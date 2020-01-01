@@ -37,15 +37,19 @@ class App extends React.Component {
 
     var tabList = this.state.tabs.map(function (res, index) {
       // 遍历标签页，如果标签的id等于tabid，那么该标签就加多一个active的className
-      var tabStyle = res.id == this.state.currentIndex ? 'subCtrl active' : 'subCtrl';
+      var tabStyle = res.id == this.state.currentIndex ? 'nav-link active' : 'nav-link';
 
-      return <li key={index} onClick={this.tabChoiced.bind(_this, res.id)} className={tabStyle}>{res.tabName}</li>
+      return (
+        <li  className="nav-item">
+          <a className={tabStyle} href="#" key={index} onClick={this.tabChoiced.bind(_this, res.id)}>{res.tabName}</a> 
+        </li>
+      )
 
     }.bind(_this));
 
     return (
       <div className="App">
-        <ul className="subNavWrap">
+        <ul className="nav ">
           {tabList}
         </ul>
         <div className="appList">

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/englishVocab/static/css/main.d1b05096.chunk.css",
+    "main.js": "/englishVocab/static/js/main.9f82a477.chunk.js",
+    "main.js.map": "/englishVocab/static/js/main.9f82a477.chunk.js.map",
+    "runtime-main.js": "/englishVocab/static/js/runtime-main.fc796263.js",
+    "runtime-main.js.map": "/englishVocab/static/js/runtime-main.fc796263.js.map",
+    "static/js/2.070cecb0.chunk.js": "/englishVocab/static/js/2.070cecb0.chunk.js",
+    "static/js/2.070cecb0.chunk.js.map": "/englishVocab/static/js/2.070cecb0.chunk.js.map",
+    "index.html": "/englishVocab/index.html",
+    "precache-manifest.c7aa02e81aef51bcfbf76e8fadb4d0d3.js": "/englishVocab/precache-manifest.c7aa02e81aef51bcfbf76e8fadb4d0d3.js",
+    "service-worker.js": "/englishVocab/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/englishVocab/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.070cecb0.chunk.js.LICENSE": "/englishVocab/static/js/2.070cecb0.chunk.js.LICENSE",
+    "static/media/logo.svg": "/englishVocab/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc796263.js",
+    "static/js/2.070cecb0.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.9f82a477.chunk.js"
+  ]
+}
