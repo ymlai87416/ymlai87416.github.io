@@ -49,7 +49,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <ul className="nav ">
+        <ul className="nav nav-tabs">
           {tabList}
         </ul>
         <div className="appList">

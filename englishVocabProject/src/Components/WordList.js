@@ -60,7 +60,9 @@ class WordList extends React.Component {
     render() {
         return (
             <div className="container">
+                <br></br>
                 <h2>{this.headerText}</h2> 
+                <br></br>
                 <div className="input-group input-group-sm mb-3">
                     <input className="form-control" type="text" placeholder="Enter your word here." onKeyDown={this._handleKeyDown}></input>
                 </div>
