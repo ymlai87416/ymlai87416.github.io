@@ -84,7 +84,7 @@ class WordList extends React.Component {
 
     _handleKeyDown = (evt) => {
         if (evt.key === 'Enter') {
-            var word = evt.target.value;
+            var word = evt.target.value.toLowerCase().trim();
             evt.target.value = "";
             var matchedEntry = this.state.content.find(function(item, index, array){
                 return item.word == word;
