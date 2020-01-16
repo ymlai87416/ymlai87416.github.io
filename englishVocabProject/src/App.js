@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Ielts4000 from './Components/Ielts4000.js';
 import Ielts7000 from './Components/Ielts7000.js';
+import Toefl5000 from './Components/Toefl5000.js';
 
 /*
   load 2 cache file, and then search the file every search
@@ -16,7 +17,7 @@ class App extends React.Component {
     this.state = {
       tabs: [
         { tabName: "IELTS 4000", id: 1 },
-        { tabName: "IELTS 7000", id: 2 },
+        { tabName: "TOEFL 5000", id: 2 },
       ],
       currentIndex: 1,
     };
@@ -57,7 +58,7 @@ class App extends React.Component {
             <Ielts4000></Ielts4000>
           </div>
           <div style={{ "display": isBox2Show }}>
-            <Ielts7000></Ielts7000>
+            <Toefl5000></Toefl5000>
           </div>
         </div>
       </div>
