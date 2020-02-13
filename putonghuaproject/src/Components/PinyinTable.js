@@ -9,10 +9,10 @@ class PinyinTable extends React.Component {
         super(props);
         this.consonantList = ["b", "p", "m", "f", "d", "t", "n", "l", "g", "k", "h", "j", 
             "q", "x", "zh", "ch", "sh", "r", "z", "c", "s", ""];
-        this.vowelList = ["i", "a", "o", "e", "ê", "ai", "ei", "ao", "ou", "an", "en", "ang", "eng", "er", 
+        this.vowelList = ["a", "o", "e", "ê", "ai", "ei", "ao", "ou", "an", "en", "ang", "eng", "er", 
             "i", "ia", "ie", "iao", "iu", "ian", "in", "iang", "ing", "u", "ua", "uo", "uai", "ui", "uan", 
             "un", "uang", "ueng", "ong", "ü", "üe", "üan", "ün", "iong"];
-        this.listUrl = "https://raw.githubusercontent.com/ymlai87416/PSC_putonghua/master/pinyin_word.json";
+        this.listUrl = "https://ymlai87416.github.io/res/pinyin_word.json";
         this.state = {
             errorMessage: "",
             content: []
