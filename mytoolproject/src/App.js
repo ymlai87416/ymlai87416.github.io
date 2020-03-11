@@ -10,10 +10,10 @@ import Dec2BinTool from './components/Dec2BinTool'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={'mytool'}>
         <Switch>
-          <Route path={'${process.env.PUBLIC_URL}/'} exact component = {ToolList} />
-          <Route path={'${process.env.PUBLIC_URL}/dec2bin'} exact component = {Dec2BinTool} />
+          <Route path="/" exact component = {ToolList} />
+          <Route path="/dec2bin" exact component = {Dec2BinTool} />
         </Switch>
       </Router>
     </div>
