@@ -11,7 +11,7 @@ class Dec2BinTool extends Component {
             sameLength: true
         }
         this.codeUrl = "https://github.com/ymlai87416/ymlai87416.github.io/blob/master/mytool/tools/dec2bin/main.go"
-        this.binUrl = "http://ymlai87416.github.io/mytool/bin/dec2bin.wasm"
+        this.binUrl = "https://ymlai87416.github.io/mytool/bin/dec2bin.wasm"
         this.wasmModule = null 
     }
 
