@@ -1,0 +1,16 @@
+div.table 
+{
+    display: table;
+    margin: 0 auto;
+}
+form.tr, div.tr
+{
+    display:table-row;
+}
+span.td
+{
+    display:table-cell;
+}
+textarea.taInput{
+    margin: 5px;
+}
