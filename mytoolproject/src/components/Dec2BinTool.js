@@ -10,7 +10,7 @@ class Dec2BinTool extends Component {
             bin : "",
             sameLength: true
         }
-        this.codeUrl = "https://github.com/ymlai87416/ymlai87416.github.io/blob/master/mytool/tools/dec2bin/main.go"
+        this.codeUrl = "https://github.com/ymlai87416/ymlai87416.github.io/blob/master/mytoolproject/tools/dec2bin/main.go"
         this.binUrl = "https://ymlai87416.github.io/mytool/bin/dec2bin.wasm"
         this.wasmModule = null 
     }
@@ -23,7 +23,7 @@ class Dec2BinTool extends Component {
 
     dec2BinHelper = debounce(() => { // this can also dispatch a redux action
         console.log("In dec2BinHelper")
-        let arr = this.state.dec.split(/\r?\n/).filter(line => line.trim().length > 0);
+        let arr = this.state.dec.split(/\r?\n/).map(line=>line.trim()).filter(line => line.length > 0);
         let sameLen = this.state.sameLength
 
         let result = window.dec2Bin(...arr, sameLen)
@@ -34,7 +34,7 @@ class Dec2BinTool extends Component {
 
     bin2DecHelper = debounce(() => { // this can also dispatch a redux action
         console.log("In bin2DecHelper")
-        let arr = this.state.bin.split(/\r?\n/).filter(line => line.trim().length > 0);
+        let arr = this.state.bin.split(/\r?\n/).map(line=>line.trim()).filter(line => line.length > 0);
         let sameLen = this.state.sameLength
 
         let result = window.bin2Dec(...arr, sameLen)
