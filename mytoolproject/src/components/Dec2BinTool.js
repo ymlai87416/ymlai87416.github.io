@@ -59,7 +59,7 @@ class Dec2BinTool extends Component {
 
     render(){
         return(
-            <div>
+            <div className="main">
                 <h1>
                     Decimal 2 binary converter
                 </h1>
