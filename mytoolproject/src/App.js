@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" exact component = {ToolList} />
-          <Route path="/dec2bin" exact component = {Dec2BinTool} />
+          <Route path={'${process.env.PUBLIC_URL}/'} exact component = {ToolList} />
+          <Route path={'${process.env.PUBLIC_URL}/dec2bin'} exact component = {Dec2BinTool} />
         </Switch>
       </Router>
     </div>
