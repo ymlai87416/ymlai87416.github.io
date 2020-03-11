@@ -61,7 +61,7 @@ class Dec2BinTool extends Component {
         return(
             <div className="main">
                 <h1>
-                    Decimal 2 binary converter
+                    Decimal/Binary converter
                 </h1>
                 <p>Convert a list of decimal to binary format, because Excel does not do it...</p>
                 <br/>

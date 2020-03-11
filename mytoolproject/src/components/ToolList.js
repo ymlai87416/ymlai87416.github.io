@@ -9,8 +9,12 @@ class ToolList extends Component {
         //hard code all the tools here
         var arr = [ 
             {
-                title: 'dec to bin converter',
+                title: 'Decimal/Binary converter',
                 path: '#/dec2bin',
+            },
+            {
+                title: 'Reverse string',
+                path: '#/reverseStr',
             },
          ];
         this.setState({tools: arr})

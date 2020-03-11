@@ -87,8 +87,6 @@ func dec2BinJs(this js.Value, args []js.Value) interface{} {
 		inputArr[i] = args[i].String()
 	}
 
-	var output = dec2Bin(inputArr, sameLen)
-
 	arr := make([]interface{}, len(output))
 	for i := 0; i < len(output); i++ {
 		arr[i] = output[i]

@@ -5,6 +5,7 @@ import {
 import './App.css';
 import ToolList from './components/ToolList.js'
 import Dec2BinTool from './components/Dec2BinTool'
+import ReverseStr from './components/ReverseStr'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div>
         <Route exact path="/" component={ToolList} />
         <Route path="/dec2bin" component={Dec2BinTool} />
+        <Route path="/reverseStr" component={ReverseStr} />
       </div>
     </HashRouter>
   );
