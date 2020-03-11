@@ -10,7 +10,7 @@ class ReverseStr extends Component {
             bin : "",
         }
         this.codeUrl = "https://github.com/ymlai87416/ymlai87416.github.io/blob/master/mytoolproject/tools/reversestr/main.go"
-        this.binUrl = "mytool/bin/reversestr.wasm"
+        this.binUrl = "/mytool/bin/reversestr.wasm"
         this.wasmModule = null 
     }
 
