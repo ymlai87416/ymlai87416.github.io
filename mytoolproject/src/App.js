@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Switch, Route 
+  HashRouter, Route 
 } from "react-router-dom";
 import './App.css';
 import ToolList from './components/ToolList.js'
@@ -9,15 +8,15 @@ import Dec2BinTool from './components/Dec2BinTool'
 
 function App() {
   return (
-    <div className="App">
-      <Router basename={'mytool'}>
-        <Switch>
-          <Route path="/" exact component = {ToolList} />
-          <Route path="/dec2bin" exact component = {Dec2BinTool} />
-        </Switch>
-      </Router>
-    </div>
+
+    <HashRouter basename="/mytool"> 
+      <div>
+        <Route exact path="/" component={ToolList} />
+        <Route path="/dec2bin" component={Dec2BinTool} />
+      </div>
+    </HashRouter>
   );
 }
+
 
 export default App;

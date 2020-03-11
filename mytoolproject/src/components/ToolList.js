@@ -10,7 +10,7 @@ class ToolList extends Component {
         var arr = [ 
             {
                 title: 'dec to bin converter',
-                path: 'dec2bin',
+                path: '#/dec2bin',
             },
          ];
         this.setState({tools: arr})
