@@ -9,7 +9,6 @@ class MultiLine extends Component {
             input : "",
             result : "",
             language: "vb",
-            sameLength: true
         }
         this.codeUrl = "https://github.com/ymlai87416/ymlai87416.github.io/blob/master/mytoolproject/tools/multiline/main.go"
         this.binUrl = "/mytool/bin/multiline.wasm"
@@ -36,8 +35,8 @@ class MultiLine extends Component {
         this.helper()
     }
 
-    setLanguage(event) {
-        console.log(event.target.value);
+    setLanguage = (event) => {
+        //console.log(event.target.value);
         this.setState({language: event.target.value})
     }
 
@@ -69,10 +68,10 @@ class MultiLine extends Component {
                     </div>
                 </div>
 
-                <div onChange={this.setLanguage.bind(this)}>
-                    <input type="radio" value="vb" name="gender" checked={true}/> Visual basic
+                <div >
+                    <input type="radio" value="vb" name="language" checked={this.state.language === "vb"} onChange={this.setLanguage}/> Visual basic
                     <br/>
-                    <input type="radio" value="java" name="gender"/> Java
+                    <input type="radio" value="java" name="language" checked={this.state.language === "java"} onChange={this.setLanguage}/> Java
                 </div>
             </div> 
         )
