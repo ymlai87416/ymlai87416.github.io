@@ -16,6 +16,10 @@ class ToolList extends Component {
                 title: 'Reverse string',
                 path: '#/reverseStr',
             },
+            {
+                title: 'Multiline',
+                path: '#/multiline',
+            },
          ];
         this.setState({tools: arr})
     }
