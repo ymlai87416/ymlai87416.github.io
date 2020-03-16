@@ -86,7 +86,14 @@ func escapeJava(input string) string {
 			} else if state == 1 {
 				resultL.WriteRune(runesArr[j])
 			} else if state == 99 {
-				resultL.WriteRune(runesArr[j])
+				switch runesArr[j] {
+				case 'n':
+				case 'r':
+				case 't':
+					resultL.WriteRune('\t')
+				default:
+					resultL.WriteRune(runesArr[j])
+				}
 				state = 1
 			}
 		}
@@ -117,7 +124,7 @@ func test() {
 	`
 
 	//java multiline
-	var javaStyleMulti1 = `"select * from haha" + 
+	var javaStyleMulti1 = `"select * from haha\n\ta" + 
 	"where haha.a = '01234'
 	`
 

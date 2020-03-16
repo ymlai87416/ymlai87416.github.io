@@ -8,7 +8,7 @@ class MultiLine extends Component {
         this.state = {
             input : "",
             result : "",
-            language: "vb",
+            language: "java",
         }
         this.codeUrl = "https://github.com/ymlai87416/ymlai87416.github.io/blob/master/mytoolproject/tools/multiline/main.go"
         this.binUrl = "/mytool/bin/multiline.wasm"
@@ -52,6 +52,12 @@ class MultiLine extends Component {
                     Code URL: <a href={this.codeUrl}>{this.codeUrl}</a>
                 </div>
                 <br/><br/>
+
+                <div >
+                    <input type="radio" value="java" name="language" checked={this.state.language === "java"} onChange={this.setLanguage}/> Java
+                    <input type="radio" value="vb" name="language" checked={this.state.language === "vb"} onChange={this.setLanguage}/> Visual basic
+                </div>
+
                 <div className="table">
                     <div className="tr">
                         <span className="td"><h3>Input</h3></span>
@@ -68,11 +74,7 @@ class MultiLine extends Component {
                     </div>
                 </div>
 
-                <div >
-                    <input type="radio" value="vb" name="language" checked={this.state.language === "vb"} onChange={this.setLanguage}/> Visual basic
-                    <br/>
-                    <input type="radio" value="java" name="language" checked={this.state.language === "java"} onChange={this.setLanguage}/> Java
-                </div>
+                
             </div> 
         )
     }
