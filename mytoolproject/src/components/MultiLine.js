@@ -47,7 +47,7 @@ class MultiLine extends Component {
 
     setConcat = (event) => {
         //console.log(event.target.value);
-        this.setState({concat: event.target.value})
+        this.setState({concat: event.target.checked})
     }
 
     render(){
