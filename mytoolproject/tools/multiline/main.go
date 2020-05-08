@@ -103,6 +103,42 @@ func escapeJava(input string) string {
 	return resultF.String()
 }
 
+func multilineInv(input string, language string) string {
+	switch language {
+	case "vb":
+		return concatVB(input)
+	case "java":
+		return concatJava(input)
+	default:
+		fmt.Printf("language not supported.")
+		return ""
+	}
+}
+
+func concatJava(input string) string {
+	temp := strings.Split(input, "\n")
+	var resultF strings.Builder
+
+	for i := 0; i < len(temp)-1; i++ {
+		resultF.WriteString("\"" + temp[i] + " \" +\n")
+	}
+	resultF.WriteString("\"" + temp[len(temp)-1] + "\"")
+
+	return resultF.String()
+}
+
+func concatVB(input string) string {
+	temp := strings.Split(input, "\n")
+	var resultF strings.Builder
+
+	for i := 0; i < len(temp)-1; i++ {
+		resultF.WriteString("\"" + temp[i] + " \" & _\n")
+	}
+	resultF.WriteString("\"" + temp[len(temp)-1] + "\"")
+
+	return resultF.String()
+}
+
 func multilineJs(this js.Value, args []js.Value) interface{} {
 
 	var output = multiline(args[0].String(), args[1].String())
@@ -110,8 +146,16 @@ func multilineJs(this js.Value, args []js.Value) interface{} {
 	return output
 }
 
+func multilineInvJs(this js.Value, args []js.Value) interface{} {
+
+	var output = multilineInv(args[0].String(), args[1].String())
+
+	return output
+}
+
 func main() {
 	js.Global().Set("multiline", js.FuncOf(multilineJs))
+	js.Global().Set("multilineInv", js.FuncOf(multilineInvJs))
 	println("Successfully load ")
 	select {}
 	//test()
@@ -119,15 +163,21 @@ func main() {
 
 func test() {
 	//vb multiline
-	var vbStyleMulti1 = `test = "select * from haha" &_ 
+	var vbStyleMulti1 = `test = "select * from haha" &_
 	"where haha.a = ""01234'"
 	`
 
 	//java multiline
-	var javaStyleMulti1 = `"select * from haha\n\ta" + 
+	var javaStyleMulti1 = `"select * from haha\n\ta" +
 	"where haha.a = '01234'
 	`
 
+	var concat = `select *
+	from haha
+	where haha.a = '01234'`
+
 	fmt.Println(multiline(vbStyleMulti1, "vb"))
 	fmt.Println(multiline(javaStyleMulti1, "java"))
+	fmt.Println(multilineInv(concat, "vb"))
+	fmt.Println(multilineInv(concat, "java"))
 }

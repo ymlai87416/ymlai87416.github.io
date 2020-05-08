@@ -20,6 +20,10 @@ class ToolList extends Component {
                 title: 'Multiline',
                 path: '#/multiline',
             },
+            {
+                title: 'Table format to insert SQL',
+                path: '#/table2SQL',
+            },
          ];
         this.setState({tools: arr})
     }

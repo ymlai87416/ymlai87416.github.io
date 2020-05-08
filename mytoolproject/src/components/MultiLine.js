@@ -9,6 +9,7 @@ class MultiLine extends Component {
             input : "",
             result : "",
             language: "java",
+            concat: false,
         }
         this.codeUrl = "https://github.com/ymlai87416/ymlai87416.github.io/blob/master/mytoolproject/tools/multiline/main.go"
         this.binUrl = "/mytool/bin/multiline.wasm"
@@ -24,7 +25,11 @@ class MultiLine extends Component {
     helper = debounce(() => { // this can also dispatch a redux action
         console.log("In helper")
 
-        let result = window.multiline(this.state.input, this.state.language)
+        let result = ""
+        if(this.state.concat)
+            result = window.multilineInv(this.state.input, this.state.language)
+        else
+            result = window.multiline(this.state.input, this.state.language)
 
         this.setState({result: result})
     }, 300);
@@ -38,6 +43,11 @@ class MultiLine extends Component {
     setLanguage = (event) => {
         //console.log(event.target.value);
         this.setState({language: event.target.value})
+    }
+
+    setConcat = (event) => {
+        //console.log(event.target.value);
+        this.setState({concat: event.target.value})
     }
 
     render(){
@@ -56,6 +66,7 @@ class MultiLine extends Component {
                 <div >
                     <input type="radio" value="java" name="language" checked={this.state.language === "java"} onChange={this.setLanguage}/> Java
                     <input type="radio" value="vb" name="language" checked={this.state.language === "vb"} onChange={this.setLanguage}/> Visual basic
+                    <input type="checkbox" name="inv" checked={this.state.concat} onChange={this.setConcat}/> Concat
                 </div>
 
                 <div className="table">
