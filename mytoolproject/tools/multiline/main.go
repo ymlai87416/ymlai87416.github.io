@@ -120,6 +120,7 @@ func concatJava(input string) string {
 	var resultF strings.Builder
 
 	for i := 0; i < len(temp)-1; i++ {
+		temp[i] = strings.Replace(temp[i], "\"", "\\\"", -1)
 		resultF.WriteString("\"" + temp[i] + " \" +\n")
 	}
 	resultF.WriteString("\"" + temp[len(temp)-1] + "\"")
@@ -132,6 +133,7 @@ func concatVB(input string) string {
 	var resultF strings.Builder
 
 	for i := 0; i < len(temp)-1; i++ {
+		temp[i] = strings.Replace(temp[i], "\"", "\"\"", -1)
 		resultF.WriteString("\"" + temp[i] + " \" & _\n")
 	}
 	resultF.WriteString("\"" + temp[len(temp)-1] + "\"")
