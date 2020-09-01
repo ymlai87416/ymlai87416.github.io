@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c621bcc796742bd674c22b09e62c5bfc",
+    "revision": "0ce5a7682375bf598e221f1a9b06083b",
     "url": "/putonghua/index.html"
   },
   {
-    "revision": "53f717177cbf7e713616",
+    "revision": "9e25a42c8ba5a0fa92f2",
     "url": "/putonghua/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/putonghua/static/js/2.8d4b94fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53f717177cbf7e713616",
-    "url": "/putonghua/static/js/main.b7ce64b3.chunk.js"
+    "revision": "9e25a42c8ba5a0fa92f2",
+    "url": "/putonghua/static/js/main.3ebd462b.chunk.js"
   },
   {
     "revision": "4729706fd066d0040b67",
