@@ -46,11 +46,14 @@ class PinyinTable extends React.Component {
     }
 
     render() {
+        const style={
+            minWidth:'1500px'
+        }
         var header = this.renderHeader();
         var rows = this.consonantList.map((consonant, i) => this.renderRow(consonant, i));
 
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" style={style}>
                 {header}
                 {rows}
             </div>
