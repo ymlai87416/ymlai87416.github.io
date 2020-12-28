@@ -58,6 +58,7 @@ A code segment which show the following
 
 ```python
 from sample_module import sample_func
+import traceback 
 
 def main():
     try:
@@ -70,8 +71,9 @@ def main():
                 print("Hello " + car + "!")
     except NameError:
         print("Variable x is not defined")
-    except:
-        print("Something else went wrong")
+    except Exception as e:
+        print("Something else went wrong", e.__class__)
+        traceback.print_exception(*sys.exc_info()) 
 
 if __name__ == '__main__':
     main()  # 或是任何你想執行的函式
@@ -508,6 +510,9 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
+
+if "year" in thisdict.keys():
+  pass
 ```
 
 ### Numpy
@@ -542,4 +547,8 @@ dict = {"groups": groups,
 select_df = pd.DataFrame(dict)
 
 out_df = select_df[select_df.loc[:,"num"] > 10] # 選出人數超過 10 的群組  
+
+# iterate and update value
+for index, row in data_loc.iterrows():
+    data_loc.set_value(index,'real_distict',findDistrict(Point(row['lng'], row['lat'])))
 ```
