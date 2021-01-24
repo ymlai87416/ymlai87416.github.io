@@ -59,6 +59,7 @@ module.exports = {
             'java',
             'javascript',
             'python',
+            'vb'
           ]
         }
       ],
