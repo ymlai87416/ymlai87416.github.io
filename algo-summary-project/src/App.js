@@ -47,7 +47,7 @@ function App() {
 
   //use context
   useEffect(() => {
-      axios.get("../index.json")
+      axios.get("./index.json")
       .then(res => {
         dbDispatch({type: "fetch_success", value: res.data})
       })
