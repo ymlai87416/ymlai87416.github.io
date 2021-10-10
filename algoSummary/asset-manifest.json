@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/algoSummary/static/css/main.5d18a833.chunk.css",
+    "main.js": "/algoSummary/static/js/main.8f67144a.chunk.js",
+    "main.js.map": "/algoSummary/static/js/main.8f67144a.chunk.js.map",
+    "runtime-main.js": "/algoSummary/static/js/runtime-main.03617eae.js",
+    "runtime-main.js.map": "/algoSummary/static/js/runtime-main.03617eae.js.map",
+    "static/css/2.095e632c.chunk.css": "/algoSummary/static/css/2.095e632c.chunk.css",
+    "static/js/2.c2c80ffe.chunk.js": "/algoSummary/static/js/2.c2c80ffe.chunk.js",
+    "static/js/2.c2c80ffe.chunk.js.map": "/algoSummary/static/js/2.c2c80ffe.chunk.js.map",
+    "static/js/3.a9b394cf.chunk.js": "/algoSummary/static/js/3.a9b394cf.chunk.js",
+    "static/js/3.a9b394cf.chunk.js.map": "/algoSummary/static/js/3.a9b394cf.chunk.js.map",
+    "index.html": "/algoSummary/index.html",
+    "static/css/2.095e632c.chunk.css.map": "/algoSummary/static/css/2.095e632c.chunk.css.map",
+    "static/css/main.5d18a833.chunk.css.map": "/algoSummary/static/css/main.5d18a833.chunk.css.map",
+    "static/js/2.c2c80ffe.chunk.js.LICENSE.txt": "/algoSummary/static/js/2.c2c80ffe.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/algoSummary/static/media/logo.6ce24c58.svg",
+    "static/media/index.css": "/algoSummary/static/media/roboto-latin-900italic.cb5ad999.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03617eae.js",
+    "static/css/2.095e632c.chunk.css",
+    "static/js/2.c2c80ffe.chunk.js",
+    "static/css/main.5d18a833.chunk.css",
+    "static/js/main.8f67144a.chunk.js"
+  ]
+}
