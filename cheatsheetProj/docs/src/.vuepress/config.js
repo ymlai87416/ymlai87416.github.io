@@ -59,7 +59,9 @@ module.exports = {
             'java',
             'javascript',
             'python',
-            'vb'
+            'dart',
+            'golang',
+            'vb',
           ]
         }
       ],

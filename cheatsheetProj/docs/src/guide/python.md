@@ -189,7 +189,8 @@ print("d1 is less than d2 : ", d1 < d2)
 
 ```python
 print(x.strftime("%B"))
-print(x.strftime("%b %d %Y %H:%M:%S"))
+print(x.strftime("%b %d %Y %H:%M:%S"))  # %b is month in text %m is number %H
+datetime.datetime.strptime('Mon Feb 15 2010', '%a %b %d %Y').strftime('%d/%m/%Y')
 ```
 	
 ## File
