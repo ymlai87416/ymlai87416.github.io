@@ -321,7 +321,7 @@ class Dec2BinTool extends Component {
         let stock1KellyReturn = `E(return) = 0.5 * \\frac{\\mu^2}{\\sigma^2}`;
         let stock2Kelly = `f^* = \\frac{p}{a} - \\frac{q}{b}`;
         let horseKelly1 = `\\underset{B}{\\text{max}} \\qquad G =  \\sum_{i=1}^{n} ln(T + B_i * O_i - \\sum_{i=1}^{n} B_i) `;
-        let horseKelly2 = `\\displaylines{ \\text{subject to} \\qquad B \\geq 0 \\\\ and \\qquad \\sum_{i=1}^{n} B_i \\leq bankroll }`;
+        let horseKelly2 = `\\displaylines{ \\text{subject to} \\qquad B \\geq 0 \\\\ and \\qquad \\sum_{i=1}^{n} B_i \\leq T }`;
         let kellyInputStyle = {
             minWidth:"150px", display:"inline-block", marginLeft: 25, marginRight: 25,
             textAlign: "right",
