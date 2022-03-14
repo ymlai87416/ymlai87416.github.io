@@ -62,6 +62,7 @@ module.exports = {
             'dart',
             'golang',
             'vb',
+            'k8s',
           ]
         }
       ],
