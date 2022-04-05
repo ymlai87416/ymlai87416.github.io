@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Machine learning from Coursera by Andrew Ng - Tom personal site</title><meta name="Description" content="Tom personal web site"><meta property="og:title" content="Machine learning from Coursera by Andrew Ng" />
+<meta property="og:description" content="A very insightful course from Coursera and Udacity on Machine learning and deep learning using Tensorflow. Learn some stunts which cannot be done by Programming 101.
+Machine learning from Coursera:
+A very good course in general, especially the assignment, really provide you a platform to test out whatever you have learnt from the video.
+When I heard that I have to learn Octave, I thought “WOW, I have to learn again a new language”, but it turns out to be Matlab, which I have some experience before." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/blog/coursera-machine-learning/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2017-07-03T00:00:00+08:00" />
+<meta property="article:modified_time" content="2017-07-03T00:00:00+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/logo.png"/>
+
+<meta name="twitter:title" content="Machine learning from Coursera by Andrew Ng"/>
+<meta name="twitter:description" content="A very insightful course from Coursera and Udacity on Machine learning and deep learning using Tensorflow. Learn some stunts which cannot be done by Programming 101.
+Machine learning from Coursera:
+A very good course in general, especially the assignment, really provide you a platform to test out whatever you have learnt from the video.
+When I heard that I have to learn Octave, I thought “WOW, I have to learn again a new language”, but it turns out to be Matlab, which I have some experience before."/>
+<meta name="application-name" content="Tom personal web site">
+<meta name="apple-mobile-web-app-title" content="Tom personal web site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/blog/coursera-machine-learning/" /><link rel="prev" href="https://example.com/blog/tensorflow-tutorial-udacity/" /><link rel="next" href="https://example.com/blog/finish-kaggle-titanic/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Machine learning from Coursera by Andrew Ng",
+        "inLanguage": "zh",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/blog\/coursera-machine-learning\/"
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "blog","keywords": "computer science, artificial intelligence","wordcount":  254 ,
+        "url": "https:\/\/example.com\/blog\/coursera-machine-learning\/","datePublished": "2017-07-03T00:00:00+08:00","dateModified": "2017-07-03T00:00:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Tom","logo": "https:\/\/example.com\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "Lai Yiu Ming, Tom"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tom personal site">Tom personal site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="/blog/"> Blog </a><a class="menu-item" href="/cheatsheet/"> Cheatsheet </a><a class="menu-item" href="/tools/"> Tools </a><a class="menu-item" href="/link/"> Link </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tom personal site">Tom personal site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="/blog/" title="">Blog</a><a class="menu-item" href="/cheatsheet/" title="">Cheatsheet</a><a class="menu-item" href="/tools/" title="">Tools</a><a class="menu-item" href="/link/" title="">Link</a><a href="javascript:void(0);" class="menu-item theme-switch" title="">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title"></h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Machine learning from Coursera by Andrew Ng</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Lai Yiu Ming, Tom</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2017-07-03">2017-07-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span></span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>A very insightful course from Coursera and Udacity on Machine learning and deep learning using Tensorflow.
+Learn some stunts which cannot be done by Programming 101.</p>
+<p>Machine learning from Coursera:</p>
+<p>A very good course in general, especially the assignment, really provide you a platform to test out whatever you have learnt from the video.</p>
+<p>When I heard that I have to learn Octave, I thought “WOW, I have to learn again a new language”, but it turns out to be Matlab, which I have some experience before.</p>
+<p>I am never a big fan of Matlab and R, so I translated all the assignment from Matlab (Octave) to Python for my reference, it turned out to be a great decision when I was studying deep learning from Udacity.</p>
+<p>I encourage you if you have time to go through this course, even paying the cost of learning a new programming language… to understand what machine learning really are. If you really like to stick with Python, just take my code from my Github and put it into your personal arsenal.
+Below are the assignments:</p>
+<p>Hands-on machine learning:
+<a href="https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex1/Assignment1.ipynb" target="_blank" rel="noopener noreffer">https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex1/Assignment1.ipynb</a></p>
+<p>Computing J(theta) and L2 regularization:
+<a href="https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex2/Assignment2.ipynb" target="_blank" rel="noopener noreffer">https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex2/Assignment2.ipynb</a></p>
+<p>Playing with neural network and identify hand-written numbers
+<a href="https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex3/Assignment3.ipynb" target="_blank" rel="noopener noreffer">https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex3/Assignment3.ipynb</a></p>
+<p>Neural network back and forth, write a backward propagation yourself.
+<a href="https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex4/Assignment4.ipynb" target="_blank" rel="noopener noreffer">https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex4/Assignment4.ipynb</a></p>
+<p>Bias and variance, teach you how to use and evaluate L2 regularization.
+<a href="https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex5/Assignment5.ipynb" target="_blank" rel="noopener noreffer">https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex5/Assignment5.ipynb</a></p>
+<p>Support vector machine and detect spamming email
+<a href="https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex6/Assignment6.ipynb" target="_blank" rel="noopener noreffer">https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex6/Assignment6.ipynb</a></p>
+<p>K-mean and PCA. Want to see what face look like under PCA?
+<a href="https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex7/Assignment7-part1.ipynb" target="_blank" rel="noopener noreffer">https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex7/Assignment7-part1.ipynb</a></p>
+<p>Anomaly detection and a movie recommendation system
+<a href="https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex8/Assignment8.ipynb" target="_blank" rel="noopener noreffer">https://github.com/ymlai87416/PythonPlayground/blob/master/Python%20notebook/Machine%20learning%20by%20andrew%20ng/machine-learning-ex8/Assignment8.ipynb</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/blog/coursera-machine-learning/index.md" target="_blank"></a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/computer-science/">computer science</a>,&nbsp;<a href="/tags/artificial-intelligence/">artificial intelligence</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="/"></a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/blog/tensorflow-tutorial-udacity/" class="prev" rel="prev" title="Tensorflow Tutorial Udacity"><i class="fas fa-angle-left fa-fw"></i>Tensorflow Tutorial Udacity</a>
+            <a href="/blog/finish-kaggle-titanic/" class="next" rel="next" title="Finish Kaggle titanic with over 80%">Finish Kaggle titanic with over 80%<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2016 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Lai Yiu Ming, Tom</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"","maxShownLines":100},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

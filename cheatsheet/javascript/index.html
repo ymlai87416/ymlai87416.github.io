@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Javascript - Tom personal site</title><meta name="Description" content="Tom personal web site"><meta property="og:title" content="Javascript" />
+<meta property="og:description" content="Javascript Basic structure Simple declaration 1 2 3 var x = 5; const PI = 3.141592653589793; let x = 2; Declare array 1 2 3 var cars = [] var cars = [&#34;Saab&#34;, &#34;Volvo&#34;, &#34;BMW&#34;]; var arr_length = cars.length; Declare structure 1 2 3 4 5 6 7 class Car { constructor(name, year) { this.name = name; this.year = year; } } let myCar1 = new Car(&#34;Ford&#34;, 2014); Enum No" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/cheatsheet/javascript/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="cheatsheet" />
+<meta property="article:published_time" content="2022-04-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-04-04T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/logo.png"/>
+
+<meta name="twitter:title" content="Javascript"/>
+<meta name="twitter:description" content="Javascript Basic structure Simple declaration 1 2 3 var x = 5; const PI = 3.141592653589793; let x = 2; Declare array 1 2 3 var cars = [] var cars = [&#34;Saab&#34;, &#34;Volvo&#34;, &#34;BMW&#34;]; var arr_length = cars.length; Declare structure 1 2 3 4 5 6 7 class Car { constructor(name, year) { this.name = name; this.year = year; } } let myCar1 = new Car(&#34;Ford&#34;, 2014); Enum No"/>
+<meta name="application-name" content="Tom personal web site">
+<meta name="apple-mobile-web-app-title" content="Tom personal web site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/cheatsheet/javascript/" /><link rel="prev" href="https://example.com/cheatsheet/k8s/" /><link rel="next" href="https://example.com/cheatsheet/java/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Javascript",
+        "inLanguage": "zh",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/cheatsheet\/javascript\/"
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "cheatsheet","wordcount":  1114 ,
+        "url": "https:\/\/example.com\/cheatsheet\/javascript\/","datePublished": "2022-04-04T00:00:00+00:00","dateModified": "2022-04-04T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Tom","logo": "https:\/\/example.com\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "Tom"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tom personal site">Tom personal site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="/blog/"> Blog </a><a class="menu-item" href="/cheatsheet/"> Cheatsheet </a><a class="menu-item" href="/tools/"> Tools </a><a class="menu-item" href="/link/"> Link </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tom personal site">Tom personal site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="/blog/" title="">Blog</a><a class="menu-item" href="/cheatsheet/" title="">Cheatsheet</a><a class="menu-item" href="/tools/" title="">Tools</a><a class="menu-item" href="/link/" title="">Link</a><a href="javascript:void(0);" class="menu-item theme-switch" title="">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title"></h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Javascript</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Tom</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-04">2022-04-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span></span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript">Javascript</a></li>
+    <li><a href="#basic-structure">Basic structure</a>
+      <ul>
+        <li><a href="#simple-declaration">Simple declaration</a></li>
+        <li><a href="#declare-array">Declare array</a></li>
+        <li><a href="#declare-structure">Declare structure</a></li>
+        <li><a href="#enum">Enum</a></li>
+      </ul>
+    </li>
+    <li><a href="#control-structure">Control structure</a></li>
+    <li><a href="#string">String</a>
+      <ul>
+        <li><a href="#basic-operation">Basic operation</a></li>
+        <li><a href="#replace">Replace</a></li>
+        <li><a href="#concat-and-compare">Concat and compare</a></li>
+      </ul>
+    </li>
+    <li><a href="#array">Array</a>
+      <ul>
+        <li><a href="#basic-operation-access-of-element">Basic operation, access of element</a></li>
+        <li><a href="#traverse-sort">Traverse, sort</a></li>
+      </ul>
+    </li>
+    <li><a href="#date">Date</a>
+      <ul>
+        <li><a href="#new-date">New date</a></li>
+        <li><a href="#add-days">Add days</a></li>
+        <li><a href="#compare-date-diff-date">Compare date, diff date</a></li>
+        <li><a href="#format-date">Format date</a></li>
+      </ul>
+    </li>
+    <li><a href="#file">File</a>
+      <ul>
+        <li><a href="#console-read-write">Console read write</a></li>
+        <li><a href="#read-write-line-with-utf-8">Read write line with UTF-8</a></li>
+      </ul>
+    </li>
+    <li><a href="#database---mysql">Database - MySQL</a>
+      <ul>
+        <li><a href="#connection-string-list">Connection string list</a></li>
+        <li><a href="#open-connection">Open connection</a></li>
+        <li><a href="#execute-updateinsert">Execute update/insert</a></li>
+        <li><a href="#execute-select">Execute select</a></li>
+        <li><a href="#traverse-the-dataset">Traverse the dataset</a></li>
+      </ul>
+    </li>
+    <li><a href="#popular-format">Popular format</a>
+      <ul>
+        <li><a href="#csv">CSV</a></li>
+        <li><a href="#dom--xml">DOM / XML</a></li>
+        <li><a href="#json">JSON</a></li>
+        <li><a href="#yaml">Yaml</a></li>
+        <li><a href="#webapi-call">Web/API call</a></li>
+      </ul>
+    </li>
+    <li><a href="#advance-structure--popular-structure">Advance structure / Popular structure</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="javascript">Javascript</h2>
+<h2 id="basic-structure">Basic structure</h2>
+<h3 id="simple-declaration">Simple declaration</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">PI</span> <span class="o">=</span> <span class="mf">3.141592653589793</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="declare-array">Declare array</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Saab&#34;</span><span class="p">,</span> <span class="s2">&#34;Volvo&#34;</span><span class="p">,</span> <span class="s2">&#34;BMW&#34;</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">arr_length</span> <span class="o">=</span> <span class="nx">cars</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="declare-structure">Declare structure</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">year</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">year</span> <span class="o">=</span> <span class="nx">year</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">myCar1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Car</span><span class="p">(</span><span class="s2">&#34;Ford&#34;</span><span class="p">,</span> <span class="mi">2014</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="enum">Enum</h3>
+<p>No such thing</p>
+<h2 id="control-structure">Control structure</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">component</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;component&#39;</span><span class="p">)</span> <span class="c1">//runtime
+</span><span class="c1"></span><span class="kr">import</span> <span class="nx">component2</span> <span class="nx">from</span> <span class="s2">&#34;component2&#34;</span><span class="p">;</span> <span class="c1">//compile time ES6
+</span><span class="c1"></span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Volvo&#34;</span><span class="p">,</span> <span class="s2">&#34;BMW&#34;</span><span class="p">,</span> <span class="s2">&#34;Ford&#34;</span><span class="p">,</span> <span class="s2">&#34;Mazda&#34;</span><span class="p">,</span> <span class="kc">null</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">cars</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">){</span>
+        <span class="kd">let</span> <span class="nx">car</span> <span class="o">=</span> <span class="nx">cars</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">car</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello Hell!&#34;</span><span class="p">);</span>    
+        <span class="k">else</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello &#34;</span> <span class="o">+</span> <span class="nx">car</span> <span class="o">+</span> <span class="s2">&#34;!&#34;</span><span class="p">);</span>    
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//document.getElementById(&#34;demo&#34;).innerHTML = err.message;
+</span><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="string">String</h2>
+<h3 id="basic-operation">Basic operation</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="s2">&#34;Hello&#34;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">txt</span><span class="p">.</span><span class="nx">Length</span>
+<span class="kd">var</span> <span class="nx">upper</span> <span class="o">=</span> <span class="nx">greeting</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()</span>
+<span class="kd">var</span> <span class="nx">trim</span> <span class="o">=</span> <span class="nx">banner</span><span class="p">.</span><span class="nx">trim</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">isOK</span> <span class="o">=</span> <span class="nx">test</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s2">&#34;&lt;&#34;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">pos</span> <span class="o">=</span> <span class="s2">&#34;test: enabled&#34;</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&#34;: &#34;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">substr1</span> <span class="o">=</span> <span class="s2">&#34;Hello world!&#34;</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>       <span class="c1">//&#39;ello&#39;
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">substr2</span> <span class="o">=</span> <span class="s2">&#34;Hello world!&#34;</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>    <span class="c1">// &#39;ell&#39;
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">masked</span> <span class="o">=</span> <span class="nx">last4Digits</span><span class="p">.</span><span class="nx">padStart</span><span class="p">(</span><span class="nx">fullNumber</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">intVal</span> <span class="o">=</span> <span class="s2">&#34;1&#34;</span><span class="p">.</span><span class="nx">valueOf</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="replace">Replace</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span><span class="s2">&#34;Visit Microsoft!&#34;</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&#34;Microsoft&#34;</span><span class="p">,</span> <span class="s2">&#34;W3Schools&#34;</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="concat-and-compare">Concat and compare</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">firstName</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">lastName</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="s2">&#34;2&#34;</span> <span class="o">&gt;</span> <span class="s2">&#34;12&#34;</span><span class="p">;</span>  <span class="c1">//true
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="s2">&#34;12&#34;</span> <span class="c1">//true
+</span></code></pre></td></tr></table>
+</div>
+</div><h2 id="array">Array</h2>
+<h3 id="basic-operation-access-of-element">Basic operation, access of element</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Saab&#34;</span><span class="p">,</span> <span class="s2">&#34;Volvo&#34;</span><span class="p">,</span> <span class="s2">&#34;BMW&#34;</span><span class="p">];</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;demo&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">cars</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nx">cars</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&#34;Tesla&#34;</span><span class="p">)</span>
+<span class="nx">cars</span><span class="p">.</span><span class="nx">concat</span><span class="p">([</span><span class="s2">&#34;Xiapeng, Biadi&#34;</span><span class="p">]])</span>
+
+<span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="s2">&#34;hi: &#34;</span>
+<span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">];</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">value</span> <span class="p">=&gt;</span> <span class="p">{</span><span class="k">return</span> <span class="nx">txt</span> <span class="o">=</span> <span class="nx">txt</span><span class="o">+</span> <span class="nx">value</span> <span class="o">+</span> <span class="s2">&#34;&lt;br/&gt;&#34;</span><span class="p">;}</span> <span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">numberSq</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">value</span> <span class="p">=&gt;</span> <span class="p">{</span><span class="k">return</span> <span class="nx">value</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;}</span> <span class="p">);</span>
+<span class="kd">var</span> <span class="nx">filtered</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span><span class="k">return</span> <span class="nx">value</span> <span class="o">&gt;</span> <span class="mi">18</span><span class="p">;}</span> <span class="p">);</span>
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">fruits</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&#34;Apple&#34;</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="traverse-sort">Traverse, sort</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+<span class="nx">fruits</span><span class="p">.</span><span class="nx">sort</span><span class="p">();</span>        <span class="c1">// Sorts the elements of fruits
+</span></code></pre></td></tr></table>
+</div>
+</div><h2 id="date">Date</h2>
+<h3 id="new-date">New date</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+<span class="nx">d</span><span class="p">.</span><span class="nx">setHours</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>  <span class="c1">//to get only date
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="add-days">Add days</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">addDays</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="compare-date-diff-date">Compare date, diff date</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">if</span> <span class="p">(</span><span class="nx">date1</span><span class="o">&gt;</span><span class="nx">date2</span><span class="p">)</span> <span class="k">return</span> <span class="p">(</span><span class="s2">&#34;Date1 &gt; Date2&#34;</span><span class="p">);</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">date1</span><span class="o">&lt;</span><span class="nx">date2</span><span class="p">)</span> <span class="k">return</span> <span class="p">(</span><span class="s2">&#34;Date2 &gt; Date1&#34;</span><span class="p">);</span>
+<span class="k">else</span> <span class="k">return</span> <span class="p">(</span><span class="s2">&#34;Date1 = Date2&#34;</span><span class="p">);</span> 
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="format-date">Format date</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">d</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>           <span class="c1">//Wed Mar 25 2015 08:00:00 GMT+0800 (台北標準時間)
+</span><span class="c1"></span><span class="nx">d</span><span class="p">.</span><span class="nx">toDateString</span><span class="p">();</span>	    <span class="c1">//Sat Dec 05 2020
+</span><span class="c1"></span><span class="nx">d</span><span class="p">.</span><span class="nx">toISOString</span><span class="p">();</span>        <span class="c1">//&#34;2015-03-25&#34; 
+</span><span class="c1"></span>
+<span class="kd">var</span> <span class="nx">dateFormat</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;dateformat&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="nx">dateFormat</span><span class="p">(</span><span class="nx">now</span><span class="p">,</span> <span class="s2">&#34;dddd, mmmm dS, yyyy, h:MM:ss TT&#34;</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="file">File</h2>
+<h3 id="console-read-write">Console read write</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">);</span>   
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="read-write-line-with-utf-8">Read write line with UTF-8</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c">&lt;!--</span> <span class="nx">The</span> <span class="sb">`multiple`</span> <span class="nx">attribute</span> <span class="nx">lets</span> <span class="nx">users</span> <span class="nx">select</span> <span class="nx">multiple</span> <span class="nx">files</span><span class="p">.</span> <span class="o">--&gt;</span>
+<span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;file&#34;</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&#34;file-selector&#34;</span> <span class="nx">multiple</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+  <span class="kr">const</span> <span class="nx">fileSelector</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;file-selector&#39;</span><span class="p">);</span>
+  <span class="nx">fileSelector</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;change&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">fileList</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">files</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fileList</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+
+<span class="c1">//File reader
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FileReader</span><span class="p">();</span>
+<span class="nx">reader</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">img</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="nx">reader</span><span class="p">.</span><span class="nx">readAsDataURL</span><span class="p">(</span><span class="nx">file</span><span class="p">);</span>
+
+<span class="c1">//fetch api
+</span><span class="c1"></span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;file.txt&#39;</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">text</span><span class="p">())</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">text</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="database---mysql">Database - MySQL</h2>
+<h3 id="connection-string-list">Connection string list</h3>
+<pre><code>Install package instead of a common interface.
+</code></pre>
+<h3 id="open-connection">Open connection</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">mysql</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;mysql&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">con</span> <span class="o">=</span> <span class="nx">mysql</span><span class="p">.</span><span class="nx">createConnection</span><span class="p">({</span>
+  <span class="nx">host</span><span class="o">:</span> <span class="s2">&#34;localhost&#34;</span><span class="p">,</span>
+  <span class="nx">user</span><span class="o">:</span> <span class="s2">&#34;yourusername&#34;</span><span class="p">,</span>
+  <span class="nx">password</span><span class="o">:</span> <span class="s2">&#34;yourpassword&#34;</span>
+<span class="p">});</span>
+
+<span class="nx">con</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">throw</span> <span class="nx">err</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Connected!&#34;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="execute-updateinsert">Execute update/insert</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">con</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">throw</span> <span class="nx">err</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Connected!&#34;</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">sql</span> <span class="o">=</span> <span class="s2">&#34;INSERT INTO customers (name, address) VALUES (&#39;Company Inc&#39;, &#39;Highway 37&#39;)&#34;</span><span class="p">;</span>
+  <span class="nx">con</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="nx">sql</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">throw</span> <span class="nx">err</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;1 record inserted&#34;</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="execute-select">Execute select</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">con</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">throw</span> <span class="nx">err</span><span class="p">;</span>
+  <span class="nx">con</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&#34;SELECT * FROM customers&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">,</span> <span class="nx">fields</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">throw</span> <span class="nx">err</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+<span class="cm">/*
+</span><span class="cm">[
+</span><span class="cm">  { id: 1, name: &#39;John&#39;, address: &#39;Highway 71&#39;},
+</span><span class="cm">  { id: 2, name: &#39;Peter&#39;, address: &#39;Lowstreet 4&#39;},
+</span><span class="cm">  { id: 3, name: &#39;Amy&#39;, address: &#39;Apple st 652&#39;},
+</span><span class="cm">    ...
+</span><span class="cm">]
+</span><span class="cm">*/</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="traverse-the-dataset">Traverse the dataset</h3>
+<pre><code>Traverse as json object
+</code></pre>
+<h2 id="popular-format">Popular format</h2>
+<h3 id="csv">CSV</h3>
+<p>Use a library call Papa parser
+<a href="https://www.papaparse.com/" target="_blank" rel="noopener noreffer">https://www.papaparse.com/</a></p>
+<h4 id="read">Read</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">Papa</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">csv</span><span class="p">);</span> <span class="c1">//csv as string
+</span><span class="c1"></span>
+<span class="c1">// Parse local CSV file
+</span><span class="c1"></span><span class="nx">Papa</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="p">{</span>
+	<span class="nx">complete</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">results</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Finished:&#34;</span><span class="p">,</span> <span class="nx">results</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="write">Write</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">csv</span> <span class="o">=</span> <span class="nx">Papa</span><span class="p">.</span><span class="nx">unparse</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="dom--xml">DOM / XML</h3>
+<h4 id="read--write">Read / Write</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">text</span> <span class="o">=</span> <span class="s2">&#34;&lt;bookstore&gt;&lt;book&gt;&#34;</span> <span class="o">+</span>
+<span class="s2">&#34;&lt;title&gt;Everyday Italian&lt;/title&gt;&#34;</span> <span class="o">+</span>
+<span class="s2">&#34;&lt;author&gt;Giada De Laurentiis&lt;/author&gt;&#34;</span> <span class="o">+</span>
+<span class="s2">&#34;&lt;year&gt;2005&lt;/year&gt;&#34;</span> <span class="o">+</span>
+<span class="s2">&#34;&lt;/book&gt;&lt;/bookstore&gt;&#34;</span><span class="p">;</span>
+
+<span class="nx">parser</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DOMParser</span><span class="p">();</span>
+<span class="nx">xmlDoc</span> <span class="o">=</span> <span class="nx">parser</span><span class="p">.</span><span class="nx">parseFromString</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="s2">&#34;text/xml&#34;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">xmlDoc</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;title&#34;</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeValue</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="write-1">Write</h4>
+<pre><code>Skip for the time being
+</code></pre>
+<h4 id="traverse">Traverse</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">names</span> <span class="o">=</span> <span class="nx">xml</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;name&#34;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">names</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">names</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">firstChild</span><span class="p">.</span><span class="nx">nodeValue</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;div&#34;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">textNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+    <span class="nx">div</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">textNode</span><span class="p">);</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;wrapper&#34;</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">div</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="select-element">Select element</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//XPath
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">nodes</span> <span class="o">=</span> <span class="nx">xml</span><span class="p">.</span><span class="nx">evaluate</span><span class="p">(</span><span class="s2">&#34;/bookstore/book[price&gt;35]/title&#34;</span><span class="p">,</span> <span class="nx">xml</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">XPathResult</span><span class="p">.</span><span class="nx">ANY_TYPE</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">.</span><span class="nx">iterateNext</span><span class="p">();</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">txt</span> <span class="o">+=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeValue</span> <span class="o">+</span> <span class="s2">&#34;&lt;br&gt;&#34;</span><span class="p">;</span>
+    <span class="nx">result</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">.</span><span class="nx">iterateNext</span><span class="p">();</span>
+<span class="p">}</span> 
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="json">JSON</h3>
+<h4 id="read--write-1">Read / Write</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="s1">&#39;{ &#34;name&#34;:&#34;John&#34;, &#34;age&#34;:30, &#34;city&#34;:&#34;New York&#34;}&#39;</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="write-2">Write</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nx">city</span><span class="o">:</span> <span class="s2">&#34;New York&#34;</span> <span class="p">};</span>
+<span class="kd">var</span> <span class="nx">myJSON</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="yaml">Yaml</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//install package js-yaml
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">yaml</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;js-yaml&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">fs</span>   <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+
+<span class="k">try</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">yaml</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&#39;/home/ixti/example.yml&#39;</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">));</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">doc</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">//write 
+</span><span class="c1"></span><span class="nx">dump</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="p">{</span>
+  <span class="s1">&#39;styles&#39;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s1">&#39;!!null&#39;</span><span class="o">:</span> <span class="s1">&#39;canonical&#39;</span> <span class="c1">// dump null as ~
+</span><span class="c1"></span>  <span class="p">},</span>
+  <span class="s1">&#39;sortKeys&#39;</span><span class="o">:</span> <span class="kc">true</span>        <span class="c1">// sort object keys
+</span><span class="c1"></span><span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="webapi-call">Web/API call</h3>
+<p>Axios: <a href="https://github.com/axios/axios" target="_blank" rel="noopener noreffer">https://github.com/axios/axios</a></p>
+<h4 id="fetch-http">Fetch http</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//no cookie
+</span><span class="c1">//further info:https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+</span><span class="c1"></span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;http://example.com/movies.json&#39;</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="call-api">Call api</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//https://github.com/axios/axios
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;axios&#39;</span><span class="p">);</span>
+
+<span class="c1">// Make a request for a user with a given ID
+</span><span class="c1"></span><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/user?ID=12345&#39;</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// handle success
+</span><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// handle error
+</span><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// always executed
+</span><span class="c1"></span>  <span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="advance-structure--popular-structure">Advance structure / Popular structure</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//map
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">mapObj</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;one&#34;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;two&#34;</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;three&#34;</span><span class="o">:</span><span class="mi">3</span><span class="p">}</span>
+
+<span class="c1">//record
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">record</span> <span class="o">=</span> <span class="p">{</span><span class="nx">firstName</span><span class="o">:</span><span class="s2">&#34;Tom&#34;</span><span class="p">,</span><span class="nx">lastName</span><span class="o">:</span><span class="s2">&#34;Smith&#34;</span><span class="p">}</span>
+
+<span class="c1">//json table
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">persons</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">persons</span><span class="p">[</span><span class="s2">&#34;2901465&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="mi">2901465</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span><span class="s2">&#34;Tom&#34;</span><span class="p">};</span>
+<span class="nx">persons</span><span class="p">[</span><span class="s2">&#34;3305579&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="mi">3305579</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span><span class="s2">&#34;Su&#34;</span><span class="p">};</span>
+<span class="nx">persons</span><span class="p">[</span><span class="s2">&#34;6492003&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="mi">6492003</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span><span class="s2">&#34;Pete&#34;</span><span class="p">};</span>
+<span class="k">try</span> <span class="p">{</span>
+  <span class="nx">localStorage</span><span class="p">[</span><span class="s2">&#34;personTable&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">persons</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Error when writing to Local Storage\n&#34;</span> <span class="o">+</span> <span class="nx">e</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/cheatsheet/javascript/index.md" target="_blank"></a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="/"></a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/cheatsheet/k8s/" class="prev" rel="prev" title="K8S"><i class="fas fa-angle-left fa-fw"></i>K8S</a>
+            <a href="/cheatsheet/java/" class="next" rel="next" title="Java">Java<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2016 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Lai Yiu Ming, Tom</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"","maxShownLines":100},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
