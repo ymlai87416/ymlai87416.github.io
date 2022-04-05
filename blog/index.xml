@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Tom personal site</title>
-    <link>https://example.com/blog/</link>
+    <link>https://ymlai87416.github.io/blog/</link>
     <description>Recent content in Blogs on Tom personal site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</managingEditor>
     <webMaster>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://ymlai87416.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Change in my personal infrastructure</title>
-      <link>https://example.com/blog/change-in-infra/</link>
+      <link>https://ymlai87416.github.io/blog/change-in-infra/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/change-in-infra/</guid>
+      <guid>https://ymlai87416.github.io/blog/change-in-infra/</guid>
       <description>Setup K8S cluster for my use K8S has outperform my expectation and work really well. I don&amp;rsquo;t need to worry about dying computers anymore. If I think the project is OK and provide a stable income on it&amp;rsquo;s own. I just simply migrate to Google cloud provider.
 The setup involved 3 Raspberry PI (3 master in ARM) and 1 intel NUC (x86).
 Now all my web service is hosted by K8S.</description>
@@ -23,19 +23,19 @@ Now all my web service is hosted by K8S.</description>
     
     <item>
       <title>Passing AWS Solution Architect Professional</title>
-      <link>https://example.com/blog/passing-aws-solution-architect-prof/</link>
+      <link>https://ymlai87416.github.io/blog/passing-aws-solution-architect-prof/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/passing-aws-solution-architect-prof/</guid>
+      <guid>https://ymlai87416.github.io/blog/passing-aws-solution-architect-prof/</guid>
       <description>Doing AWS Solution Architect Professional is like following road signs. It is intangible, it does not make you money, it does not teach you to make website. You just need to know enough to pass the exam and I advise you to take a breath first search approach to explore. The 5 domains are just nonsense. After reading them, you may ask yourself why you waste your precious life to do this.</description>
     </item>
     
     <item>
       <title>My OSCP Journey</title>
-      <link>https://example.com/blog/oscp-journey/</link>
+      <link>https://ymlai87416.github.io/blog/oscp-journey/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/oscp-journey/</guid>
+      <guid>https://ymlai87416.github.io/blog/oscp-journey/</guid>
       <description>I am a software engineer working in HK for 7 years, no much security background. I did work on machine code debugging to get what I want, you know when playing game and submitting homework assignment.
 I know OSCP for long, when Kali was still named as BackTrack. I thought that getting OSCP was hard and somehow I was worrying if I can complete the whole course.
 I have read BackTrack and play with Metasploit when I was studying Mphil.</description>
@@ -43,10 +43,10 @@ I have read BackTrack and play with Metasploit when I was studying Mphil.</descr
     
     <item>
       <title>Udacity Self Driving Car Term3</title>
-      <link>https://example.com/blog/udacity-self-driving-car-term3/</link>
+      <link>https://ymlai87416.github.io/blog/udacity-self-driving-car-term3/</link>
       <pubDate>Tue, 04 Sep 2018 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/udacity-self-driving-car-term3/</guid>
+      <guid>https://ymlai87416.github.io/blog/udacity-self-driving-car-term3/</guid>
       <description>Term 3, the final term is finished, and I want to share with you want I have learned in this term.
 This term focuses on self-driving car brian:
 Behavior Planning: Write a drive computer to drive, while collecting data and predict using what you have learned in Term 2 (e.g. EKF, UKF, particle filter, PID, etc…) Interlude: Lyft challenge on semantic segmentation Semantic Segmentation: To let the car know what these point clouds are, e.</description>
@@ -54,10 +54,10 @@ Behavior Planning: Write a drive computer to drive, while collecting data and pr
     
     <item>
       <title>Udacity Self Driving Car Term2</title>
-      <link>https://example.com/blog/udacity-self-driving-car-term2/</link>
+      <link>https://ymlai87416.github.io/blog/udacity-self-driving-car-term2/</link>
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/udacity-self-driving-car-term2/</guid>
+      <guid>https://ymlai87416.github.io/blog/udacity-self-driving-car-term2/</guid>
       <description>Term 2 is finished, and I want to share with you want I have learned in this term.
 This term focus on control, I learn how to use Kalman filter, particle filter, PID controller and MPC controller. This term requires C++ to finish but I have used it before.
 In term 2, the course teaches you the followings:
@@ -66,19 +66,19 @@ Extended Kalman filter and Unscented Kalman filter When you have both lidar and 
     
     <item>
       <title>這個網站已經搬住 amazon web service</title>
-      <link>https://example.com/blog/site-move-to-aws/</link>
+      <link>https://ymlai87416.github.io/blog/site-move-to-aws/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/site-move-to-aws/</guid>
+      <guid>https://ymlai87416.github.io/blog/site-move-to-aws/</guid>
       <description>之前個網站係我自己台主機入面, 用Digital ocean reverse proxy 返過來，但係我發覺SSL 同 WordPress 係 reverse proxy 下實在太難搞，而且Google search console 又成日報錯，所以我決</description>
     </item>
     
     <item>
       <title>Cousera Deep Learning</title>
-      <link>https://example.com/blog/coursera-deep-learning/</link>
+      <link>https://ymlai87416.github.io/blog/coursera-deep-learning/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/coursera-deep-learning/</guid>
+      <guid>https://ymlai87416.github.io/blog/coursera-deep-learning/</guid>
       <description>A friend of mine told me about this course, and I cannot believe that I can actually complete it.
  For the price, It worths me 49 USD only for 5 courses. The pricing model is $49/month until your finish the specialization. I finish the course within a month.
 I can say it is a steal, for $49, you can have a taste of reproducing some good papers in the deep learning fields.</description>
@@ -86,10 +86,10 @@ I can say it is a steal, for $49, you can have a taste of reproducing some good 
     
     <item>
       <title>Udacity Self Driving Car Term1</title>
-      <link>https://example.com/blog/udacity-self-driving-car-term1/</link>
+      <link>https://ymlai87416.github.io/blog/udacity-self-driving-car-term1/</link>
       <pubDate>Fri, 26 Jan 2018 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/udacity-self-driving-car-term1/</guid>
+      <guid>https://ymlai87416.github.io/blog/udacity-self-driving-car-term1/</guid>
       <description>I have recently finished the Udacity self-driving car course Term 1.
 The course is great and out of my expectation. I joined the course because I want to consolidate my understanding of neural network an computer vision. The course does fulfill my wishes.
 In term 1, the course teaches you the followings:
@@ -98,10 +98,10 @@ Use computer vision to find the road The driving computer needs to know where th
     
     <item>
       <title>Finish Kaggle titanic with over 80%</title>
-      <link>https://example.com/blog/finish-kaggle-titanic/</link>
+      <link>https://ymlai87416.github.io/blog/finish-kaggle-titanic/</link>
       <pubDate>Sun, 16 Jul 2017 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/finish-kaggle-titanic/</guid>
+      <guid>https://ymlai87416.github.io/blog/finish-kaggle-titanic/</guid>
       <description>A week has gone and finally, I have nailed this problem. 80% is not high, but it lands me on 4% which is OK for me.
 The book Hands-On machine learning with scikit learn and Tensorflow really helps a lot in the process. It helps me to standardize what I have to do, so I don’t need to think over when doing another ML project.
 I have split my notebook into 3, and each focus on different area</description>
@@ -109,10 +109,10 @@ I have split my notebook into 3, and each focus on different area</description>
     
     <item>
       <title>Machine learning from Coursera by Andrew Ng</title>
-      <link>https://example.com/blog/coursera-machine-learning/</link>
+      <link>https://ymlai87416.github.io/blog/coursera-machine-learning/</link>
       <pubDate>Mon, 03 Jul 2017 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/coursera-machine-learning/</guid>
+      <guid>https://ymlai87416.github.io/blog/coursera-machine-learning/</guid>
       <description>A very insightful course from Coursera and Udacity on Machine learning and deep learning using Tensorflow. Learn some stunts which cannot be done by Programming 101.
 Machine learning from Coursera:
 A very good course in general, especially the assignment, really provide you a platform to test out whatever you have learnt from the video.
@@ -121,10 +121,10 @@ When I heard that I have to learn Octave, I thought “WOW, I have to learn agai
     
     <item>
       <title>Tensorflow Tutorial Udacity</title>
-      <link>https://example.com/blog/tensorflow-tutorial-udacity/</link>
+      <link>https://ymlai87416.github.io/blog/tensorflow-tutorial-udacity/</link>
       <pubDate>Mon, 03 Jul 2017 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/tensorflow-tutorial-udacity/</guid>
+      <guid>https://ymlai87416.github.io/blog/tensorflow-tutorial-udacity/</guid>
       <description>Google hosts a Tensorflow course on Udacity, which is quite fun actually.
 Tensorflow makes creating a neural network like a breeze. If you went through the course “Machine learning by Andrew Ng” before, you will wonder where should you put the derivatives of a objective function.
 The answer is you don’t have to, Tensorflow computes the gradient numerically for you, you don’t have to differentiate any equations. Slow it is to compute gradient numerically, isn’t it?</description>
@@ -132,110 +132,110 @@ The answer is you don’t have to, Tensorflow computes the gradient numerically 
     
     <item>
       <title>股票期權分析</title>
-      <link>https://example.com/blog/%E8%82%A1%E7%A5%A8%E6%9C%9F%E6%AC%8A%E5%88%86%E6%9E%90/</link>
+      <link>https://ymlai87416.github.io/blog/%E8%82%A1%E7%A5%A8%E6%9C%9F%E6%AC%8A%E5%88%86%E6%9E%90/</link>
       <pubDate>Wed, 08 Mar 2017 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/%E8%82%A1%E7%A5%A8%E6%9C%9F%E6%AC%8A%E5%88%86%E6%9E%90/</guid>
+      <guid>https://ymlai87416.github.io/blog/%E8%82%A1%E7%A5%A8%E6%9C%9F%E6%AC%8A%E5%88%86%E6%9E%90/</guid>
       <description>之前去investology 聽黃sir 講座, 佢提到港股期權市場其實係一個大戶市場. 入面既數據可以比較好地預測股票走勢. 佢仲話自己聰明絶頂, 自</description>
     </item>
     
     <item>
       <title>Ichimoku 一目均衡表</title>
-      <link>https://example.com/blog/ichimoku/</link>
+      <link>https://ymlai87416.github.io/blog/ichimoku/</link>
       <pubDate>Fri, 17 Feb 2017 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/ichimoku/</guid>
+      <guid>https://ymlai87416.github.io/blog/ichimoku/</guid>
       <description>前陣子跟同事一同去投資講座 (investology). 黃sir 介紹一目均衡表 (ichimoku) 去預測股票走勢. 當然唔可以話一定準, 但係有時候總要放手一搏, 而個勝算就係用工具去演算出來</description>
     </item>
     
     <item>
       <title>2017 Facebook Hackercup</title>
-      <link>https://example.com/blog/2017-facebook-hackercup/</link>
+      <link>https://ymlai87416.github.io/blog/2017-facebook-hackercup/</link>
       <pubDate>Sat, 14 Jan 2017 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/2017-facebook-hackercup/</guid>
+      <guid>https://ymlai87416.github.io/blog/2017-facebook-hackercup/</guid>
       <description>Facebook hacker cup 2017 has come. and I am now sharpening my tools to join the fight. Facebook hacker cup can allow you to submit only 1 time for each problem, and give you only 6 minutes to do the submission. After trying several past year questions. I can conclude questions of the following type.
  Questions I can’t solve within the competition. Quick and swift by applying algorithm tricks, returning answer below 3 seconds.</description>
     </item>
     
     <item>
       <title>2016年 第4季投資目標</title>
-      <link>https://example.com/blog/2016-q4-investment/</link>
+      <link>https://ymlai87416.github.io/blog/2016-q4-investment/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/2016-q4-investment/</guid>
+      <guid>https://ymlai87416.github.io/blog/2016-q4-investment/</guid>
       <description>現在server 己經設置好。 interactive broker 申請己經進行中。 我想我這3個月應該好好運用怎樣用程式做自動買賣吧。不能也最少參與一下股票期權的買賣。 以下是我</description>
     </item>
     
     <item>
       <title>Digital Ocean Reverse Proxy</title>
-      <link>https://example.com/blog/digital-ocean-reverse-proxy/</link>
+      <link>https://ymlai87416.github.io/blog/digital-ocean-reverse-proxy/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/digital-ocean-reverse-proxy/</guid>
+      <guid>https://ymlai87416.github.io/blog/digital-ocean-reverse-proxy/</guid>
       <description>我用 Digital ocean VPS 來做以下的事： 建立一個 reverse proxy 建立一個 zabbix 來監察我家server 的情況 （遲些有機會再說） 什麼是reverse proxy 簡單來說是一個http se</description>
     </item>
     
     <item>
       <title>Dynamic Dns</title>
-      <link>https://example.com/blog/dynamic-dns/</link>
+      <link>https://ymlai87416.github.io/blog/dynamic-dns/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/dynamic-dns/</guid>
+      <guid>https://ymlai87416.github.io/blog/dynamic-dns/</guid>
       <description>因為 Godaddy 買的東西不能掛 wordpress (五年前最平的套餐 ），所以我也有看看有沒有方法可以令到我用屋企IP 去建設網站，用過了 dynamic dns, no-ip, changeip, duckdns. 這是我一路來的感覺。 不用</description>
     </item>
     
     <item>
       <title>Free SSL</title>
-      <link>https://example.com/blog/free-ssl/</link>
+      <link>https://ymlai87416.github.io/blog/free-ssl/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/free-ssl/</guid>
+      <guid>https://ymlai87416.github.io/blog/free-ssl/</guid>
       <description>免費的SSL: Let’s encrypt https://letsencrypt.org/ 免費，而且營運開支也是有大公司去做backup的。而公司的目的是要SSL不用錢就可以用到，從而建立安全的網上世界</description>
     </item>
     
     <item>
       <title>Godaddy vs Digital Ocean</title>
-      <link>https://example.com/blog/godaddy-vs-digital-ocean/</link>
+      <link>https://ymlai87416.github.io/blog/godaddy-vs-digital-ocean/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/godaddy-vs-digital-ocean/</guid>
+      <guid>https://ymlai87416.github.io/blog/godaddy-vs-digital-ocean/</guid>
       <description>Godaddy 是我五年前買下用來掛hosting 的。 30港紙用來掛wordpress 是會當掛的。之後我用blogspot 來寫，但是也沒有堅持多久。 但是d</description>
     </item>
     
     <item>
       <title>Scala and Akka Framework</title>
-      <link>https://example.com/blog/scala-and-akka-framework/</link>
+      <link>https://ymlai87416.github.io/blog/scala-and-akka-framework/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/scala-and-akka-framework/</guid>
+      <guid>https://ymlai87416.github.io/blog/scala-and-akka-framework/</guid>
       <description>前幾個月係日本返來之後係網上留意一個用JVM 行既 functional programming language. 之前係 StackOverflow Job 個度都見到有job requirement 要用呢種 language, 佢就係 Scala. 係一個月前我見到 Coursera 有呢隻languag</description>
     </item>
     
     <item>
       <title>Finance Markets Coursera</title>
-      <link>https://example.com/blog/finance-markets-coursera/</link>
+      <link>https://ymlai87416.github.io/blog/finance-markets-coursera/</link>
       <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/finance-markets-coursera/</guid>
+      <guid>https://ymlai87416.github.io/blog/finance-markets-coursera/</guid>
       <description>之前上網見到一個網站叫 coursera, 見到佢到有D我想睇既 course. 我register 左 3個 (到目前為止) 一個係 scala programming, 一個係 Finance Markets, 一個係 AI. 個course 主要係用視頻做</description>
     </item>
     
     <item>
       <title>林森池</title>
-      <link>https://example.com/blog/%E6%9E%97%E6%A3%AE%E6%B1%A0/</link>
+      <link>https://ymlai87416.github.io/blog/%E6%9E%97%E6%A3%AE%E6%B1%A0/</link>
       <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/%E6%9E%97%E6%A3%AE%E6%B1%A0/</guid>
+      <guid>https://ymlai87416.github.io/blog/%E6%9E%97%E6%A3%AE%E6%B1%A0/</guid>
       <description>係讀 MPhil 個年我係我 supervisor 個 lab 度返工, 識左個聽講炒股好叻既人. 佢 recommend 左林森池 2 本書比我. 第一本係平民資本家, 另一本係證券分析實踐, 投資王道. 而家都好似</description>
     </item>
     
     <item>
       <title>蟹貨區</title>
-      <link>https://example.com/blog/%E8%9F%B9%E8%B2%A8%E5%8D%80/</link>
+      <link>https://ymlai87416.github.io/blog/%E8%9F%B9%E8%B2%A8%E5%8D%80/</link>
       <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
       <author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author>
-      <guid>https://example.com/blog/%E8%9F%B9%E8%B2%A8%E5%8D%80/</guid>
+      <guid>https://ymlai87416.github.io/blog/%E8%9F%B9%E8%B2%A8%E5%8D%80/</guid>
       <description>近日因為同朋友一齊炒股既關係, 上多左aastock. 發現成日係新聞紙都理電視都有講牛熊區或者蟹貨區. 今日就上網發現在有2個網站都係提供這個功</description>
     </item>
     

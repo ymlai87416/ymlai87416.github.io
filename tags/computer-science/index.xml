@@ -1,95 +1,95 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>computer science - tag - Tom personal site</title>
-        <link>https://example.com/tags/computer-science/</link>
+        <link>https://ymlai87416.github.io/tags/computer-science/</link>
         <description>computer science - tag - Tom personal site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</managingEditor>
-            <webMaster>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 14 Jun 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/computer-science/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 14 Jun 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://ymlai87416.github.io/tags/computer-science/" rel="self" type="application/rss+xml" /><item>
     <title>Passing AWS Solution Architect Professional</title>
-    <link>https://example.com/blog/passing-aws-solution-architect-prof/</link>
+    <link>https://ymlai87416.github.io/blog/passing-aws-solution-architect-prof/</link>
     <pubDate>Sun, 14 Jun 2020 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/passing-aws-solution-architect-prof/</guid>
+    <guid>https://ymlai87416.github.io/blog/passing-aws-solution-architect-prof/</guid>
     <description><![CDATA[Doing AWS Solution Architect Professional is like following road signs. It is intangible, it does not make you money, it does not teach you to make website. You just need to know enough to pass the exam and I advise you to take a breath first search approach to explore. The 5 domains are just nonsense. After reading them, you may ask yourself why you waste your precious life to do this.]]></description>
 </item><item>
     <title>My OSCP Journey</title>
-    <link>https://example.com/blog/oscp-journey/</link>
+    <link>https://ymlai87416.github.io/blog/oscp-journey/</link>
     <pubDate>Thu, 07 Feb 2019 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/oscp-journey/</guid>
+    <guid>https://ymlai87416.github.io/blog/oscp-journey/</guid>
     <description><![CDATA[I am a software engineer working in HK for 7 years, no much security background. I did work on machine code debugging to get what I want, you know when playing game and submitting homework assignment.
 I know OSCP for long, when Kali was still named as BackTrack. I thought that getting OSCP was hard and somehow I was worrying if I can complete the whole course.
 I have read BackTrack and play with Metasploit when I was studying Mphil.]]></description>
 </item><item>
     <title>Udacity Self Driving Car Term3</title>
-    <link>https://example.com/blog/udacity-self-driving-car-term3/</link>
+    <link>https://ymlai87416.github.io/blog/udacity-self-driving-car-term3/</link>
     <pubDate>Tue, 04 Sep 2018 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/udacity-self-driving-car-term3/</guid>
+    <guid>https://ymlai87416.github.io/blog/udacity-self-driving-car-term3/</guid>
     <description><![CDATA[Term 3, the final term is finished, and I want to share with you want I have learned in this term.
 This term focuses on self-driving car brian:
 Behavior Planning: Write a drive computer to drive, while collecting data and predict using what you have learned in Term 2 (e.g. EKF, UKF, particle filter, PID, etc…) Interlude: Lyft challenge on semantic segmentation Semantic Segmentation: To let the car know what these point clouds are, e.]]></description>
 </item><item>
     <title>Udacity Self Driving Car Term2</title>
-    <link>https://example.com/blog/udacity-self-driving-car-term2/</link>
+    <link>https://ymlai87416.github.io/blog/udacity-self-driving-car-term2/</link>
     <pubDate>Mon, 30 Apr 2018 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/udacity-self-driving-car-term2/</guid>
+    <guid>https://ymlai87416.github.io/blog/udacity-self-driving-car-term2/</guid>
     <description><![CDATA[Term 2 is finished, and I want to share with you want I have learned in this term.
 This term focus on control, I learn how to use Kalman filter, particle filter, PID controller and MPC controller. This term requires C++ to finish but I have used it before.
 In term 2, the course teaches you the followings:
 Extended Kalman filter and Unscented Kalman filter When you have both lidar and radar and you want to extract the good from both of them, Kalman filter is the tool to use.]]></description>
 </item><item>
     <title>這個網站已經搬住 amazon web service</title>
-    <link>https://example.com/blog/site-move-to-aws/</link>
+    <link>https://ymlai87416.github.io/blog/site-move-to-aws/</link>
     <pubDate>Sat, 28 Apr 2018 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/site-move-to-aws/</guid>
+    <guid>https://ymlai87416.github.io/blog/site-move-to-aws/</guid>
     <description><![CDATA[之前個網站係我自己台主機入面, 用Digital ocean reverse proxy 返過來，但係我發覺SSL 同 WordPress 係 reverse proxy 下實在太難搞，而且Google search console 又成日報錯，所以我決]]></description>
 </item><item>
     <title>Cousera Deep Learning</title>
-    <link>https://example.com/blog/coursera-deep-learning/</link>
+    <link>https://ymlai87416.github.io/blog/coursera-deep-learning/</link>
     <pubDate>Tue, 06 Feb 2018 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/coursera-deep-learning/</guid>
+    <guid>https://ymlai87416.github.io/blog/coursera-deep-learning/</guid>
     <description><![CDATA[A friend of mine told me about this course, and I cannot believe that I can actually complete it.
  For the price, It worths me 49 USD only for 5 courses. The pricing model is $49/month until your finish the specialization. I finish the course within a month.
 I can say it is a steal, for $49, you can have a taste of reproducing some good papers in the deep learning fields.]]></description>
 </item><item>
     <title>Udacity Self Driving Car Term1</title>
-    <link>https://example.com/blog/udacity-self-driving-car-term1/</link>
+    <link>https://ymlai87416.github.io/blog/udacity-self-driving-car-term1/</link>
     <pubDate>Fri, 26 Jan 2018 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/udacity-self-driving-car-term1/</guid>
+    <guid>https://ymlai87416.github.io/blog/udacity-self-driving-car-term1/</guid>
     <description><![CDATA[I have recently finished the Udacity self-driving car course Term 1.
 The course is great and out of my expectation. I joined the course because I want to consolidate my understanding of neural network an computer vision. The course does fulfill my wishes.
 In term 1, the course teaches you the followings:
 Use computer vision to find the road The driving computer needs to know where the road is in order to drive.]]></description>
 </item><item>
     <title>Finish Kaggle titanic with over 80%</title>
-    <link>https://example.com/blog/finish-kaggle-titanic/</link>
+    <link>https://ymlai87416.github.io/blog/finish-kaggle-titanic/</link>
     <pubDate>Sun, 16 Jul 2017 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/finish-kaggle-titanic/</guid>
+    <guid>https://ymlai87416.github.io/blog/finish-kaggle-titanic/</guid>
     <description><![CDATA[A week has gone and finally, I have nailed this problem. 80% is not high, but it lands me on 4% which is OK for me.
 The book Hands-On machine learning with scikit learn and Tensorflow really helps a lot in the process. It helps me to standardize what I have to do, so I don’t need to think over when doing another ML project.
 I have split my notebook into 3, and each focus on different area]]></description>
 </item><item>
     <title>Machine learning from Coursera by Andrew Ng</title>
-    <link>https://example.com/blog/coursera-machine-learning/</link>
+    <link>https://ymlai87416.github.io/blog/coursera-machine-learning/</link>
     <pubDate>Mon, 03 Jul 2017 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/coursera-machine-learning/</guid>
+    <guid>https://ymlai87416.github.io/blog/coursera-machine-learning/</guid>
     <description><![CDATA[A very insightful course from Coursera and Udacity on Machine learning and deep learning using Tensorflow. Learn some stunts which cannot be done by Programming 101.
 Machine learning from Coursera:
 A very good course in general, especially the assignment, really provide you a platform to test out whatever you have learnt from the video.
 When I heard that I have to learn Octave, I thought “WOW, I have to learn again a new language”, but it turns out to be Matlab, which I have some experience before.]]></description>
 </item><item>
     <title>Tensorflow Tutorial Udacity</title>
-    <link>https://example.com/blog/tensorflow-tutorial-udacity/</link>
+    <link>https://ymlai87416.github.io/blog/tensorflow-tutorial-udacity/</link>
     <pubDate>Mon, 03 Jul 2017 00:00:00 &#43;0800</pubDate>
     <author></author>
-    <guid>https://example.com/blog/tensorflow-tutorial-udacity/</guid>
+    <guid>https://ymlai87416.github.io/blog/tensorflow-tutorial-udacity/</guid>
     <description><![CDATA[Google hosts a Tensorflow course on Udacity, which is quite fun actually.
 Tensorflow makes creating a neural network like a breeze. If you went through the course “Machine learning by Andrew Ng” before, you will wonder where should you put the derivatives of a objective function.
 The answer is you don’t have to, Tensorflow computes the gradient numerically for you, you don’t have to differentiate any equations. Slow it is to compute gradient numerically, isn’t it?]]></description>

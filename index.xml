@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tom personal site</title>
-        <link>https://example.com/</link>
+        <link>https://ymlai87416.github.io/</link>
         <description>Tom personal web site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</managingEditor>
             <webMaster>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 05 Apr 2022 00:00:00 &#43;0800</lastBuildDate>
-            <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://ymlai87416.github.io/index.xml" rel="self" type="application/rss+xml" />
         </channel>
 </rss>
