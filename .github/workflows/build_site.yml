@@ -28,7 +28,19 @@ jobs:
         # extended: true
 
     - name: Build
-      run: hugo --minify -s mysite
+      run: 
+
+    - name: Copy english
+      run: cp -R englishVocab mysite/public
+
+    - name: Copy algorithm
+      run: cp -R algoSummary mysite/public
+
+    - name: Copy putonghua
+      run: cp -R putonghua mysite/public
+
+    - name: Copy mytool
+      run: cp -R mytool mysite/public
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
@@ -36,22 +48,3 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./mysite/public
     
-    - uses: actions/upload-artifact@v3
-      with:
-        name: upload-english
-        path: englishVocab
-
-    - uses: actions/upload-artifact@v3
-      with:
-        name: upload-putonghua
-        path: putonghua
-
-    - uses: actions/upload-artifact@v3
-      with:
-        name: upload-mytool
-        path: mytool
-
-    - uses: actions/upload-artifact@v3
-      with:
-        name: upload-algo
-        path: algoSummary
