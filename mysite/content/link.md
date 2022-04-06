@@ -29,7 +29,10 @@ Toc: false
 
 * NFT market like: [Opensea](http://opensea.io), [SolanaArt](https://solanart.io)
 
+* Ethereum gas fee: [Gas estimator](https://www.blocknative.com/gas-estimator)
+
 * A list of launch pads: https://theislandnow.com/blog-112/best-ido-launchpads/
+
 
 #### Mobile app
 
