@@ -34,8 +34,8 @@ jobs:
     - name: Copy english
       run: cp -R englishVocab mysite/public
 
-    - name: Copy english workbook
-      run: cp Word2Vec.ipynb mysite/public
+    - name: Copy resources
+      run: cp -R res mysite/public
 
     - name: Copy algorithm
       run: cp -R algoSummary mysite/public
