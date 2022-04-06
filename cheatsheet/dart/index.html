@@ -1,0 +1,707 @@
+<!doctype html><html lang=zh><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>Dart - Tom personal site</title><meta name=Description content="Tom personal web site"><meta property="og:title" content="Dart"><meta property="og:description" content="Dart Basic structure Simple declaration 1 2 3 4  int x = 5; int? x; x ??= 5 //??= only assign when it is null final PI = 3.141592653589793;   Declare array 1 2 3  final aListOfInts = <int>[]; final aListOfStrings = ['one', 'two', 'three']; Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}   Declare structure Enum 1 2 3 4 5 6  enum Status { none, running, stopped, paused }   Control structure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33  import 'project/car."><meta property="og:type" content="article"><meta property="og:url" content="https://ymlai87416.github.io/cheatsheet/dart/"><meta property="og:image" content="https://ymlai87416.github.io/logo.png"><meta property="article:section" content="cheatsheet"><meta property="article:published_time" content="2022-04-04T00:00:00+00:00"><meta property="article:modified_time" content="2022-04-04T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ymlai87416.github.io/logo.png"><meta name=twitter:title content="Dart"><meta name=twitter:description content="Dart Basic structure Simple declaration 1 2 3 4  int x = 5; int? x; x ??= 5 //??= only assign when it is null final PI = 3.141592653589793;   Declare array 1 2 3  final aListOfInts = <int>[]; final aListOfStrings = ['one', 'two', 'three']; Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}   Declare structure Enum 1 2 3 4 5 6  enum Status { none, running, stopped, paused }   Control structure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33  import 'project/car."><meta name=application-name content="Tom personal web site"><meta name=apple-mobile-web-app-title content="Tom personal web site"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://ymlai87416.github.io/cheatsheet/dart/><link rel=prev href=https://ymlai87416.github.io/cheatsheet/golang/><link rel=next href=https://ymlai87416.github.io/cheatsheet/admin/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Dart","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/ymlai87416.github.io\/cheatsheet\/dart\/"},"image":["https:\/\/ymlai87416.github.io\/images\/Apple-Devices-Preview.png"],"genre":"cheatsheet","wordcount":1564,"url":"https:\/\/ymlai87416.github.io\/cheatsheet\/dart\/","datePublished":"2022-04-04T00:00:00+00:00","dateModified":"2022-04-04T00:00:00+00:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"Tom","logo":"https:\/\/ymlai87416.github.io\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Tom"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Tom personal site">Tom personal site</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/about/>About </a><a class=menu-item href=/blog/>Blog </a><a class=menu-item href=/cheatsheet/>Cheatsheet </a><a class=menu-item href=/tools/>Tools </a><a class=menu-item href=/link/>Link </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Tom personal site">Tom personal site</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><a class=menu-item href=/about/ title>About</a><a class=menu-item href=/blog/ title>Blog</a><a class=menu-item href=/cheatsheet/ title>Cheatsheet</a><a class=menu-item href=/tools/ title>Tools</a><a class=menu-item href=/link/ title>Link</a><a href=javascript:void(0); class="menu-item theme-switch" title>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title></h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">Dart</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Tom</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-04-04>2022-04-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;&nbsp;</div></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span></span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#dart>Dart</a></li><li><a href=#basic-structure>Basic structure</a><ul><li><a href=#simple-declaration>Simple declaration</a></li><li><a href=#declare-array>Declare array</a></li><li><a href=#declare-structure>Declare structure</a></li><li><a href=#enum>Enum</a></li></ul></li><li><a href=#control-structure>Control structure</a></li><li><a href=#string>String</a><ul><li><a href=#basic-operation>Basic operation</a></li><li><a href=#replace>Replace</a></li><li><a href=#concat-and-compare>Concat and compare</a></li><li><a href=#regular-expression>Regular expression</a></li></ul></li><li><a href=#array>Array</a><ul><li><a href=#basic-operation-access-of-element>Basic operation, access of element</a></li><li><a href=#traverse-sort>Traverse, sort</a></li></ul></li><li><a href=#date>Date</a><ul><li><a href=#new-date>New date</a></li><li><a href=#add-days>Add days</a></li><li><a href=#compare-date-diff-date>Compare date, diff date</a></li><li><a href=#format-date>Format date</a></li></ul></li><li><a href=#file>File</a><ul><li><a href=#console-read-write>Console read write</a></li><li><a href=#read-write-line-with-utf-8>Read write line with UTF-8</a></li><li><a href=#file-system-operation>File system operation</a></li></ul></li><li><a href=#database>Database</a><ul><li><a href=#connection-string-list---nosql>Connection string list - NOSQL</a></li><li><a href=#open-connection>Open connection</a></li><li><a href=#execute-updateinsert>Execute update/insert</a></li><li><a href=#execute-select>Execute select</a></li><li><a href=#connection-string-list---sql>Connection string list - SQL</a></li><li><a href=#open-connection-1>Open connection</a></li><li><a href=#execute-updateinsert-1>Execute update/insert</a></li><li><a href=#execute-select-1>Execute select</a></li></ul></li><li><a href=#popular-format>Popular format</a><ul><li><a href=#csv>CSV</a></li><li><a href=#dom--xml>DOM / XML</a></li><li><a href=#json>JSON</a></li><li><a href=#yaml>Yaml</a></li><li><a href=#webapi-call>Web/API call</a></li></ul></li><li><a href=#advance-structure--popular-structure>Advance structure / Popular structure</a><ul><li><a href=#map>Map</a></li><li><a href=#set>Set</a></li><li><a href=#list>List</a></li></ul></li></ul></nav></div></div><div class=content id=content><h2 id=dart>Dart</h2><h2 id=basic-structure>Basic structure</h2><h3 id=simple-declaration>Simple declaration</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kt>int</span> <span class=n>x</span> <span class=o>=</span> <span class=m>5</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span><span class=o>?</span> <span class=n>x</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>x</span> <span class=o>??=</span> <span class=m>5</span>  <span class=c1>//??= only assign when it is null
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>PI</span> <span class=o>=</span> <span class=m>3.141592653589793</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=declare-array>Declare array</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>aListOfInts</span> <span class=o>=</span> <span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span><span class=p>[];</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>aListOfStrings</span> <span class=o>=</span> <span class=p>[</span><span class=s1>&#39;one&#39;</span><span class=p>,</span> <span class=s1>&#39;two&#39;</span><span class=p>,</span> <span class=s1>&#39;three&#39;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=n>Dim</span> <span class=n>matrix</span> <span class=o>=</span> <span class=n>New</span> <span class=n>Integer</span><span class=p>(</span><span class=m>3</span><span class=p>,</span> <span class=m>2</span><span class=p>)</span> <span class=p>{{</span><span class=m>1</span><span class=p>,</span> <span class=m>2</span><span class=p>,</span> <span class=m>3</span><span class=p>},</span> <span class=p>{</span><span class=m>2</span><span class=p>,</span> <span class=m>3</span><span class=p>,</span> <span class=m>4</span><span class=p>},</span> <span class=p>{</span><span class=m>3</span><span class=p>,</span> <span class=m>4</span><span class=p>,</span> <span class=m>5</span><span class=p>},</span> <span class=p>{</span><span class=m>4</span><span class=p>,</span> <span class=m>5</span><span class=p>,</span> <span class=m>6</span><span class=p>}}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=declare-structure>Declare structure</h3><h3 id=enum>Enum</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>enum</span> <span class=n>Status</span> <span class=p>{</span> 
+</span></span><span class=line><span class=cl>   <span class=n>none</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>   <span class=n>running</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>   <span class=n>stopped</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>   <span class=n>paused</span> 
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=control-structure>Control structure</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;project/car.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>main</span><span class=p>()</span> <span class=p>{</span> 
+</span></span><span class=line><span class=cl>    <span class=n>List</span><span class=o>&lt;</span><span class=n>Car</span><span class=o>&gt;</span> <span class=n>cars</span> <span class=o>=</span> <span class=p>[</span><span class=n>Car</span><span class=p>(</span><span class=n>name</span><span class=o>=</span><span class=s2>&#34;Volvo&#34;</span><span class=p>),</span> <span class=n>Car</span><span class=p>(</span><span class=n>name</span><span class=o>=</span><span class=s2>&#34;BMW&#34;</span><span class=p>),</span> <span class=n>Car</span><span class=p>(</span><span class=n>name</span><span class=o>=</span><span class=s2>&#34;Ford&#34;</span><span class=p>),</span> <span class=n>Car</span><span class=p>(</span><span class=n>name</span><span class=o>=</span><span class=s2>&#34;Mazda&#34;</span><span class=p>),</span> <span class=kc>null</span><span class=p>,]</span>
+</span></span><span class=line><span class=cl>   <span class=n>Car</span> <span class=n>c</span><span class=o>=</span> <span class=k>new</span> <span class=n>Car</span><span class=p>();</span> 
+</span></span><span class=line><span class=cl>    <span class=k>for</span><span class=p>(</span><span class=kd>var</span> <span class=n>i</span> <span class=o>=</span> <span class=m>0</span><span class=p>;</span> <span class=n>i</span><span class=o>&lt;</span><span class=n>cars</span><span class=p>.</span><span class=n>length</span><span class=p>;</span> <span class=o>++</span><span class=n>i</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>        <span class=k>try</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>c</span><span class=p>.</span><span class=n>disp</span><span class=p>();</span> 
+</span></span><span class=line><span class=cl>        <span class=p>}</span> <span class=n>on</span> <span class=n>OutOfGasException</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Out of gas&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span> <span class=n>on</span> <span class=n>Exception</span> <span class=k>catch</span> <span class=p>(</span><span class=n>e</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Unknown exception: </span><span class=si>$</span><span class=n>e</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>e</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Something really unknown: </span><span class=si>$</span><span class=n>e</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Car</span> <span class=p>{</span>  
+</span></span><span class=line><span class=cl>   <span class=c1>// field 
+</span></span></span><span class=line><span class=cl><span class=c1></span>   <span class=kt>String</span> <span class=n>engine</span> <span class=o>=</span> <span class=s2>&#34;E1001&#34;</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>   <span class=kt>String</span> <span class=n>name</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>   <span class=n>Car</span><span class=p>({</span><span class=n>required</span> <span class=k>this</span><span class=p>.</span><span class=n>name</span><span class=p>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   <span class=c1>// function 
+</span></span></span><span class=line><span class=cl><span class=c1></span>   <span class=kt>void</span> <span class=n>disp</span><span class=p>()</span> <span class=p>{</span> 
+</span></span><span class=line><span class=cl>      <span class=n>print</span><span class=p>(</span><span class=n>engine</span><span class=p>);</span> 
+</span></span><span class=line><span class=cl>   <span class=p>}</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   <span class=n>Future</span><span class=o>&lt;</span><span class=n>RoadCondition</span><span class=o>&gt;</span> <span class=n>fetchRoadCondition</span><span class=p>(</span><span class=kt>int</span> <span class=n>type</span><span class=p>)</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=string>String</h2><h3 id=basic-operation>Basic operation</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kt>String</span> <span class=n>Str1</span> <span class=o>=</span> <span class=s2>&#34;geeks&#34;</span><span class=p>;</span> 
+</span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>Str1</span><span class=p>.</span><span class=n>toUpperCase</span><span class=p>());</span> 
+</span></span></code></pre></td></tr></table></div></div><h3 id=replace>Replace</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kt>String</span> <span class=n>gfg</span> <span class=o>=</span> <span class=s2>&#34;Welcome GeeksForGeeks&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>String</span> <span class=n>result</span> <span class=o>=</span> <span class=n>gfg</span><span class=p>.</span><span class=n>replaceAll</span><span class=p>(</span><span class=s2>&#34;GeeksForGeeks&#34;</span><span class=p>,</span> <span class=s2>&#34;Geek!&#34;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=concat-and-compare>Concat and compare</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>var</span> <span class=n>c1</span> <span class=o>=</span> <span class=n>a</span> <span class=o>+</span> <span class=n>b</span><span class=p>;</span> <span class=c1>// + operator
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>var</span> <span class=n>c2</span> <span class=o>=</span> <span class=s1>&#39;</span><span class=si>$</span><span class=n>a</span><span class=si>$</span><span class=n>b</span><span class=s1>&#39;</span><span class=p>;</span> <span class=c1>// string interpolation
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>var</span> <span class=n>c3</span> <span class=o>=</span> <span class=s1>&#39;a&#39;</span> <span class=s1>&#39;b&#39;</span><span class=p>;</span> <span class=c1>// string literals separated only by whitespace are concatenated automatically
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>rubi</span> <span class=o>==</span> <span class=n>ore</span><span class=p>);</span> <span class=c1>// true, contain the same characters
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=regular-expression>Regular expression</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>RegExp</span> <span class=n>hexColor</span> <span class=o>=</span> <span class=n>RegExp</span><span class=p>(</span><span class=s1>r&#39;^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>hexColor</span><span class=p>.</span><span class=n>hasMatch</span><span class=p>(</span><span class=s1>&#39;#3b5&#39;</span><span class=p>);</span>     <span class=c1>// true
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>hexColor</span><span class=p>.</span><span class=n>hasMatch</span><span class=p>(</span><span class=s1>&#39;#FF7723&#39;</span><span class=p>);</span>  <span class=c1>// true
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>hexColor</span><span class=p>.</span><span class=n>hasMatch</span><span class=p>(</span><span class=s1>&#39;#000000z&#39;</span><span class=p>);</span> <span class=c1>// false
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>myString</span> <span class=o>=</span> <span class=s1>&#39;25F8..25FF    ; Common # Sm   [8] UPPER LEFT TRIANGLE&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// find a variable length hex value at the beginning of the line
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>regexp</span> <span class=o>=</span> <span class=n>RegExp</span><span class=p>(</span><span class=s1>r&#39;^[0-9a-fA-F]+&#39;</span><span class=p>);</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// find the first match though you could also do `allMatches`
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>match</span> <span class=o>=</span> <span class=n>regexp</span><span class=p>.</span><span class=n>firstMatch</span><span class=p>(</span><span class=n>myString</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// group(0) is the full matched text
+</span></span></span><span class=line><span class=cl><span class=c1>// if your regex had groups (using parentheses) then you could get the 
+</span></span></span><span class=line><span class=cl><span class=c1>// text from them by using group(1), group(2), etc.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>matchedText</span> <span class=o>=</span> <span class=n>match</span><span class=o>?</span><span class=p>.</span><span class=n>group</span><span class=p>(</span><span class=m>0</span><span class=p>);</span>  <span class=c1>// 25F8
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=array>Array</h2><h3 id=basic-operation-access-of-element>Basic operation, access of element</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>List</span><span class=o>&lt;</span><span class=kt>String</span><span class=o>&gt;</span> <span class=n>cars</span> <span class=o>=</span> <span class=p>[</span><span class=s2>&#34;Volvo&#34;</span><span class=p>,</span> <span class=s2>&#34;BMW&#34;</span><span class=p>,</span> <span class=s2>&#34;Ford&#34;</span><span class=p>,</span> <span class=s2>&#34;Mazda&#34;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>cars</span><span class=p>[</span><span class=m>0</span><span class=p>]);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=traverse-sort>Traverse, sort</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kd>final</span> <span class=n>i</span> <span class=k>in</span> <span class=n>cars</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=n>i</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>cars</span><span class=p>.</span><span class=n>sort</span><span class=p>((</span><span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=n>a</span><span class=p>.</span><span class=n>length</span><span class=p>.</span><span class=n>compareTo</span><span class=p>(</span><span class=n>b</span><span class=p>.</span><span class=n>length</span><span class=p>));</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=date>Date</h2><h3 id=new-date>New date</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>now</span> <span class=o>=</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>now</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>berlinWallFell</span> <span class=o>=</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>utc</span><span class=p>(</span><span class=m>1989</span><span class=p>,</span> <span class=m>11</span><span class=p>,</span> <span class=m>9</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>moonLanding</span> <span class=o>=</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=s1>&#39;1969-07-20 20:18:04Z&#39;</span><span class=p>);</span> <span class=c1>// 8:18pm
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>today</span> <span class=o>=</span> <span class=n>DateTime</span><span class=p>(</span><span class=n>now</span><span class=p>.</span><span class=n>year</span><span class=p>,</span> <span class=n>now</span><span class=p>.</span><span class=n>month</span><span class=p>,</span> <span class=n>now</span><span class=p>.</span><span class=n>day</span><span class=p>);</span> <span class=c1>//remove time part
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=add-days>Add days</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl> <span class=n>date1</span><span class=p>.</span><span class=n>subtract</span><span class=p>(</span><span class=n>Duration</span><span class=p>(</span><span class=nl>days:</span> <span class=m>7</span><span class=p>,</span> <span class=nl>hours:</span> <span class=m>3</span><span class=p>,</span> <span class=nl>minutes:</span> <span class=m>43</span><span class=p>,</span> <span class=nl>seconds:</span> <span class=m>56</span><span class=p>));</span> 
+</span></span><span class=line><span class=cl> <span class=n>date1</span><span class=p>.</span><span class=n>add</span><span class=p>(</span><span class=n>Duration</span><span class=p>(</span><span class=nl>days:</span> <span class=m>1</span><span class=p>,</span> <span class=nl>hours:</span> <span class=m>23</span><span class=p>)));</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=compare-date-diff-date>Compare date, diff date</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>givenDate</span><span class=p>.</span><span class=n>isAfter</span><span class=p>(</span><span class=n>dt1</span><span class=p>));</span>  <span class=c1>// false
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>givenDate</span><span class=p>.</span><span class=n>isBefore</span><span class=p>(</span><span class=n>dt1</span><span class=p>));</span>  <span class=c1>// true
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>givenDate</span><span class=p>.</span><span class=n>compareTo</span><span class=p>(</span><span class=n>dt1</span><span class=p>));</span>  <span class=c1>// -1
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>daysBetween</span><span class=p>(</span><span class=n>DateTime</span> <span class=n>from</span><span class=p>,</span> <span class=n>DateTime</span> <span class=n>to</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>from</span> <span class=o>=</span> <span class=n>DateTime</span><span class=p>(</span><span class=n>from</span><span class=p>.</span><span class=n>year</span><span class=p>,</span> <span class=n>from</span><span class=p>.</span><span class=n>month</span><span class=p>,</span> <span class=n>from</span><span class=p>.</span><span class=n>day</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>to</span> <span class=o>=</span> <span class=n>DateTime</span><span class=p>(</span><span class=n>to</span><span class=p>.</span><span class=n>year</span><span class=p>,</span> <span class=n>to</span><span class=p>.</span><span class=n>month</span><span class=p>,</span> <span class=n>to</span><span class=p>.</span><span class=n>day</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=p>(</span><span class=n>to</span><span class=p>.</span><span class=n>difference</span><span class=p>(</span><span class=n>from</span><span class=p>).</span><span class=n>inHours</span> <span class=o>/</span> <span class=m>24</span><span class=p>).</span><span class=n>round</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=format-date>Format date</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;package:intl/intl.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>DateTime</span> <span class=n>now</span> <span class=o>=</span> <span class=n>DateTime</span><span class=p>.</span><span class=n>now</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>DateFormat</span> <span class=n>formatter</span> <span class=o>=</span> <span class=n>DateFormat</span><span class=p>(</span><span class=s1>&#39;yyyy-MM-dd&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=kt>String</span> <span class=n>formatted</span> <span class=o>=</span> <span class=n>formatter</span><span class=p>.</span><span class=n>format</span><span class=p>(</span><span class=n>now</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>formatted</span><span class=p>);</span> <span class=c1>// something like 2013-04-20
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=file>File</h2><h3 id=console-read-write>Console read write</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;dart:convert&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;dart:io&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;1 + 1 = ...&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>var</span> <span class=n>line</span> <span class=o>=</span> <span class=n>stdin</span><span class=p>.</span><span class=n>readLineSync</span><span class=p>(</span><span class=nl>encoding:</span> <span class=n>utf8</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=n>line</span><span class=o>?</span><span class=p>.</span><span class=n>trim</span><span class=p>()</span> <span class=o>==</span> <span class=s1>&#39;2&#39;</span> <span class=o>?</span> <span class=s1>&#39;Yup!&#39;</span> <span class=o>:</span> <span class=s1>&#39;Nope :(&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=read-write-line-with-utf-8>Read write line with UTF-8</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>Future</span><span class=o>&lt;</span><span class=kt>String</span><span class=o>&gt;</span> <span class=kd>get</span> <span class=n>_localPath</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>directory</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>getApplicationDocumentsDirectory</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=n>directory</span><span class=p>.</span><span class=n>path</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Future</span><span class=o>&lt;</span><span class=n>File</span><span class=o>&gt;</span> <span class=kd>get</span> <span class=n>_localFile</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>path</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>_localPath</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=n>File</span><span class=p>(</span><span class=s1>&#39;</span><span class=si>$</span><span class=n>path</span><span class=s1>/counter.txt&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Future</span><span class=o>&lt;</span><span class=n>File</span><span class=o>&gt;</span> <span class=n>writeCounter</span><span class=p>(</span><span class=kt>int</span> <span class=n>counter</span><span class=p>)</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>file</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>_localFile</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// Write the file
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>return</span> <span class=n>file</span><span class=p>.</span><span class=n>writeAsString</span><span class=p>(</span><span class=s1>&#39;</span><span class=si>$</span><span class=n>counter</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Future</span><span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span> <span class=n>readCounter</span><span class=p>()</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>try</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>final</span> <span class=n>file</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>_localFile</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Read the file
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kd>final</span> <span class=n>contents</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>file</span><span class=p>.</span><span class=n>readAsString</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=kt>int</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=n>contents</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>e</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// If encountering an error, return 0
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>return</span> <span class=m>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=file-system-operation>File system operation</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;dart:io&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>createFileRecursively</span><span class=p>(</span><span class=kt>String</span> <span class=n>filename</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Create a new directory, recursively creating non-existent directories.
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>new</span> <span class=n>Directory</span><span class=p>.</span><span class=n>fromPath</span><span class=p>(</span><span class=k>new</span> <span class=n>Path</span><span class=p>(</span><span class=n>filename</span><span class=p>).</span><span class=n>directoryPath</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=n>createSync</span><span class=p>(</span><span class=nl>recursive:</span> <span class=kc>true</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>new</span> <span class=n>File</span><span class=p>(</span><span class=n>filename</span><span class=p>).</span><span class=n>createSync</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>createFileRecursively</span><span class=p>(</span><span class=s1>&#39;foo/bar/baz/bleh.html&#39;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=database>Database</h2><h3 id=connection-string-list---nosql>Connection string list - NOSQL</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>database</span> <span class=o>=</span> <span class=n>MemoryDatabase</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=open-connection>Open connection</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>collection</span> <span class=o>=</span> <span class=n>database</span><span class=p>.</span><span class=n>collection</span><span class=p>(</span><span class=s1>&#39;pizzas&#39;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=execute-updateinsert>Execute update/insert</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=c1>// Our document
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>document</span> <span class=o>=</span> <span class=n>collection</span><span class=p>.</span><span class=n>newDocument</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Insert a pizza
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>await</span> <span class=n>document</span><span class=p>.</span><span class=n>insert</span><span class=p>({</span>
+</span></span><span class=line><span class=cl><span class=s1>&#39;name&#39;</span><span class=o>:</span> <span class=s1>&#39;Pizza Margherita&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=s1>&#39;rating&#39;</span><span class=o>:</span> <span class=m>3.5</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s1>&#39;ingredients&#39;</span><span class=o>:</span> <span class=p>[</span><span class=s1>&#39;dough&#39;</span><span class=p>,</span> <span class=s1>&#39;tomatoes&#39;</span><span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=s1>&#39;similar&#39;</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=n>database</span><span class=p>.</span><span class=n>collection</span><span class=p>(</span><span class=s1>&#39;recipes&#39;</span><span class=p>).</span><span class=n>document</span><span class=p>(</span><span class=s1>&#39;pizza_funghi&#39;</span><span class=p>),</span>
+</span></span><span class=line><span class=cl><span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=c1>//updater individuals
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>await</span> <span class=n>product</span><span class=p>.</span><span class=n>patch</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s1>&#39;price&#39;</span><span class=o>:</span> <span class=m>12.50</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>await</span> <span class=n>document</span><span class=p>.</span><span class=n>delete</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>await</span> <span class=n>database</span><span class=p>.</span><span class=n>runInTransaction</span><span class=p>((</span><span class=n>transaction</span><span class=p>)</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>document</span> <span class=o>=</span> <span class=n>database</span><span class=p>.</span><span class=n>collection</span><span class=p>(</span><span class=s1>&#39;products&#39;</span><span class=p>).</span><span class=n>document</span><span class=p>(</span><span class=s1>&#39;coffeeMugId&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>snapshot</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>transaction</span><span class=p>.</span><span class=kd>get</span><span class=p>(</span><span class=n>document</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>price</span> <span class=o>=</span> <span class=n>snapshot</span><span class=p>.</span><span class=n>data</span><span class=p>[</span><span class=s1>&#39;price&#39;</span><span class=p>]</span> <span class=o>as</span> <span class=kt>double</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=kd>await</span> <span class=n>transaction</span><span class=p>.</span><span class=n>patch</span><span class=p>(</span><span class=n>document</span><span class=p>,</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s1>&#39;price&#39;</span><span class=o>:</span> <span class=n>price</span> <span class=o>+</span> <span class=m>1.50</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>),</span> <span class=nl>timeout:</span> <span class=n>Duration</span><span class=p>(</span><span class=nl>seconds:</span><span class=m>3</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=execute-select>Execute select</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=c1>// Define what we are searching
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>query</span> <span class=o>=</span> <span class=n>Query</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=nl>filter:</span> <span class=n>MapFilter</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>    <span class=s1>&#39;category&#39;</span><span class=o>:</span> <span class=n>OrFilter</span><span class=p>([</span>
+</span></span><span class=line><span class=cl>      <span class=n>ValueFilter</span><span class=p>(</span><span class=s1>&#39;computer&#39;</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>      <span class=n>ValueFilter</span><span class=p>(</span><span class=s1>&#39;tablet&#39;</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>    <span class=p>]),</span>
+</span></span><span class=line><span class=cl>    <span class=s1>&#39;price&#39;</span><span class=o>:</span> <span class=n>RangeFilter</span><span class=p>(</span><span class=nl>min:</span><span class=m>0</span><span class=p>,</span> <span class=nl>max:</span><span class=m>1000</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>  <span class=p>}),</span>
+</span></span><span class=line><span class=cl>  <span class=nl>skip:</span> <span class=m>0</span><span class=p>,</span> <span class=c1>// Start from the first result item
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nl>take:</span> <span class=m>10</span><span class=p>,</span> <span class=c1>// Return 10 result items
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Send query to the database
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>result</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>database</span><span class=p>.</span><span class=n>collection</span><span class=p>(</span><span class=s1>&#39;product&#39;</span><span class=p>).</span><span class=n>search</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=nl>query:</span> <span class=n>query</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nl>reach:</span> <span class=n>Reach</span><span class=p>.</span><span class=n>server</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// For each snapshots
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>for</span> <span class=p>(</span><span class=kd>var</span> <span class=n>snapshot</span> <span class=k>in</span> <span class=n>result</span><span class=p>.</span><span class=n>snapshots</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Get price
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kd>final</span> <span class=n>price</span> <span class=o>=</span> <span class=n>snapshot</span><span class=p>.</span><span class=n>data</span><span class=p>[</span><span class=s1>&#39;price&#39;</span><span class=p>]</span> <span class=o>as</span> <span class=kt>double</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;price: </span><span class=si>$</span><span class=n>price</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=connection-string-list---sql>Connection string list - SQL</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;package:database/sql.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;package:database_adapter_postgre/database_adapter_postgre.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// In this example, we use PostgreSQL adapter
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>database</span> <span class=o>=</span> <span class=n>Postgre</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=nl>host:</span>         <span class=s1>&#39;localhost&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nl>user:</span>         <span class=s1>&#39;database user&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nl>password:</span>     <span class=s1>&#39;database password&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nl>databaseName:</span> <span class=s1>&#39;example&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>).</span><span class=n>database</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=open-connection-1>Open connection</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=c1>// Get SQL client.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>final</span> <span class=n>sqlClient</span> <span class=o>=</span> <span class=n>database</span><span class=p>.</span><span class=n>sqlClient</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=execute-updateinsert-1>Execute update/insert</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>await</span> <span class=n>sqlClient</span><span class=p>.</span><span class=n>execute</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=s1>&#39;INSERT INTO Product (name, price) VALUES (?, ?)&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>[</span><span class=s1>&#39;Pizza Hawaii&#39;</span><span class=p>,</span> <span class=m>8.50</span><span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kd>await</span> <span class=n>sqlClient</span><span class=p>.</span><span class=n>execute</span><span class=p>(</span><span class=s1>&#39;DELETE FROM Product WHERE price &lt; ?&#39;</span><span class=p>,</span> <span class=p>[</span><span class=m>5.0</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>await</span> <span class=n>sqlClient</span><span class=p>.</span><span class=n>runInTransaction</span><span class=p>((</span><span class=n>transaction</span><span class=p>)</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>values</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>transaction</span><span class=p>.</span><span class=n>query</span><span class=p>(</span><span class=s1>&#39;...&#39;</span><span class=p>).</span><span class=n>toMaps</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// ...
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  <span class=kd>await</span> <span class=n>transaction</span><span class=p>.</span><span class=n>execute</span><span class=p>(</span><span class=s1>&#39;...&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>await</span> <span class=n>transaction</span><span class=p>.</span><span class=n>execute</span><span class=p>(</span><span class=s1>&#39;...&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// ...
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>),</span> <span class=nl>timeout:</span> <span class=n>Duration</span><span class=p>(</span><span class=nl>seconds:</span><span class=m>3</span><span class=p>));</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=execute-select-1>Execute select</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>pizzas</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>sqlClient</span><span class=p>.</span><span class=n>query</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=s1>&#39;SELECT * FROM product WHERE type = ?, price &lt; ?&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=s1>&#39;pizza&#39;</span><span class=p>,</span> <span class=m>10</span><span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>).</span><span class=n>toMaps</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kd>var</span> <span class=n>pizza</span> <span class=k>in</span> <span class=n>pizzas</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=n>pizza</span><span class=p>[</span><span class=s1>&#39;name&#39;</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=popular-format>Popular format</h2><h3 id=csv>CSV</h3><h4 id=read>Read</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;package:csv/csv.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>input</span> <span class=o>=</span> <span class=k>new</span> <span class=n>File</span><span class=p>(</span><span class=s1>&#39;a/csv/file.txt&#39;</span><span class=p>).</span><span class=n>openRead</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>fields</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>input</span><span class=p>.</span><span class=n>transform</span><span class=p>(</span><span class=n>utf8</span><span class=p>.</span><span class=n>decoder</span><span class=p>).</span><span class=n>transform</span><span class=p>(</span><span class=k>new</span> <span class=n>CsvToListConverter</span><span class=p>()).</span><span class=n>toList</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=write>Write</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>res</span> <span class=o>=</span> <span class=kd>const</span> <span class=n>ListToCsvConverter</span><span class=p>().</span><span class=n>convert</span><span class=p>([[</span><span class=s1>&#39;,b&#39;</span><span class=p>,</span> <span class=m>3.1</span><span class=p>,</span> <span class=m>42</span><span class=p>],</span> <span class=p>[</span><span class=s1>&#39;n</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>]]);</span>
+</span></span><span class=line><span class=cl><span class=k>assert</span><span class=p>(</span><span class=n>res</span> <span class=o>==</span> <span class=s1>&#39;&#34;,b&#34;,3.1,42</span><span class=se>\r\n</span><span class=s1>&#34;n</span><span class=se>\n</span><span class=s1>&#34;&#39;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=dom--xml>DOM / XML</h3><h4 id=read--write>Read / Write</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;package:xml/xml.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>bookshelfXml</span> <span class=o>=</span> <span class=s1>&#39;&#39;&#39;&lt;?xml version=&#34;1.0&#34;?&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>    &lt;bookshelf&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>      &lt;book&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>        &lt;title lang=&#34;english&#34;&gt;Growing a Language&lt;/title&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>        &lt;price&gt;29.99&lt;/price&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>      &lt;/book&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>      &lt;book&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>        &lt;title lang=&#34;english&#34;&gt;Learning XML&lt;/title&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>        &lt;price&gt;39.95&lt;/price&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>      &lt;/book&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>      &lt;price&gt;132.00&lt;/price&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>    &lt;/bookshelf&gt;&#39;&#39;&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>document</span> <span class=o>=</span> <span class=n>XmlDocument</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=n>bookshelfXml</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>total</span> <span class=o>=</span> <span class=n>document</span><span class=p>.</span><span class=n>findAllElements</span><span class=p>(</span><span class=s1>&#39;book&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>.</span><span class=n>map</span><span class=p>((</span><span class=n>node</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=kt>double</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=n>node</span><span class=p>.</span><span class=n>findElements</span><span class=p>(</span><span class=s1>&#39;price&#39;</span><span class=p>).</span><span class=n>single</span><span class=p>.</span><span class=n>text</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=p>.</span><span class=n>reduce</span><span class=p>((</span><span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=n>a</span> <span class=o>+</span> <span class=n>b</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>total</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>builder</span> <span class=o>=</span> <span class=n>XmlBuilder</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=n>builder</span><span class=p>.</span><span class=n>processing</span><span class=p>(</span><span class=s1>&#39;xml&#39;</span><span class=p>,</span> <span class=s1>&#39;version=&#34;1.0&#34;&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>builder</span><span class=p>.</span><span class=n>element</span><span class=p>(</span><span class=s1>&#39;bookshelf&#39;</span><span class=p>,</span> <span class=nl>nest:</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>builder</span><span class=p>.</span><span class=n>element</span><span class=p>(</span><span class=s1>&#39;book&#39;</span><span class=p>,</span> <span class=nl>nest:</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>builder</span><span class=p>.</span><span class=n>element</span><span class=p>(</span><span class=s1>&#39;title&#39;</span><span class=p>,</span> <span class=nl>nest:</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=n>builder</span><span class=p>.</span><span class=n>attribute</span><span class=p>(</span><span class=s1>&#39;lang&#39;</span><span class=p>,</span> <span class=s1>&#39;en&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=n>builder</span><span class=p>.</span><span class=n>text</span><span class=p>(</span><span class=s1>&#39;Growing a Language&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=n>builder</span><span class=p>.</span><span class=n>element</span><span class=p>(</span><span class=s1>&#39;price&#39;</span><span class=p>,</span> <span class=nl>nest:</span> <span class=m>29.99</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>});</span>
+</span></span><span class=line><span class=cl>  <span class=n>builder</span><span class=p>.</span><span class=n>element</span><span class=p>(</span><span class=s1>&#39;book&#39;</span><span class=p>,</span> <span class=nl>nest:</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>builder</span><span class=p>.</span><span class=n>element</span><span class=p>(</span><span class=s1>&#39;title&#39;</span><span class=p>,</span> <span class=nl>nest:</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=n>builder</span><span class=p>.</span><span class=n>attribute</span><span class=p>(</span><span class=s1>&#39;lang&#39;</span><span class=p>,</span> <span class=s1>&#39;en&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=n>builder</span><span class=p>.</span><span class=n>text</span><span class=p>(</span><span class=s1>&#39;Learning XML&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=n>builder</span><span class=p>.</span><span class=n>element</span><span class=p>(</span><span class=s1>&#39;price&#39;</span><span class=p>,</span> <span class=nl>nest:</span> <span class=m>39.95</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>});</span>
+</span></span><span class=line><span class=cl>  <span class=n>builder</span><span class=p>.</span><span class=n>element</span><span class=p>(</span><span class=s1>&#39;price&#39;</span><span class=p>,</span> <span class=nl>nest:</span> <span class=m>132.00</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>bookshelfXml</span> <span class=o>=</span> <span class=n>builder</span><span class=p>.</span><span class=n>buildDocument</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=select-element-and-traverse>Select element and Traverse</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>titles</span> <span class=o>=</span> <span class=n>document</span><span class=p>.</span><span class=n>findAllElements</span><span class=p>(</span><span class=s1>&#39;title&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>titles</span>
+</span></span><span class=line><span class=cl>    <span class=p>.</span><span class=n>map</span><span class=p>((</span><span class=n>node</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=n>node</span><span class=p>.</span><span class=n>text</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>.</span><span class=n>forEach</span><span class=p>(</span><span class=n>print</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=json>JSON</h3><h4 id=read--write-1>Read / Write</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;dart:convert&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>parsed</span> <span class=o>=</span> <span class=n>jsonDecode</span><span class=p>(</span><span class=n>responseBody</span><span class=p>).</span><span class=n>cast</span><span class=o>&lt;</span><span class=n>Map</span><span class=o>&lt;</span><span class=kt>String</span><span class=p>,</span> <span class=kt>dynamic</span><span class=o>&gt;&gt;</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>factory</span> <span class=n>Photo</span><span class=p>.</span><span class=n>fromJson</span><span class=p>(</span><span class=n>Map</span><span class=o>&lt;</span><span class=kt>String</span><span class=p>,</span> <span class=kt>dynamic</span><span class=o>&gt;</span> <span class=n>json</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>Photo</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=nl>albumId:</span> <span class=n>json</span><span class=p>[</span><span class=s1>&#39;albumId&#39;</span><span class=p>]</span> <span class=o>as</span> <span class=kt>int</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=nl>id:</span> <span class=n>json</span><span class=p>[</span><span class=s1>&#39;id&#39;</span><span class=p>]</span> <span class=o>as</span> <span class=kt>int</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=nl>title:</span> <span class=n>json</span><span class=p>[</span><span class=s1>&#39;title&#39;</span><span class=p>]</span> <span class=o>as</span> <span class=kt>String</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=nl>url:</span> <span class=n>json</span><span class=p>[</span><span class=s1>&#39;url&#39;</span><span class=p>]</span> <span class=o>as</span> <span class=kt>String</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=nl>thumbnailUrl:</span> <span class=n>json</span><span class=p>[</span><span class=s1>&#39;thumbnailUrl&#39;</span><span class=p>]</span> <span class=o>as</span> <span class=kt>String</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Map</span><span class=o>&lt;</span><span class=kt>String</span><span class=p>,</span> <span class=kt>dynamic</span><span class=o>&gt;</span> <span class=n>toJson</span><span class=p>()</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;name&#39;</span><span class=o>:</span> <span class=n>name</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;email&#39;</span><span class=o>:</span> <span class=n>email</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>String</span> <span class=n>json</span> <span class=o>=</span> <span class=n>jsonEncode</span><span class=p>(</span><span class=n>user</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>Map</span><span class=o>&lt;</span><span class=kt>String</span><span class=p>,</span> <span class=kt>dynamic</span><span class=o>&gt;</span> <span class=n>userMap</span> <span class=o>=</span> <span class=n>jsonDecode</span><span class=p>(</span><span class=n>jsonString</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kd>var</span> <span class=n>user</span> <span class=o>=</span> <span class=n>User</span><span class=p>.</span><span class=n>fromJson</span><span class=p>(</span><span class=n>userMap</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=yaml>Yaml</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;package:yaml/yaml.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>var</span> <span class=n>doc</span> <span class=o>=</span> <span class=n>loadYaml</span><span class=p>(</span><span class=s2>&#34;YAML: YAML Ain&#39;t Markup Language&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>doc</span><span class=p>[</span><span class=s1>&#39;YAML&#39;</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl><span class=c1>// json is a valid yaml so you can dump it as json.!?
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=webapi-call>Web/API call</h3><h4 id=fetch-http-and-call-api>Fetch http and call api</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;package:http/http.dart&#39;</span> <span class=k>as</span> <span class=n>http</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Future</span><span class=o>&lt;</span><span class=n>List</span><span class=o>&lt;</span><span class=n>Photo</span><span class=o>&gt;&gt;</span> <span class=n>fetchPhotos</span><span class=p>(</span><span class=n>http</span><span class=p>.</span><span class=n>Client</span> <span class=n>client</span><span class=p>)</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>response</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>client</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=kd>get</span><span class=p>(</span><span class=n>Uri</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=s1>&#39;https://jsonplaceholder.typicode.com/photos&#39;</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// Use the compute function to run parsePhotos in a separate isolate.
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>return</span> <span class=n>compute</span><span class=p>(</span><span class=n>parsePhotos</span><span class=p>,</span> <span class=n>response</span><span class=p>.</span><span class=n>body</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=advance-structure--popular-structure>Advance structure / Popular structure</h2><h3 id=map>Map</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>Map</span><span class=o>&lt;</span><span class=kt>int</span><span class=p>,</span> <span class=kt>double</span><span class=o>&gt;</span> <span class=n>aMapOfIntToDouble</span> <span class=o>=</span> <span class=o>&lt;</span><span class=kt>int</span><span class=p>,</span> <span class=kt>double</span><span class=o>&gt;</span><span class=p>{};</span>
+</span></span><span class=line><span class=cl><span class=n>map</span><span class=p>.</span><span class=n>forEach</span><span class=p>((</span><span class=n>k</span><span class=p>,</span> <span class=n>v</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Key : </span><span class=si>$</span><span class=n>k</span><span class=s2>, Value : </span><span class=si>$</span><span class=n>v</span><span class=s2>&#34;</span><span class=p>));</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kd>var</span> <span class=n>k</span> <span class=k>in</span> <span class=n>numMap</span><span class=p>.</span><span class=n>keys</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Key : </span><span class=si>$</span><span class=n>k</span><span class=s2>, value : </span><span class=si>${</span><span class=n>numMap</span><span class=p>[</span><span class=n>k</span><span class=p>]</span><span class=si>}</span><span class=s2>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=n>MapEntry</span> <span class=n>e</span> <span class=k>in</span> <span class=n>numMap</span><span class=p>.</span><span class=n>entries</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Key </span><span class=si>${</span><span class=n>e</span><span class=p>.</span><span class=n>key</span><span class=si>}</span><span class=s2>, Value </span><span class=si>${</span><span class=n>e</span><span class=p>.</span><span class=n>value</span><span class=si>}</span><span class=s2>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=set>Set</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>Set</span><span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span> <span class=n>aSetOfInts</span> <span class=o>=</span> <span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span><span class=p>{};</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kd>var</span> <span class=n>e</span> <span class=k>in</span> <span class=n>mySet</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>//code
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=list>List</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>List</span><span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span> <span class=n>aListOfInts</span> <span class=o>=</span> <span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span><span class=p>[];</span>
+</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>aListOfBaseType</span> <span class=o>=</span> <span class=o>&lt;</span><span class=n>BaseType</span><span class=o>&gt;</span><span class=p>[</span><span class=n>SubType</span><span class=p>(),</span> <span class=n>SubType</span><span class=p>()];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>for</span><span class=p>(</span><span class=kd>var</span> <span class=n>i</span><span class=o>=</span><span class=m>0</span><span class=p>;</span><span class=n>i</span><span class=o>&lt;</span><span class=n>myList</span><span class=p>.</span><span class=n>length</span><span class=p>;</span><span class=n>i</span><span class=o>++</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=n>myList</span><span class=p>[</span><span class=n>i</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>myList</span><span class=p>.</span><span class=n>forEach</span><span class=p>((</span><span class=n>element</span><span class=p>)</span> <span class=o>=&gt;</span> 
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=n>element</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//get iterator to the list
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>var</span> <span class=n>myListIter</span> <span class=o>=</span> <span class=n>myList</span><span class=p>.</span><span class=n>iterator</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl><span class=c1>//iterate over the list
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>while</span><span class=p>(</span><span class=n>myListIter</span><span class=p>.</span><span class=n>moveNext</span><span class=p>()){</span>
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=n>myListIter</span><span class=p>.</span><span class=n>current</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span></span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/cheatsheet/dart/index.md target=_blank></a></span></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()></a></span>&nbsp;|&nbsp;<span><a href=/></a></span></section></div><div class=post-nav><a href=/cheatsheet/golang/ class=prev rel=prev title=Go><i class="fas fa-angle-left fa-fw"></i>Go</a>
+<a href=/cheatsheet/admin/ class=next rel=next title="Server admin">Server admin<i class="fas fa-angle-right fa-fw"></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2016 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Lai Yiu Ming, Tom</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title><i class="fas fa-comment fa-fw"></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"",maxShownLines:100},comment:{}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
