@@ -21,13 +21,13 @@ Toc: false
 
 * [Canvas](https://www.canva.com/zh_tw/)
 
-* [Leetcode Patterns](https://seanprashad.com/leetcode-patterns/)
+* Interview related: [Leetcode Patterns](https://seanprashad.com/leetcode-patterns/), [System design primer](https://github.com/donnemartin/system-design-primer)
 
 #### Bitcoin and NFT:
 
 * Check transaction:  [Etherscan](https://etherscan.io/), [BSCscan](https://bscscan.com/)
 
-* NFT market like: [Opensea](http://opensea.io), [SolanaArt](https://solanart.io)
+* NFT market like: [Opensea](http://opensea.io), [SolanaArt](https://solanart.io), [Flips Finance](https://www.flips.finance)
 
 * Ethereum gas fee: [Gas estimator](https://www.blocknative.com/gas-estimator)
 
@@ -48,8 +48,8 @@ Toc: false
 
     Very useful tutorial of how to realize all your idea.
 
-* [老貓與指標](https://www.youtube.com/c/%E8%80%81%E8%B2%93%E8%88%87%E6%8C%87%E6%A8%99)
+* [Trading rush](https://www.youtube.com/c/TRADINGRUSH)
 
-    Link another channel, trading rush. which give me idea of how an indicator works
+    Give me idea of how an indicator works
 
 
