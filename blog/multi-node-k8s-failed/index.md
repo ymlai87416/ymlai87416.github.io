@@ -33,9 +33,10 @@ I login to k8s-master02.
 
 run `journalctl -u kubelet` shows the following error
 
+```
 Attempting to register node k8s-master02
 Apr 09 05:25:17 k8s-master02 kubelet[744]: E0409 05:25:17.570172     744 kubelet_node_status.go:93] Unable to register node  with API server: nodes is forbidden: User "system:anonymous" cannot create resource "nodes" in API group "" at the cluster scope
-
+```
 
 ## Re-add master node
 
