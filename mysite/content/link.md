@@ -17,9 +17,9 @@ Toc: false
 
 * [Trello](https://trello.com/)
 
-* [Figma](https://www.figma.com/)
+* Design website: [Figma](https://www.figma.com/), [Canvas](https://www.canva.com/zh_tw/)
 
-* [Canvas](https://www.canva.com/zh_tw/)
+* API development [Postman](https://www.postman.com)
 
 * Interview related: [Leetcode Patterns](https://seanprashad.com/leetcode-patterns/), [System design primer](https://github.com/donnemartin/system-design-primer)
 
