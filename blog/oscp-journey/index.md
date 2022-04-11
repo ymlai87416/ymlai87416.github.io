@@ -94,5 +94,8 @@ There are unforeseen contingency when I took the exam and had to email to suppor
 ### Passed!!
 I have received an email on 10 Feb (Sunday) 06:00 saying that I have passed the exam. I am so happy! They are going to ship me the certification via DHL.
 
+
 ### Certificate
 Got my certificate today!! 23 Feb.
+
+{{< figure src="/images/oscp.jpeg" alt="OSCP" position="center" style="border-radius: 8px;"  >}}
