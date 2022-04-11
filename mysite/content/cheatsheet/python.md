@@ -556,7 +556,7 @@ x = [True, False, True, False, False]
 newarr = arr[x]   # return [1, 3]
 ```
 
-### Panda
+### Pandas
 
 ```python
 import pandas as pd # 引用套件並縮寫為 pd  
@@ -590,3 +590,9 @@ dataframe.set_index('Date', inplace=True)
 date_df['diff_days'] = date_df['Date'].diff().dt.days
 #
 ```
+
+### Flask
+
+Useful cheatsheet from Pretty Printed
+
+[Cheatsheet](/pdf/flask_cheatsheet.pdf)
