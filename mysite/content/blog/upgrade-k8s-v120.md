@@ -42,7 +42,8 @@ Time taken: 1 hour.
 apt-get update && apt-get install -y kubeadm=1.21.11-00 && apt-mark hold kubeadm
 
 # output
-root@k8s-master01:/home/ubuntu# apt-get update && apt-get install -y kubeadm=1.21.11-00 && apt-mark hold kubeadm
+$ apt-mark unhold kubeadm
+$ apt-get update && apt-get install -y kubeadm=1.21.11-00 && apt-mark hold kubeadm
 Hit:1 https://download.docker.com/linux/ubuntu focal InRelease
 Hit:3 http://ports.ubuntu.com/ubuntu-ports focal InRelease                       
 Hit:2 https://packages.cloud.google.com/apt kubernetes-xenial InRelease          
@@ -144,7 +145,7 @@ _____________________________________________________________________
 Did take some time to fetch docker image from web.
 
 ```
-kubeadm upgrade plan apply v1.21.11
+kubeadm upgrade apply v1.21.11
 
 #output
 [upgrade/config] Making sure the configuration is correct:
@@ -266,7 +267,7 @@ kubelet set on hold.
 
 Now when you run `kubectl get nodes`, you should see only 1 master node with v1.21.11
 
-### Upgrade rest master nodes
+### Upgrade other master nodes
 
 Repeat step 6-8 on other master nodes
 
@@ -398,7 +399,7 @@ k8s-master03   Ready    control-plane,master   368d   v1.21.11
 k8s-node01     Ready    <none>                 368d   v1.20.5
 ```
 
-9. Update kubectl on all master node
+9. Update kubectl on all master nodes
 
 `apt-mark unhold kubectl && apt-get update && apt-get install -y kubectl=1.21.11-00 && apt-mark hold kubectl`
 
