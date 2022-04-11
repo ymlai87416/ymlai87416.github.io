@@ -1,5 +1,5 @@
 ---
-title: "Upgrade Kubernetes from 1.20 to 1.21"
+title: "Upgrade Kubernetes from 1.21 to 1.22"
 date: 2022-04-11T15:04:19+01:00
 draft: false
 tags: ["computer science", "infrastructure"]
@@ -73,7 +73,7 @@ The upgrade returns no error, and seems everything is running fine.
 
 ## Final words
 
-I totally not aware of these software need to be updated also. I should have reviewed my Kubernetes cluster at least semi-yearly.
+I totally do not aware of these software need to be updated also. I should have reviewed my Kubernetes cluster at least semi-yearly.
 
 ## Reference
 [1] Ingress-nginx support version: https://github.com/kubernetes/ingress-nginx#support-versions-table
