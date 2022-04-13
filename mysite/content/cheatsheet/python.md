@@ -591,7 +591,7 @@ date_df['diff_days'] = date_df['Date'].diff().dt.days
 #
 ```
 
-### Flask
+## Flask
 
 Useful cheatsheet from Pretty Printed
 
