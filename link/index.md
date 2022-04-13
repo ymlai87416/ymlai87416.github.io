@@ -19,6 +19,8 @@
 
 * Interview related: [Leetcode Patterns](https://seanprashad.com/leetcode-patterns/), [System design primer](https://github.com/donnemartin/system-design-primer)
 
+* (Best JSON formatter)[https://jsonformatter.curiousconcept.com/#]
+
 #### Bitcoin and NFT:
 
 * Check transaction:  [Etherscan](https://etherscan.io/), [BSCscan](https://bscscan.com/)
