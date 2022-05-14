@@ -12,7 +12,6 @@ toc:
   auto: true
 ---
 
-# Data structure
 
 ## Union find
 

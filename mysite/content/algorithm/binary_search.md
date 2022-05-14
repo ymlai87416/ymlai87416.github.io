@@ -12,7 +12,6 @@ toc:
   auto: true
 ---
 
-# Binary search
 
 ## Finding mid
 

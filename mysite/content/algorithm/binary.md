@@ -12,7 +12,6 @@ toc:
   auto: true
 ---
 
-# Binary
 
 ## Number of bit set
 

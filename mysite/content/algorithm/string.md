@@ -12,8 +12,6 @@ toc:
   auto: true
 ---
 
-# String
-
 
 ## KMP searching
 
