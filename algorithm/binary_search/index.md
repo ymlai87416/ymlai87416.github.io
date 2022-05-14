@@ -1,7 +1,6 @@
 # Binary search
 
 
-# Binary search
 
 ## Finding mid
 

@@ -1,8 +1,6 @@
 # Strings
 
 
-# String
-
 
 ## KMP searching
 

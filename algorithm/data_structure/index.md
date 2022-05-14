@@ -1,7 +1,6 @@
 # Data structures
 
 
-# Data structure
 
 ## Union find
 

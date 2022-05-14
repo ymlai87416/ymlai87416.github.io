@@ -1,7 +1,6 @@
 # Binary
 
 
-# Binary
 
 ## Number of bit set
 

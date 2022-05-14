@@ -5,14 +5,14 @@
 
 ## Master therom
 
-$
+$$
 T(n) = aT(\frac{n}{b}) + f(n^d)
 \begin{cases}
  & \text{ if } a=b^d, T(n)=O(n^d logn)\\ 
  & \text{ if } a<b^d, T(n)=O(n^d)\\
  & \text{ if } a>b^d, T(n)=O(n^{log_{b}a})
 \end{cases}
-$
+$$
 
 First case: 
 
