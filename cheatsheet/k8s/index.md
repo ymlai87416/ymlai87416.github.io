@@ -62,6 +62,9 @@ sudo swapoff -a
 sudo nano /etc/fstab
 sudo hostnamectl set-hostname kubernetes-master
 
+# remove all useless iptables rules
+iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
+
 lsmod | grep br_netfilter
 sudo modprobe br_netfilter
 sudo sysctl net.bridge.bridge-nf-call-iptables=1
@@ -70,4 +73,9 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 
 kubeadm token create --print-join-command
+
+# if kube-flannel and kube-proxy crash, should have some problem with cidr
+kubectl patch node k8s-node02 -p '{"spec":{"podCIDR":"10.244.4.0/24"}}'
+# don't know your podcidr?
+kubectl cluster-info dump
 ```

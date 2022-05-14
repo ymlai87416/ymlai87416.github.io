@@ -1,0 +1,395 @@
+<!doctype html><html lang=zh><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>Data structures - Tom personal site</title><meta name=Description content="Tom personal web site"><meta property="og:title" content="Data structures"><meta property="og:description" content="Data structure Union find Shortcut: ds.uf
+Time complexity: O(α(n))
+Memory complexity: O(n)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  class UnionFind { // OOP style  int[] p; int[] rank; int[] size; UnionFind(int N) { p = new int[N]; rank = new int[N]; size = new int[N]; for (int i = 0; i < N; i++) p[i] = i; } void init(){ for (int i = 0; i < p."><meta property="og:type" content="article"><meta property="og:url" content="https://ymlai87416.github.io/cheatsheet/algorithm/data_structure/"><meta property="og:image" content="https://ymlai87416.github.io/logo.png"><meta property="article:section" content="cheatsheet"><meta property="article:published_time" content="2022-04-04T00:00:00+00:00"><meta property="article:modified_time" content="2022-04-04T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ymlai87416.github.io/logo.png"><meta name=twitter:title content="Data structures"><meta name=twitter:description content="Data structure Union find Shortcut: ds.uf
+Time complexity: O(α(n))
+Memory complexity: O(n)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  class UnionFind { // OOP style  int[] p; int[] rank; int[] size; UnionFind(int N) { p = new int[N]; rank = new int[N]; size = new int[N]; for (int i = 0; i < N; i++) p[i] = i; } void init(){ for (int i = 0; i < p."><meta name=application-name content="Tom personal web site"><meta name=apple-mobile-web-app-title content="Tom personal web site"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://ymlai87416.github.io/cheatsheet/algorithm/data_structure/><link rel=prev href=https://ymlai87416.github.io/cheatsheet/algorithm/dp/><link rel=next href=https://ymlai87416.github.io/cheatsheet/algorithm/binary/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Data structures","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/ymlai87416.github.io\/cheatsheet\/algorithm\/data_structure\/"},"image":["https:\/\/ymlai87416.github.io\/images\/Apple-Devices-Preview.png"],"genre":"cheatsheet","wordcount":1464,"url":"https:\/\/ymlai87416.github.io\/cheatsheet\/algorithm\/data_structure\/","datePublished":"2022-04-04T00:00:00+00:00","dateModified":"2022-04-04T00:00:00+00:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"Tom","logo":"https:\/\/ymlai87416.github.io\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Tom"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Tom personal site">Tom personal site</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/about/>About </a><a class=menu-item href=/blog/>Blog </a><a class=menu-item href=/cheatsheet/>Cheatsheet </a><a class=menu-item href=/tools/>Tools </a><a class=menu-item href=/link/>Link </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Tom personal site">Tom personal site</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><a class=menu-item href=/about/ title>About</a><a class=menu-item href=/blog/ title>Blog</a><a class=menu-item href=/cheatsheet/ title>Cheatsheet</a><a class=menu-item href=/tools/ title>Tools</a><a class=menu-item href=/link/ title>Link</a><a href=javascript:void(0); class="menu-item theme-switch" title>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title></h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">Data structures</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Tom</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-04-04>2022-04-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;&nbsp;</div></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span></span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#union-find>Union find</a></li><li><a href=#segment-tree>Segment tree</a></li><li><a href=#2d-segment-tree>2D Segment tree</a></li><li><a href=#fenwick-tree>Fenwick tree</a></li><li><a href=#heap>Heap</a><ul><li><a href=#quick-select>Quick select</a></li></ul></li><li><a href=#monotonic-stack--heap>Monotonic stack / heap</a><ul><li><a href=#monotonic-heap>Monotonic heap</a></li><li><a href=#monotonic-stack>Monotonic stack</a></li></ul></li></ul></nav></div></div><div class=content id=content><h1 id=data-structure>Data structure</h1><h2 id=union-find>Union find</h2><p>Shortcut: ds.uf</p><p>Time complexity: O(α(n))</p><p>Memory complexity: O(n)</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>UnionFind</span> <span class=o>{</span> <span class=c1>// OOP style
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>int</span><span class=o>[]</span> <span class=n>p</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span><span class=o>[]</span> <span class=n>rank</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span><span class=o>[]</span> <span class=n>size</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>UnionFind</span><span class=o>(</span><span class=kt>int</span> <span class=n>N</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>p</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>int</span><span class=o>[</span><span class=n>N</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>        <span class=n>rank</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>int</span><span class=o>[</span><span class=n>N</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>        <span class=n>size</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>int</span><span class=o>[</span><span class=n>N</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=n>0</span><span class=o>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>N</span><span class=o>;</span> <span class=n>i</span><span class=o>++)</span> <span class=n>p</span><span class=o>[</span><span class=n>i</span><span class=o>]</span> <span class=o>=</span> <span class=n>i</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>init</span><span class=o>(){</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=n>0</span><span class=o>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>p</span><span class=o>.</span><span class=na>length</span><span class=o>;</span> <span class=n>i</span><span class=o>++)</span> <span class=n>p</span><span class=o>[</span><span class=n>i</span><span class=o>]</span> <span class=o>=</span> <span class=n>i</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>Arrays</span><span class=o>.</span><span class=na>fill</span><span class=o>(</span><span class=n>rank</span><span class=o>,</span> <span class=n>0</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>Arrays</span><span class=o>.</span><span class=na>fill</span><span class=o>(</span><span class=n>size</span><span class=o>,</span> <span class=n>1</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=nf>findSet</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>)</span> <span class=o>{</span> <span class=k>return</span> <span class=o>(</span><span class=n>p</span><span class=o>[</span><span class=n>i</span><span class=o>]</span> <span class=o>==</span> <span class=n>i</span><span class=o>)</span> <span class=o>?</span> <span class=n>i</span> <span class=o>:</span> <span class=o>(</span><span class=n>p</span><span class=o>[</span><span class=n>i</span><span class=o>]</span> <span class=o>=</span> <span class=n>findSet</span><span class=o>(</span><span class=n>p</span><span class=o>[</span><span class=n>i</span><span class=o>]));</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>boolean</span> <span class=nf>isSameSet</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>,</span> <span class=kt>int</span> <span class=n>j</span><span class=o>)</span> <span class=o>{</span> <span class=k>return</span> <span class=n>findSet</span><span class=o>(</span><span class=n>i</span><span class=o>)</span> <span class=o>==</span> <span class=n>findSet</span><span class=o>(</span><span class=n>j</span><span class=o>);</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>unionSet</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>,</span> <span class=kt>int</span> <span class=n>j</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=o>(!</span><span class=n>isSameSet</span><span class=o>(</span><span class=n>i</span><span class=o>,</span> <span class=n>j</span><span class=o>))</span> <span class=o>{</span> <span class=c1>// if from different set
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=kt>int</span> <span class=n>x</span> <span class=o>=</span> <span class=n>findSet</span><span class=o>(</span><span class=n>i</span><span class=o>),</span> <span class=n>y</span> <span class=o>=</span> <span class=n>findSet</span><span class=o>(</span><span class=n>j</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=o>(</span><span class=n>rank</span><span class=o>[</span><span class=n>x</span><span class=o>]</span> <span class=o>&gt;</span> <span class=n>rank</span><span class=o>[</span><span class=n>y</span><span class=o>])</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>p</span><span class=o>[</span><span class=n>y</span><span class=o>]</span> <span class=o>=</span> <span class=n>x</span><span class=o>;</span> <span class=c1>// rank keeps the tree short
+</span></span></span><span class=line><span class=cl><span class=c1></span>                <span class=n>size</span><span class=o>[</span><span class=n>x</span><span class=o>]</span> <span class=o>+=</span> <span class=n>size</span><span class=o>[</span><span class=n>y</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>            <span class=o>}</span>
+</span></span><span class=line><span class=cl>            <span class=k>else</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>p</span><span class=o>[</span><span class=n>x</span><span class=o>]</span> <span class=o>=</span> <span class=n>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>                <span class=n>size</span><span class=o>[</span><span class=n>y</span><span class=o>]</span> <span class=o>+=</span> <span class=n>size</span><span class=o>[</span><span class=n>x</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=o>(</span><span class=n>rank</span><span class=o>[</span><span class=n>x</span><span class=o>]</span> <span class=o>==</span> <span class=n>rank</span><span class=o>[</span><span class=n>y</span><span class=o>])</span>
+</span></span><span class=line><span class=cl>                    <span class=n>rank</span><span class=o>[</span><span class=n>y</span><span class=o>]++;</span>
+</span></span><span class=line><span class=cl>            <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=nf>getSetSize</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>size</span><span class=o>[</span><span class=n>i</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>Refer to: <a href=https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/UnionFind/UVA11503.java target=_blank rel="noopener noreffer">UVA11503</a></p><h2 id=segment-tree>Segment tree</h2><p>Segment tree support online update and query
+For range update, lazy propagation is needed</p><p>Shortcut: ds.st</p><p>Time complexity:</p><ul><li>Build: O(nlogn)</li><li>Query: O(log n)</li><li>Update: O(log n)</li></ul><p>Memory: O(n)</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span><span class=lnt>70
+</span><span class=lnt>71
+</span><span class=lnt>72
+</span><span class=lnt>73
+</span><span class=lnt>74
+</span><span class=lnt>75
+</span><span class=lnt>76
+</span><span class=lnt>77
+</span><span class=lnt>78
+</span><span class=lnt>79
+</span><span class=lnt>80
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>SegmentTree</span> <span class=o>{</span> <span class=c1>// the segment tree is stored like a heap array
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kd>private</span> <span class=kt>int</span><span class=o>[]</span> <span class=n>st</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>int</span><span class=o>[</span><span class=n>100001</span><span class=o>*</span><span class=n>4</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span><span class=o>[]</span> <span class=n>A</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span> <span class=n>n</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span> <span class=nf>left</span><span class=o>(</span><span class=kt>int</span> <span class=n>p</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>p</span> <span class=o>&lt;&lt;</span> <span class=n>1</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span> <span class=c1>// same as binary heap operations
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span> <span class=nf>right</span><span class=o>(</span><span class=kt>int</span> <span class=n>p</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>(</span><span class=n>p</span> <span class=o>&lt;&lt;</span> <span class=n>1</span><span class=o>)</span> <span class=o>+</span> <span class=n>1</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>void</span> <span class=nf>build</span><span class=o>(</span><span class=kt>int</span> <span class=n>p</span><span class=o>,</span> <span class=kt>int</span> <span class=n>L</span><span class=o>,</span> <span class=kt>int</span> <span class=n>R</span><span class=o>)</span> <span class=o>{</span> <span class=c1>// O(n)
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>if</span> <span class=o>(</span><span class=n>L</span> <span class=o>==</span> <span class=n>R</span><span class=o>)</span> <span class=c1>// as L == R, either one is fine
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>st</span><span class=o>[</span><span class=n>p</span><span class=o>]</span> <span class=o>=</span> <span class=n>A</span><span class=o>[</span><span class=n>L</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=o>{</span> <span class=c1>// recursively compute the values
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>build</span><span class=o>(</span><span class=n>left</span><span class=o>(</span><span class=n>p</span><span class=o>),</span> <span class=n>L</span><span class=o>,</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>build</span><span class=o>(</span><span class=n>right</span><span class=o>(</span><span class=n>p</span><span class=o>),</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span> <span class=o>+</span> <span class=n>1</span><span class=o>,</span> <span class=n>R</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=kt>int</span> <span class=n>p1</span> <span class=o>=</span> <span class=n>st</span><span class=o>[</span><span class=n>left</span><span class=o>(</span><span class=n>p</span><span class=o>)],</span> <span class=n>p2</span> <span class=o>=</span> <span class=n>st</span><span class=o>[</span><span class=n>right</span><span class=o>(</span><span class=n>p</span><span class=o>)];</span>
+</span></span><span class=line><span class=cl>            <span class=n>st</span><span class=o>[</span><span class=n>p</span><span class=o>]=</span> <span class=n>p1</span> <span class=o>*</span> <span class=n>p2</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/* This is individual update */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>update</span><span class=o>(</span><span class=kt>int</span> <span class=n>p</span><span class=o>,</span> <span class=kt>int</span> <span class=n>val</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=n>update</span><span class=o>(</span><span class=n>1</span><span class=o>,</span> <span class=n>p</span><span class=o>,</span> <span class=n>val</span><span class=o>,</span> <span class=n>0</span><span class=o>,</span> <span class=n>n</span><span class=o>-</span><span class=n>1</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>update</span><span class=o>(</span><span class=kt>int</span> <span class=n>p</span><span class=o>,</span> <span class=kt>int</span> <span class=n>idx</span><span class=o>,</span> <span class=kt>int</span> <span class=n>val</span><span class=o>,</span> <span class=kt>int</span> <span class=n>L</span><span class=o>,</span> <span class=kt>int</span> <span class=n>R</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=o>(</span><span class=n>L</span> <span class=o>==</span> <span class=n>R</span><span class=o>)</span> <span class=c1>// as L == R, either one is fine
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>st</span><span class=o>[</span><span class=n>p</span><span class=o>]</span> <span class=o>=</span> <span class=n>val</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=o>{</span> <span class=c1>// recursively compute the values
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=k>if</span><span class=o>(</span><span class=n>L</span> <span class=o>&lt;=</span> <span class=n>idx</span> <span class=o>&amp;&amp;</span> <span class=n>idx</span> <span class=o>&lt;=</span> <span class=o>(</span><span class=n>L</span><span class=o>+</span><span class=n>R</span><span class=o>)/</span><span class=n>2</span><span class=o>)</span> <span class=n>update</span><span class=o>(</span><span class=n>left</span><span class=o>(</span><span class=n>p</span><span class=o>),</span> <span class=n>idx</span><span class=o>,</span> <span class=n>val</span><span class=o>,</span> <span class=n>L</span><span class=o>,</span> <span class=o>(</span><span class=n>L</span><span class=o>+</span><span class=n>R</span><span class=o>)/</span><span class=n>2</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>else</span> <span class=k>if</span> <span class=o>((</span><span class=n>L</span><span class=o>+</span><span class=n>R</span><span class=o>)/</span><span class=n>2</span><span class=o>+</span><span class=n>1</span> <span class=o>&lt;=</span> <span class=n>idx</span> <span class=o>&amp;&amp;</span> <span class=n>idx</span><span class=o>&lt;=</span> <span class=n>R</span><span class=o>)</span><span class=n>update</span><span class=o>(</span><span class=n>right</span><span class=o>(</span><span class=n>p</span><span class=o>),</span> <span class=n>idx</span><span class=o>,</span> <span class=n>val</span><span class=o>,</span> <span class=o>(</span><span class=n>L</span><span class=o>+</span><span class=n>R</span><span class=o>)/</span><span class=n>2</span><span class=o>+</span><span class=n>1</span><span class=o>,</span> <span class=n>R</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=kt>int</span> <span class=n>p1</span> <span class=o>=</span> <span class=n>st</span><span class=o>[</span><span class=n>left</span><span class=o>(</span><span class=n>p</span><span class=o>)],</span> <span class=n>p2</span> <span class=o>=</span> <span class=n>st</span><span class=o>[</span><span class=n>right</span><span class=o>(</span><span class=n>p</span><span class=o>)];</span>          <span class=c1>//Never a node with only left or right child.
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>st</span><span class=o>[</span><span class=n>p</span><span class=o>]=</span> <span class=n>p1</span> <span class=o>*</span> <span class=n>p2</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/* Non optimized range update */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>updateRange</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>,</span> <span class=kt>int</span> <span class=n>j</span><span class=o>,</span> <span class=kt>int</span> <span class=n>val</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=n>updateRange</span><span class=o>(</span><span class=n>1</span><span class=o>,</span> <span class=n>0</span><span class=o>,</span> <span class=n>n</span><span class=o>-</span><span class=n>1</span><span class=o>,</span> <span class=n>i</span><span class=o>,</span> <span class=n>j</span><span class=o>,</span> <span class=n>val</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>void</span> <span class=nf>updateRange</span><span class=o>(</span><span class=kt>int</span> <span class=n>p</span><span class=o>,</span> <span class=kt>int</span> <span class=n>L</span><span class=o>,</span> <span class=kt>int</span> <span class=n>R</span><span class=o>,</span> <span class=kt>int</span> <span class=n>i</span><span class=o>,</span> <span class=kt>int</span> <span class=n>j</span><span class=o>,</span> <span class=kt>int</span> <span class=n>val</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=o>(</span><span class=n>L</span> <span class=o>==</span> <span class=n>R</span><span class=o>)</span> <span class=c1>// as L == R, either one is fine
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>st</span><span class=o>[</span><span class=n>p</span><span class=o>]</span> <span class=o>=</span> <span class=n>val</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=o>{</span> <span class=c1>// recursively compute the values
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=k>if</span> <span class=o>(</span><span class=n>L</span> <span class=o>&lt;=</span> <span class=n>i</span> <span class=o>&amp;&amp;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>                <span class=n>updateRange</span><span class=o>(</span><span class=n>left</span><span class=o>(</span><span class=n>p</span><span class=o>),</span> <span class=n>L</span><span class=o>,</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span><span class=o>,</span> <span class=n>i</span><span class=o>,</span> <span class=n>Math</span><span class=o>.</span><span class=na>min</span><span class=o>(</span><span class=n>j</span><span class=o>,</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span><span class=o>),</span> <span class=n>val</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=o>((</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span> <span class=o>+</span> <span class=n>1</span> <span class=o>&lt;=</span> <span class=n>j</span> <span class=o>&amp;&amp;</span> <span class=n>j</span> <span class=o>&lt;=</span> <span class=n>R</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>                <span class=n>updateRange</span><span class=o>(</span><span class=n>right</span><span class=o>(</span><span class=n>p</span><span class=o>),</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span> <span class=o>+</span> <span class=n>1</span><span class=o>,</span> <span class=n>R</span><span class=o>,</span> <span class=n>Math</span><span class=o>.</span><span class=na>max</span><span class=o>(</span><span class=n>i</span><span class=o>,</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span> <span class=o>+</span> <span class=n>1</span><span class=o>),</span> <span class=n>j</span><span class=o>,</span> <span class=n>val</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=kt>int</span> <span class=n>p1</span> <span class=o>=</span> <span class=n>st</span><span class=o>[</span><span class=n>left</span><span class=o>(</span><span class=n>p</span><span class=o>)],</span> <span class=n>p2</span> <span class=o>=</span> <span class=n>st</span><span class=o>[</span><span class=n>right</span><span class=o>(</span><span class=n>p</span><span class=o>)];</span>          <span class=c1>//Never a node with only left or right child.
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>st</span><span class=o>[</span><span class=n>p</span><span class=o>]</span> <span class=o>=</span> <span class=n>p1</span> <span class=o>+</span> <span class=n>p2</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span> <span class=nf>rmq</span><span class=o>(</span><span class=kt>int</span> <span class=n>p</span><span class=o>,</span> <span class=kt>int</span> <span class=n>L</span><span class=o>,</span> <span class=kt>int</span> <span class=n>R</span><span class=o>,</span> <span class=kt>int</span> <span class=n>i</span><span class=o>,</span> <span class=kt>int</span> <span class=n>j</span><span class=o>)</span> <span class=o>{</span> <span class=c1>// O(log n)
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>if</span> <span class=o>(</span><span class=n>i</span> <span class=o>&gt;</span> <span class=n>R</span> <span class=o>||</span> <span class=n>j</span> <span class=o>&lt;</span> <span class=n>L</span><span class=o>)</span> <span class=k>return</span> <span class=n>Integer</span><span class=o>.</span><span class=na>MIN_VALUE</span><span class=o>;</span> <span class=c1>// current segment outside query range
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>if</span> <span class=o>(</span><span class=n>L</span> <span class=o>&gt;=</span> <span class=n>i</span> <span class=o>&amp;&amp;</span> <span class=n>R</span> <span class=o>&lt;=</span> <span class=n>j</span><span class=o>)</span> <span class=k>return</span> <span class=n>st</span><span class=o>[</span><span class=n>p</span><span class=o>];</span> <span class=c1>// inside query range
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=c1>// compute the min position in the left and right part of the interval
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=kt>int</span> <span class=n>p1</span> <span class=o>=</span> <span class=n>rmq</span><span class=o>(</span><span class=n>left</span><span class=o>(</span><span class=n>p</span><span class=o>),</span> <span class=n>L</span><span class=o>,</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span><span class=o>,</span> <span class=n>i</span><span class=o>,</span> <span class=n>j</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=kt>int</span> <span class=n>p2</span> <span class=o>=</span> <span class=n>rmq</span><span class=o>(</span><span class=n>right</span><span class=o>(</span><span class=n>p</span><span class=o>),</span> <span class=o>(</span><span class=n>L</span> <span class=o>+</span> <span class=n>R</span><span class=o>)</span> <span class=o>/</span> <span class=n>2</span> <span class=o>+</span> <span class=n>1</span><span class=o>,</span> <span class=n>R</span><span class=o>,</span> <span class=n>i</span><span class=o>,</span> <span class=n>j</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=o>(</span><span class=n>p1</span> <span class=o>==</span> <span class=n>Integer</span><span class=o>.</span><span class=na>MIN_VALUE</span><span class=o>)</span> <span class=k>return</span> <span class=n>p2</span><span class=o>;</span> <span class=c1>// if we try to access segment outside query
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>if</span> <span class=o>(</span><span class=n>p2</span> <span class=o>==</span> <span class=n>Integer</span><span class=o>.</span><span class=na>MIN_VALUE</span><span class=o>)</span> <span class=k>return</span> <span class=n>p1</span><span class=o>;</span> <span class=c1>// same as above
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>return</span> <span class=n>p1</span> <span class=o>*</span> <span class=n>p2</span><span class=o>;</span> <span class=c1>// as in build routine
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>SegmentTree</span><span class=o>(</span><span class=kt>int</span><span class=o>[]</span> <span class=n>A</span><span class=o>,</span> <span class=kt>int</span> <span class=n>size</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>A</span> <span class=o>=</span> <span class=n>A</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>n</span> <span class=o>=</span> <span class=n>size</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=c1>//Arrays.fill(st, 0);
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>build</span><span class=o>(</span><span class=n>1</span><span class=o>,</span> <span class=n>0</span><span class=o>,</span> <span class=n>n</span> <span class=o>-</span> <span class=n>1</span><span class=o>);</span> <span class=c1>// recursive build
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>int</span> <span class=nf>rmq</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>,</span> <span class=kt>int</span> <span class=n>j</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>rmq</span><span class=o>(</span><span class=n>1</span><span class=o>,</span> <span class=n>0</span><span class=o>,</span> <span class=n>n</span> <span class=o>-</span> <span class=n>1</span><span class=o>,</span> <span class=n>i</span><span class=o>,</span> <span class=n>j</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span> <span class=c1>// overloading
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Refer to: <a href rel></a></p><ul><li>Lazy operation: push()</li></ul><p>Refer to: <a href=https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA11402.java target=_blank rel="noopener noreffer">UVA11402</a></p><ul><li>Segment tree on interval instead of update range of value.</li></ul><h2 id=2d-segment-tree>2D Segment tree</h2><p>Shortcut: ds.st2d</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback></code></pre></td></tr></table></div></div><p>Refer to: <a href=https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA11297.java target=_blank rel="noopener noreffer">UVA11297</a></p><h2 id=fenwick-tree>Fenwick tree</h2><p>Shortcut: ds.ft</p><p>Time complexity:</p><ul><li>Build: O(nlogn), but calling adjust on each element.</li><li>Query: O(log n)</li><li>Update: O(log n)</li></ul><p>Memory: O(n) - less memory compare to segment tree</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>FenwickTree</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span><span class=o>[]</span> <span class=n>ft</span><span class=o>;</span> <span class=c1>// recall that vi is: typedef vector&lt;int&gt; vi;
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kd>public</span> <span class=nf>FenwickTree</span><span class=o>(</span><span class=kt>int</span> <span class=n>n</span><span class=o>)</span> <span class=o>{</span> <span class=n>ft</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>int</span><span class=o>[</span><span class=n>n</span><span class=o>+</span><span class=n>1</span><span class=o>];</span> <span class=o>}</span> <span class=c1>// init n + 1 zeroes
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kd>private</span> <span class=kt>int</span> <span class=nf>LSOne</span><span class=o>(</span><span class=kt>int</span> <span class=n>S</span><span class=o>){</span> <span class=k>return</span> <span class=n>S</span> <span class=o>&amp;</span> <span class=o>-</span><span class=n>S</span><span class=o>;}</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=nf>rsq</span><span class=o>(</span><span class=kt>int</span> <span class=n>b</span><span class=o>)</span> <span class=o>{</span> <span class=c1>// returns RSQ(1, b)
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=kt>int</span> <span class=n>sum</span> <span class=o>=</span> <span class=n>0</span><span class=o>;</span> <span class=k>for</span> <span class=o>(;</span> <span class=n>b</span> <span class=o>!=</span> <span class=n>0</span><span class=o>;</span> <span class=n>b</span> <span class=o>-=</span> <span class=n>LSOne</span><span class=o>(</span><span class=n>b</span><span class=o>))</span> <span class=n>sum</span> <span class=o>+=</span> <span class=n>ft</span><span class=o>[</span><span class=n>b</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>sum</span><span class=o>;</span> <span class=o>}</span> <span class=c1>// note: LSOne(S) (S &amp; (-S))
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>int</span> <span class=nf>rsq</span><span class=o>(</span><span class=kt>int</span> <span class=n>a</span><span class=o>,</span> <span class=kt>int</span> <span class=n>b</span><span class=o>)</span> <span class=o>{</span> <span class=c1>// returns RSQ(a, b)
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>return</span> <span class=n>rsq</span><span class=o>(</span><span class=n>b</span><span class=o>)</span> <span class=o>-</span> <span class=o>(</span><span class=n>a</span> <span class=o>==</span> <span class=n>1</span> <span class=o>?</span> <span class=n>0</span> <span class=o>:</span> <span class=n>rsq</span><span class=o>(</span><span class=n>a</span> <span class=o>-</span> <span class=n>1</span><span class=o>));</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// adjusts value of the k-th element by v (v can be +ve/inc or -ve/dec)
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>void</span> <span class=nf>adjust</span><span class=o>(</span><span class=kt>int</span> <span class=n>k</span><span class=o>,</span> <span class=kt>int</span> <span class=n>v</span><span class=o>)</span> <span class=o>{</span> <span class=c1>// note: n = ft.size() - 1
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>for</span> <span class=o>(;</span> <span class=n>k</span> <span class=o>&lt;</span> <span class=n>ft</span><span class=o>.</span><span class=na>length</span><span class=o>;</span> <span class=n>k</span> <span class=o>+=</span> <span class=n>LSOne</span><span class=o>(</span><span class=n>k</span><span class=o>))</span> <span class=n>ft</span><span class=o>[</span><span class=n>k</span><span class=o>]</span> <span class=o>+=</span> <span class=n>v</span><span class=o>;</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>Refer to <a href=https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA12086.java target=_blank rel="noopener noreffer">UVA12086</a></p><h2 id=heap>Heap</h2><p>Not much used, can be replaced by PriorityQueue in most setting.</p><p>Update element in PriorityQueue replaced by either delete O(N) and insert again O(logN)
+or being lazy and check if the element pop from PriorityQueue is the same as the latest record.</p><p>Application:
+It is inferor to linear scan if the scan is small.
+Refer to <a href=https://leetcode.com/submissions/detail/692559183/ target=_blank rel="noopener noreffer">Longest Repeating Character Replacement</a>, which linear scan perform much faster.</p><p>TODO: There is currently no bubbleUp and bubbleDown implementation in my implementation of heap.</p><p>Refer: <a href=https://leetcode.com/submissions/detail/627876806/ target=_blank rel="noopener noreffer">Kth Largest Element in a Stream</a></p><h3 id=quick-select>Quick select</h3><p>Most Top K problem can also be solved by quick select, which have a better time complexity of O(N)</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kt>int</span><span class=o>[]</span> <span class=n>nums</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=kd>public</span> <span class=kt>int</span> <span class=nf>findKthLargest</span><span class=o>(</span><span class=kt>int</span><span class=o>[]</span> <span class=n>nums</span><span class=o>,</span> <span class=kt>int</span> <span class=n>k</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>this</span><span class=o>.</span><span class=na>nums</span> <span class=o>=</span> <span class=n>nums</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>quickSelect</span><span class=o>(</span><span class=n>0</span><span class=o>,</span> <span class=n>nums</span><span class=o>.</span><span class=na>length</span><span class=o>-</span><span class=n>1</span><span class=o>,</span> <span class=n>nums</span><span class=o>.</span><span class=na>length</span><span class=o>-</span><span class=n>k</span><span class=o>);</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Random</span> <span class=n>r</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Random</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//k means position of desired element in sorted array.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=nf>quickSelect</span><span class=o>(</span><span class=kt>int</span> <span class=n>left</span><span class=o>,</span> <span class=kt>int</span> <span class=n>right</span><span class=o>,</span> <span class=kt>int</span> <span class=n>k</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//base case
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span><span class=o>(</span><span class=n>left</span> <span class=o>==</span> <span class=n>right</span><span class=o>)</span> <span class=k>return</span> <span class=n>nums</span><span class=o>[</span><span class=n>left</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//choose a pivot index by random
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>int</span> <span class=n>pivotIndex</span> <span class=o>=</span> <span class=n>r</span><span class=o>.</span><span class=na>nextInt</span><span class=o>(</span><span class=n>right</span><span class=o>-</span><span class=n>left</span><span class=o>)</span> <span class=o>+</span> <span class=n>left</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//call parititon
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>pivotIndex</span> <span class=o>=</span> <span class=n>partition</span><span class=o>(</span><span class=n>left</span><span class=o>,</span> <span class=n>right</span><span class=o>,</span> <span class=n>pivotIndex</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//from partition we know pivot is nth bigger
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=c1>//if n == k return pivot
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span><span class=o>(</span><span class=n>k</span> <span class=o>==</span> <span class=n>pivotIndex</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>nums</span><span class=o>[</span><span class=n>k</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//else if n &lt; k =&gt; quickSelect(left, pivot-1, k)
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>else</span> <span class=k>if</span><span class=o>(</span><span class=n>k</span> <span class=o>&lt;</span> <span class=n>pivotIndex</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>quickSelect</span><span class=o>(</span><span class=n>left</span><span class=o>,</span> <span class=n>pivotIndex</span><span class=o>-</span><span class=n>1</span><span class=o>,</span> <span class=n>k</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//else if n &gt; k =&gt; quickSelect(pivot+1, right, k) 
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>else</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>quickSelect</span><span class=o>(</span><span class=n>pivotIndex</span><span class=o>+</span><span class=n>1</span><span class=o>,</span> <span class=n>right</span><span class=o>,</span> <span class=n>k</span><span class=o>);</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//left and right are inclusive
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=nf>partition</span><span class=o>(</span><span class=kt>int</span> <span class=n>left</span><span class=o>,</span> <span class=kt>int</span> <span class=n>right</span><span class=o>,</span> <span class=kt>int</span> <span class=n>pivotIndex</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//create a variable call store index
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>int</span> <span class=n>storeIndex</span> <span class=o>=</span> <span class=n>left</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>pivot</span> <span class=o>=</span> <span class=n>nums</span><span class=o>[</span><span class=n>pivotIndex</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//move pivot to the rightmost
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>swap</span><span class=o>(</span><span class=n>right</span><span class=o>,</span> <span class=n>pivotIndex</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//loop all the element and store the element smaller than pivot to left side (store index)
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>for</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>=</span><span class=n>left</span><span class=o>;</span> <span class=n>i</span><span class=o>&lt;=</span><span class=n>right</span><span class=o>;</span> <span class=o>++</span><span class=n>i</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>nums</span><span class=o>[</span><span class=n>i</span><span class=o>]</span> <span class=o>&lt;</span> <span class=n>pivot</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>            <span class=n>swap</span><span class=o>(</span><span class=n>i</span><span class=o>,</span> <span class=n>storeIndex</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>storeIndex</span><span class=o>++;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//swap right with store index
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>swap</span><span class=o>(</span><span class=n>storeIndex</span><span class=o>,</span> <span class=n>right</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//return store index
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>return</span> <span class=n>storeIndex</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>swap</span><span class=o>(</span><span class=kt>int</span> <span class=n>a</span><span class=o>,</span> <span class=kt>int</span> <span class=n>b</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>temp</span> <span class=o>=</span> <span class=n>nums</span><span class=o>[</span><span class=n>a</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>    <span class=n>nums</span><span class=o>[</span><span class=n>a</span><span class=o>]</span> <span class=o>=</span> <span class=n>nums</span><span class=o>[</span><span class=n>b</span><span class=o>];</span>
+</span></span><span class=line><span class=cl>    <span class=n>nums</span><span class=o>[</span><span class=n>b</span><span class=o>]</span> <span class=o>=</span> <span class=n>temp</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Refer: <a href=https://leetcode.com/submissions/detail/692620636/ target=_blank rel="noopener noreffer">Kth Largest Element in an Array</a></p><h2 id=monotonic-stack--heap>Monotonic stack / heap</h2><h3 id=monotonic-heap>Monotonic heap</h3><p>Usually used for querying max/min in sliding windows</p><p>Refer: <a href=https://leetcode.com/submissions/detail/239296842/ target=_blank rel="noopener noreffer">Sliding Window Maximum</a>
+Refer: <a href=https://leetcode.com/problems/max-value-of-equation/submissions/ target=_blank rel="noopener noreffer">Max Value of Equation</a></p><h3 id=monotonic-stack>Monotonic stack</h3><p>Search for previous min or next min.</p><p>Refer: <a href=https://leetcode.com/submissions/detail/237169540/ target=_blank rel="noopener noreffer">Largest Rectangle in Histogram</a></p><p>Refer: <a href=https://leetcode.com/submissions/detail/314810956/ target=_blank rel="noopener noreffer">Maximal Rectangle</a></p><pre><code>Make use of Largest Rectange in Histogram
+</code></pre><p>Refer: <a href=https://leetcode.com/submissions/detail/696897687/ target=_blank rel="noopener noreffer">Sum of Subarray Minimums</a></p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span></span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/cheatsheet/algorithm/data_structure/index.md target=_blank></a></span></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()></a></span>&nbsp;|&nbsp;<span><a href=/></a></span></section></div><div class=post-nav><a href=/cheatsheet/algorithm/dp/ class=prev rel=prev title="Dynamic programming"><i class="fas fa-angle-left fa-fw"></i>Dynamic programming</a>
+<a href=/cheatsheet/algorithm/binary/ class=next rel=next title=Binary>Binary<i class="fas fa-angle-right fa-fw"></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2016 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Lai Yiu Ming, Tom</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title><i class="fas fa-comment fa-fw"></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"",maxShownLines:100},comment:{}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
