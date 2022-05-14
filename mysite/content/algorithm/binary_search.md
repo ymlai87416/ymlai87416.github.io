@@ -1,3 +1,17 @@
+---
+weight: 1
+title: "Binary search"
+date: "2022-04-04"
+author: "Tom"
+draft: false
+
+lightgallery: false
+
+toc:
+  enable: true
+  auto: true
+---
+
 # Binary search
 
 ## Finding mid

@@ -214,7 +214,7 @@ params:
       copy: true
       maxShownLines: 100
     math:
-      enable: false
+      enable: true
       blockLeftDelimiter: ''
       blockRightDelimiter: ''
       inlineLeftDelimiter: ''
