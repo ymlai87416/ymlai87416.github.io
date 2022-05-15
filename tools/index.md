@@ -11,7 +11,7 @@
 
 [Algorithm summary](../algoSummary/)
 
-[Algorithm notes](./algorithm/)
+[Algorithm notes](../algorithm/)
 
 ## Development tools
 
