@@ -715,3 +715,77 @@ Set<String> strSet = Set.of("Apple", "Ball", "Cat", "Dog");
 // ArrayList
 ArrayList<String> cars = new ArrayList<String>();
 ```
+
+## Threading
+
+```java
+//there are 3 ways to create a thread
+//extends a thread class
+NewThread t = new NewThread();
+t.start();
+//create a runnable
+Thread t = new Thread(new MyRunnable());
+t.start();
+//create a task
+Callable<String> callableTask = () -> {
+    TimeUnit.MILLISECONDS.sleep(300);
+    return "Task's execution";
+};
+
+ExecutorService executor = Executors.newFixedThreadPool(10);
+Future<String> result = executor.submit(() -> {
+    new Task();
+});
+result.get();
+
+//a lock
+Reentrantlock lock = new Reentrantlock();
+lock.lock(); lock.tryLock(); lock.unlock();
+
+static syncrhonized void myMethod(){}  //lock on class level
+syncrhonized void myMethod(){}  //lock on object level
+```
+
+## Stream and reactive programming
+
+```java
+//create stream
+private static List<Employee> empList = Arrays.asList(arrayOfEmps);
+empList.stream();
+Stream.of(arrayOfEmps[0], arrayOfEmps[1], arrayOfEmps[2]);
+
+Stream.Builder<Employee> empStreamBuilder = Stream.builder();
+empStreamBuilder.accept(arrayOfEmps[0]);
+empStreamBuilder.accept(arrayOfEmps[1]);
+empStreamBuilder.accept(arrayOfEmps[2]);
+Stream<Employee> empStream = empStreamBuilder.build();
+
+//for-each
+empList.stream().forEach(e -> e.salaryIncrement(10.0));
+
+//map and reduce
+Double sumSal = empList.stream()
+      .map(Employee::getSalary)
+      .reduce(0.0, Double::sum);
+
+//filter
+mployees = Stream.of(empIds).map(employeeRepository::findById).filter(e -> e != null)
+
+//flatMap
+List<String> namesFlatStream = namesNested.stream().flatMap(Collection::stream)
+      .collect(Collectors.toList());
+
+//others: sorted, findFirst, orElse, min, max, distinct, allMatch, anyMatch, noneMatch, takeWhile, dropWhile
+
+//collect function
+//toList
+List<Employee> employees = empList.stream().collect(Collectors.toList());
+//toArray
+Employee[] employees = empList.stream().toArray(Employee[]::new);
+//others: joining, toSet, toCollection, summarizingDouble, groupingBy, partitioningBy, reducing, 
+
+//parallel stream. Default pool is ForkJoinPool.commonPool(), you can assign a pool for it.
+ForkJoinPool customThreadPool = new ForkJoinPool(4);
+long actualTotal = customThreadPool.submit(
+      () -> aList.parallelStream().reduce(0L, Long::sum)).get();
+```
