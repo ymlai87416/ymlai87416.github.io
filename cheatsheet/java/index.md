@@ -731,9 +731,11 @@ Future<String> result = executor.submit(() -> {
 });
 result.get();
 
-//a lock
+//a lock, please aware of lock ownership.
 Reentrantlock lock = new Reentrantlock();
 lock.lock(); lock.tryLock(); lock.unlock();
+
+Semaphore seml new Semaphore(1);
 
 static syncrhonized void myMethod(){}  //lock on class level
 syncrhonized void myMethod(){}  //lock on object level

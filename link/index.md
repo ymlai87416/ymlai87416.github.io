@@ -21,6 +21,8 @@
 
 * [Best JSON formatter](https://jsonformatter.curiousconcept.com/#])
 
+* [Amazon Leadership Principles] (https://www.amazon.jobs/en/principles)
+
 #### Bitcoin and NFT:
 
 * Check transaction:  [Etherscan](https://etherscan.io/), [BSCscan](https://bscscan.com/)
