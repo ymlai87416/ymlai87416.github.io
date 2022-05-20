@@ -274,9 +274,69 @@ Refer: [Longest Duplicate Substring](https://leetcode.com/submissions/detail/696
 
 ## Aho corasick
 
-It can match a dictionary to a string simultaneously.
+Use BFS to do automaton on Trie
 
 ```java
+class TrieNode{
+
+    TrieNode[] children;
+    List<Integer> outIndex;
+    TrieNode f;  //failure link, for root it is null.
+
+    public TrieNode(){
+        children = new TrieNode[26];
+        outIndex = new ArrayList<Integer>();
+        f = null;
+    }
+}
+
+//after building the trie, build the automaton.
+private void buildAutomaton(){
+    Queue<TrieNode> q = new ArrayDeque<>();
+
+    for(int i=0; i<26; ++i){
+        if(root.children[i] != null){
+            root.children[i].f = root;
+            q.offer(root.children[i]);
+        }
+    }
+
+    while(!q.isEmpty()){
+        TrieNode u = q.poll();
+
+        for(int i= 0; i<26; ++i){
+            TrieNode v = u.children[i];
+            if(v != null){
+                TrieNode failure = u.f;
+
+                while(failure != null && failure.children[i] == null)
+                    failure = failure.f;
+
+                failure = failure ==null ? root: failure.children[i];
+                v.f = failure;
+
+                v.outIndex.addAll(failure.outIndex);
+
+                q.offer(v);
+            }
+        }
+    }
+}
+
+//searching by letters
+public boolean query(char letter) {
+    int li = letter - 'a';
+    while(ptr!= null && ptr.children[li] == null){
+        ptr = ptr.f;
+    }
+    ptr = ptr == null ? root : ptr.children[li];
+
+    //System.out.println("Current location: " + ptr.debug);
+
+    return ptr.outIndex.size() > 0;
+}
 ```
 
-Refer: [](https://leetcode.com/problems/stream-of-characters/)
+Refer: [1032. Stream of Characters](https://leetcode.com/submissions/detail/703087591/)
+
+Refer: [GFG](https://www.geeksforgeeks.org/aho-corasick-algorithm-pattern-searching/)
