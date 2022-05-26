@@ -715,3 +715,7 @@ Refer: [Basic Calculator III](https://leetcode.com/submissions/detail/637896732/
 ![image](https://latex.codecogs.com/svg.image?\sum_{1}^{k}&space;p(k)&space;log(p(k)))
 
 Refer: [Guess the Word](https://leetcode.com/submissions/detail/631362555/)
+
+## Solve system of linear equations
+
+TBC

@@ -341,9 +341,6 @@ public boolean query(char letter) {
         ptr = ptr.f;
     }
     ptr = ptr == null ? root : ptr.children[li];
-
-    //System.out.println("Current location: " + ptr.debug);
-
     return ptr.outIndex.size() > 0;
 }
 ```

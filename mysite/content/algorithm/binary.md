@@ -12,6 +12,13 @@ toc:
   auto: true
 ---
 
+## Data structure holding bits
+
+Boolean[]: 4-20bytes
+boolean[]: 1bytes
+BitSet: 1bit
+
+Refer: [boolean[] vs. BitSet: Which is more efficient?](https://stackoverflow.com/questions/605226/boolean-vs-bitset-which-is-more-efficient)
 
 ## Number of bit set
 
