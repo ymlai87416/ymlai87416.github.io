@@ -891,6 +891,112 @@ private int weightedMCM(int bitmask){
 
 ## Tree
 
+### Binary search tree
+
+BST has many properties, and can be used to keep track the rank of element from a stream.
+
+To delete a node from binary tree with 2 children, replace the delete node value with either
+* max value from left subtree (Please aware how BST handle duplicate, put it left or right?)
+* min value from right subtree
+
+then the problem become deleting node having only 1 child.
+
+```java
+class BST{
+    TreeNode root;
+
+    public RankFromStream(){
+        root = null;
+    }
+
+    void add(int x){
+        root = addHelper(root, val);
+    }
+
+    TreeNode addHelper(TreeNode root, int val){
+        if(root == null)
+            return new TreeNode(val);
+        
+        if(root.val == val){
+            //no duplicate?
+        }
+        else if(root.val > val){
+            root.left = addHelper(root.left, val);
+        }
+        else{
+            root.right = addHelper(root.right, val);
+        }
+
+        return root;
+    }
+
+    void deleteKey(int key) { root = deleteRec(root, key); }
+ 
+    /* A recursive function to
+      delete an existing key in BST
+     */
+    TreeNode deleteRec(TreeNode root, int key)
+    {
+        /* Base Case: If the tree is empty */
+        if (root == null)
+            return root;
+ 
+        /* Otherwise, recur down the tree */
+        if (key < root.key)
+            root.left = deleteRec(root.left, key);
+        else if (key > root.key)
+            root.right = deleteRec(root.right, key);
+ 
+        // if key is same as root's
+        // key, then This is the
+        // node to be deleted
+        else {
+            // node with only one child or no child
+            if (root.left == null)
+                return root.right;
+            else if (root.right == null)
+                return root.left;
+ 
+            // node with two children: Get the inorder
+            // successor (smallest in the right subtree)
+            root.key = minValue(root.right);
+ 
+            // Delete the inorder successor
+            root.right = deleteRec(root.right, root.key);
+        }
+ 
+        return root;
+    }
+ 
+    int minValue(TreeNode root)
+    {
+        int minv = root.key;
+        while (root.left != null)
+        {
+            minv = root.left.key;
+            root = root.left;
+        }
+        return minv;
+    }
+}
+
+class TreeNode{
+    TreeNode left;
+    TreeNode right;
+    int val;
+    //int leftSize;  for checking rank
+
+    public RankTreeNode(int val){
+        this.val = val;
+        //this.leftSize = 0;
+    }
+}
+```
+
+Refer: [Rank Transform of an Array](https://leetcode.com/submissions/detail/706474370/)
+
+Refer: [Rank from stream](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ctci/sortsearch/RankFromStream.java)
+
 ### Minimum vertex cover tree
 
 ### Display order
