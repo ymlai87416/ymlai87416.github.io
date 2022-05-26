@@ -1,0 +1,510 @@
+<!doctype html><html lang=zh><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>Geometry - Tom personal site</title><meta name=Description content="Tom personal web site"><meta property="og:title" content="Geometry"><meta property="og:description" content="geometry This is the library for the geometry
+If integer is available, do integer operation, or just BigDouble If double is available, compare them by 1e-9.
+Point Operations include:
+ Sorting Equal  Double version
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  class Point implements Comparable<Point>{ double x; double y; public Point(double x, double y){ this."><meta property="og:type" content="article"><meta property="og:url" content="https://ymlai87416.github.io/algorithm/geometry/"><meta property="og:image" content="https://ymlai87416.github.io/logo.png"><meta property="article:section" content="algorithm"><meta property="article:published_time" content="2022-04-04T00:00:00+00:00"><meta property="article:modified_time" content="2022-04-04T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ymlai87416.github.io/logo.png"><meta name=twitter:title content="Geometry"><meta name=twitter:description content="geometry This is the library for the geometry
+If integer is available, do integer operation, or just BigDouble If double is available, compare them by 1e-9.
+Point Operations include:
+ Sorting Equal  Double version
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  class Point implements Comparable<Point>{ double x; double y; public Point(double x, double y){ this."><meta name=application-name content="Tom personal web site"><meta name=apple-mobile-web-app-title content="Tom personal web site"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://ymlai87416.github.io/algorithm/geometry/><link rel=prev href=https://ymlai87416.github.io/algorithm/graph/><link rel=next href=https://ymlai87416.github.io/algorithm/dp/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Geometry","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/ymlai87416.github.io\/algorithm\/geometry\/"},"image":["https:\/\/ymlai87416.github.io\/images\/Apple-Devices-Preview.png"],"genre":"algorithm","wordcount":1518,"url":"https:\/\/ymlai87416.github.io\/algorithm\/geometry\/","datePublished":"2022-04-04T00:00:00+00:00","dateModified":"2022-04-04T00:00:00+00:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"Tom","logo":"https:\/\/ymlai87416.github.io\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Tom"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Tom personal site">Tom personal site</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/about/>About </a><a class=menu-item href=/blog/>Blog </a><a class=menu-item href=/cheatsheet/>Cheatsheet </a><a class=menu-item href=/tools/>Tools </a><a class=menu-item href=/link/>Link </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Tom personal site">Tom personal site</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><a class=menu-item href=/about/ title>About</a><a class=menu-item href=/blog/ title>Blog</a><a class=menu-item href=/cheatsheet/ title>Cheatsheet</a><a class=menu-item href=/tools/ title>Tools</a><a class=menu-item href=/link/ title>Link</a><a href=javascript:void(0); class="menu-item theme-switch" title>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title></h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">Geometry</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Tom</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-04-04>2022-04-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;&nbsp;</div></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span></span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#point>Point</a></li><li><a href=#line>Line</a><ul><li><a href=#line-segment>Line segment</a></li><li><a href=#vector>Vector</a></li></ul></li><li><a href=#circle>Circle</a></li><li><a href=#triangle>Triangle</a></li></ul><ul><li><a href=#polygon>polygon</a></li><li><a href=#transformation>Transformation</a></li></ul></nav></div></div><div class=content id=content><h1 id=geometry>geometry</h1><p>This is the library for the geometry</p><p>If integer is available, do integer operation, or just BigDouble
+If double is available, compare them by 1e-9.</p><h2 id=point>Point</h2><p>Operations include:</p><ul><li>Sorting</li><li>Equal</li></ul><p>Double version</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Point</span> <span class=kd>implements</span> <span class=n>Comparable</span><span class=o>&lt;</span><span class=n>Point</span><span class=o>&gt;{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>x</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>Point</span><span class=o>(</span><span class=kt>double</span> <span class=n>x</span><span class=o>,</span> <span class=kt>double</span> <span class=n>y</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>x</span> <span class=o>=</span> <span class=n>x</span><span class=o>;</span> <span class=k>this</span><span class=o>.</span><span class=na>y</span> <span class=o>=</span> <span class=n>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>int</span> <span class=nf>compareTo</span><span class=o>(</span><span class=n>Point</span> <span class=n>p</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>x</span> <span class=o>-</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>&gt;</span> <span class=n>EPS</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>x</span> <span class=o>&lt;</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span> <span class=o>?</span> <span class=o>-</span><span class=n>1</span> <span class=o>:</span> <span class=n>1</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>y</span> <span class=o>&lt;</span> <span class=n>p</span><span class=o>.</span><span class=na>y</span> <span class=o>?</span> <span class=o>-</span><span class=n>1</span> <span class=o>:</span> <span class=n>1</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>boolean</span> <span class=nf>equals</span><span class=o>(</span><span class=n>Point</span> <span class=n>p</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>x</span> <span class=o>-</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>&lt;</span> <span class=n>EPS</span> <span class=o>&amp;&amp;</span> <span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>y</span> <span class=o>-</span> <span class=n>p</span><span class=o>.</span><span class=na>y</span><span class=o>)</span> <span class=o>&lt;</span> <span class=n>EPS</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Point_I</span> <span class=kd>implements</span> <span class=n>Comparable</span><span class=o>&lt;</span><span class=n>Point_I</span><span class=o>&gt;{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>x</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>Point_I</span><span class=o>(</span><span class=kt>int</span> <span class=n>x</span><span class=o>,</span> <span class=kt>int</span> <span class=n>y</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>x</span> <span class=o>=</span> <span class=n>x</span><span class=o>;</span> <span class=k>this</span><span class=o>.</span><span class=na>y</span> <span class=o>=</span> <span class=n>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>int</span> <span class=nf>compareTo</span><span class=o>(</span><span class=n>Point_I</span> <span class=n>p</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>x</span> <span class=o>-</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>&gt;</span> <span class=n>EPS</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>x</span> <span class=o>&lt;</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span> <span class=o>?</span> <span class=o>-</span><span class=n>1</span> <span class=o>:</span> <span class=n>1</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>y</span> <span class=o>&lt;</span> <span class=n>p</span><span class=o>.</span><span class=na>y</span> <span class=o>?</span> <span class=o>-</span><span class=n>1</span> <span class=o>:</span> <span class=n>1</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>boolean</span> <span class=nf>equals</span><span class=o>(</span><span class=n>Point_I</span> <span class=n>p</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>(</span><span class=n>x</span> <span class=o>-</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>==</span> <span class=n>0</span> <span class=o>&amp;&amp;</span> <span class=o>(</span><span class=n>y</span> <span class=o>-</span> <span class=n>p</span><span class=o>.</span><span class=na>y</span><span class=o>)</span> <span class=o>==</span> <span class=n>0</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Distance</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kt>double</span> <span class=nf>distance</span><span class=o>(</span><span class=n>Point</span> <span class=n>p1</span><span class=o>,</span> <span class=n>Point</span> <span class=n>p2</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>dx</span> <span class=o>=</span> <span class=n>p1</span><span class=o>.</span><span class=na>x</span> <span class=o>-</span> <span class=n>p2</span><span class=o>.</span><span class=na>x</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>dy</span> <span class=o>=</span> <span class=n>p1</span><span class=o>.</span><span class=na>y</span> <span class=o>-</span> <span class=n>p2</span><span class=o>.</span><span class=na>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>Math</span><span class=o>.</span><span class=na>sqrt</span><span class=o>(</span><span class=n>dx</span> <span class=o>*</span> <span class=n>dx</span> <span class=o>+</span> <span class=n>dy</span> <span class=o>*</span> <span class=n>dy</span><span class=o>);</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Rotate</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=c1>// rotate p by theta degrees CCW w.r.t origin (0, 0)
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>Point</span> <span class=nf>rotate</span><span class=o>(</span><span class=n>Point</span> <span class=n>p</span><span class=o>,</span> <span class=kt>double</span> <span class=n>theta</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>rad</span> <span class=o>=</span> <span class=n>theta</span> <span class=o>*</span> <span class=n>PI</span> <span class=o>/</span> <span class=n>180</span><span class=o>.</span><span class=na>0</span><span class=o>;</span> <span class=c1>// multiply theta with PI / 180.0
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>double</span> <span class=n>x</span> <span class=o>=</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span> <span class=o>*</span> <span class=n>cos</span><span class=o>(</span><span class=n>rad</span><span class=o>)</span> <span class=o>-</span> <span class=n>p</span><span class=o>.</span><span class=na>y</span> <span class=o>*</span> <span class=n>sin</span><span class=o>(</span><span class=n>rad</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>y</span> <span class=o>=</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span> <span class=o>*</span> <span class=n>sin</span><span class=o>(</span><span class=n>rad</span><span class=o>)</span> <span class=o>+</span> <span class=n>p</span><span class=o>.</span><span class=na>y</span> <span class=o>*</span> <span class=n>cos</span><span class=o>(</span><span class=n>rad</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>point</span><span class=o>(</span><span class=n>x</span><span class=o>,</span> <span class=n>y</span><span class=o>);</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=line>Line</h2><p>There are multiple way to define a line.
+Define a line by slope and y-intercept or by ax+by+c = 0</p><p>Additional b make the comparison complicated so we try to fix it at 1.0
+If we use slope and y-intercept, we need to deal with infinity slope.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Line</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>a</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>b</span><span class=o>;</span> 
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>c</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>static</span> <span class=n>Line</span> <span class=nf>pointsToLine</span><span class=o>(</span><span class=n>Point</span> <span class=n>p1</span><span class=o>,</span> <span class=n>Point</span> <span class=n>p2</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>p1</span><span class=o>.</span><span class=na>x</span> <span class=o>-</span> <span class=n>p2</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>&lt;</span> <span class=n>EPS</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=k>new</span> <span class=n>Line</span><span class=o>(</span><span class=n>1</span><span class=o>.</span><span class=na>0</span><span class=o>,</span> <span class=n>0</span><span class=o>.</span><span class=na>0</span><span class=o>,</span> <span class=o>-</span><span class=n>p1</span><span class=o>.</span><span class=na>x</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span><span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=kt>double</span> <span class=n>a</span> <span class=o>=</span> <span class=o>-(</span><span class=n>p2</span><span class=o>.</span><span class=na>y</span> <span class=o>-</span> <span class=n>p1</span><span class=o>.</span><span class=na>y</span><span class=o>)</span> <span class=o>/</span> <span class=o>(</span><span class=n>p2</span><span class=o>.</span><span class=na>x</span> <span class=o>-</span> <span class=n>p1</span><span class=o>.</span><span class=na>x</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=kt>double</span> <span class=n>b</span> <span class=o>=</span> <span class=n>1</span><span class=o>.</span><span class=na>0</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=kt>double</span> <span class=n>c</span> <span class=o>=</span> <span class=o>-(</span><span class=n>a</span> <span class=o>*</span> <span class=n>p1</span><span class=o>.</span><span class=na>x</span> <span class=o>+</span> <span class=n>b</span> <span class=o>*</span> <span class=n>p1</span><span class=o>.</span><span class=na>y</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=k>new</span> <span class=n>Line</span><span class=o>(</span><span class=n>a</span><span class=o>,</span> <span class=n>b</span><span class=o>,</span> <span class=n>c</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>Line</span><span class=o>(</span><span class=kt>double</span> <span class=n>a</span><span class=o>,</span> <span class=kt>double</span> <span class=n>b</span><span class=o>,</span> <span class=kt>double</span> <span class=n>c</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>a</span> <span class=o>=</span> <span class=n>a</span><span class=o>;</span> <span class=k>this</span><span class=o>.</span><span class=na>b</span> <span class=o>=</span> <span class=n>b</span><span class=o>;</span> <span class=k>this</span><span class=o>.</span><span class=na>c</span> <span class=o>=</span> <span class=n>c</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>static</span> <span class=kt>boolean</span> <span class=nf>areParallel</span><span class=o>(</span><span class=n>Line</span> <span class=n>l1</span><span class=o>,</span> <span class=n>Line</span> <span class=n>l2</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>l1</span><span class=o>.</span><span class=na>a</span> <span class=o>-</span> <span class=n>l2</span><span class=o>.</span><span class=na>a</span><span class=o>)</span> <span class=o>&lt;</span> <span class=n>EPS</span> <span class=o>&amp;&amp;</span> <span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>l1</span><span class=o>.</span><span class=na>b</span> <span class=o>-</span> <span class=n>l2</span><span class=o>.</span><span class=na>b</span><span class=o>)</span> <span class=o>&lt;</span> <span class=n>EPS</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>static</span> <span class=kt>boolean</span> <span class=nf>areSame</span><span class=o>(</span><span class=n>Line</span> <span class=n>l1</span><span class=o>,</span> <span class=n>Line</span> <span class=n>l2</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>areParallel</span><span class=o>(</span><span class=n>l1</span><span class=o>,</span> <span class=n>l2</span><span class=o>)</span> <span class=o>&amp;&amp;</span> <span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>l1</span><span class=o>.</span><span class=na>c</span> <span class=o>-</span> <span class=n>l2</span><span class=o>.</span><span class=na>c</span><span class=o>)</span> <span class=o>&lt;</span> <span class=n>EPS</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>static</span> <span class=n>Point</span> <span class=nf>areIntersect</span><span class=o>(</span><span class=n>Line</span> <span class=n>l1</span><span class=o>,</span> <span class=n>Line</span> <span class=n>l2</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>areParallel</span><span class=o>(</span><span class=n>l1</span><span class=o>,</span> <span class=n>l2</span><span class=o>))</span> <span class=k>return</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=kt>double</span> <span class=n>x</span> <span class=o>=</span> <span class=o>(</span><span class=n>l2</span><span class=o>.</span><span class=na>b</span> <span class=o>*</span> <span class=n>l1</span><span class=o>.</span><span class=na>c</span> <span class=o>-</span> <span class=n>l1</span><span class=o>.</span><span class=na>b</span> <span class=o>*</span> <span class=n>l2</span><span class=o>.</span><span class=na>c</span><span class=o>)</span> <span class=o>/</span> <span class=o>(</span><span class=n>l2</span><span class=o>.</span><span class=na>a</span> <span class=o>*</span> <span class=n>l1</span><span class=o>.</span><span class=na>b</span> <span class=o>-</span> <span class=n>l1</span><span class=o>.</span><span class=na>a</span> <span class=o>*</span> <span class=n>l2</span><span class=o>.</span><span class=na>b</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>l1</span><span class=o>.</span><span class=na>b</span><span class=o>)</span> <span class=o>&gt;</span> <span class=n>EPS</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=k>new</span> <span class=n>Point</span><span class=o>(</span><span class=n>x</span><span class=o>,</span> <span class=o>-(</span><span class=n>l1</span><span class=o>.</span><span class=na>a</span> <span class=o>*</span> <span class=n>x</span> <span class=o>+</span> <span class=n>l1</span><span class=o>.</span><span class=na>c</span><span class=o>));</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=k>new</span> <span class=n>Point</span><span class=o>(</span><span class=n>x</span><span class=o>,</span> <span class=o>-(</span><span class=n>l2</span><span class=o>.</span><span class=na>a</span> <span class=o>*</span> <span class=n>x</span> <span class=o>+</span> <span class=n>l2</span><span class=o>.</span><span class=na>c</span><span class=o>));</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=line-segment>Line segment</h3><p>Line segment = line with 2 end points.</p><h3 id=vector>Vector</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Vector</span><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>x</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>Vector</span><span class=o>(</span><span class=kt>double</span> <span class=n>x</span><span class=o>,</span> <span class=kt>double</span> <span class=n>y</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>x</span> <span class=o>=</span> <span class=n>x</span><span class=o>;</span> <span class=k>this</span><span class=o>.</span><span class=na>y</span> <span class=o>=</span> <span class=n>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=n>Vector</span> <span class=nf>toVector</span><span class=o>(</span><span class=n>Point</span> <span class=n>a</span><span class=o>,</span> <span class=n>Point</span> <span class=n>b</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>b</span><span class=o>.</span><span class=na>x</span> <span class=o>-</span> <span class=n>a</span><span class=o>.</span><span class=na>x</span><span class=o>,</span> <span class=n>b</span><span class=o>.</span><span class=na>y</span> <span class=o>-</span> <span class=n>a</span><span class=o>.</span><span class=na>y</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=n>Vector</span> <span class=nf>scale</span><span class=o>(</span><span class=kt>double</span> <span class=n>s</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>x</span> <span class=o>*</span> <span class=n>s</span><span class=o>,</span> <span class=n>y</span> <span class=o>*</span> <span class=n>s</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=n>Point</span> <span class=nf>translate</span><span class=o>(</span><span class=n>Point</span> <span class=n>p</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=k>new</span> <span class=n>Point</span><span class=o>(</span><span class=n>p</span><span class=o>.</span><span class=na>x</span> <span class=o>+</span> <span class=n>x</span><span class=o>,</span> <span class=n>p</span><span class=o>.</span><span class=na>y</span><span class=o>+</span><span class=n>y</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>static</span> <span class=kt>double</span> <span class=nf>dot</span><span class=o>(</span><span class=n>Vector</span> <span class=n>b</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=c1>//projection of this vector on b
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>return</span> <span class=n>x</span> <span class=o>*</span> <span class=n>b</span><span class=o>.</span><span class=na>x</span> <span class=o>+</span> <span class=n>y</span> <span class=o>*</span> <span class=n>b</span><span class=o>.</span><span class=na>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>double</span> <span class=nf>normSq</span><span class=o>(){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>x</span> <span class=o>*</span> <span class=n>x</span> <span class=o>+</span> <span class=n>y</span> <span class=o>*</span> <span class=n>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>double</span> <span class=nf>cross</span><span class=o>(</span><span class=n>Vector</span> <span class=n>b</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=c1>//cross product
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>return</span> <span class=n>x</span> <span class=o>*</span> <span class=n>b</span><span class=o>.</span><span class=na>y</span> <span class=o>-</span> <span class=n>y</span> <span class=o>*</span> <span class=n>b</span><span class=o>.</span><span class=na>x</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Distance to line</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kt>double</span> <span class=nf>distanceToLine</span><span class=o>(</span><span class=n>Point</span> <span class=n>p</span><span class=o>,</span> <span class=n>Point</span> <span class=n>a</span><span class=o>,</span> <span class=n>Point</span> <span class=n>b</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>ap</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>a</span><span class=o>,</span> <span class=n>p</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>ab</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>a</span><span class=o>,</span> <span class=n>b</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>u</span> <span class=o>=</span> <span class=n>ap</span><span class=o>.</span><span class=na>dot</span><span class=o>(</span><span class=n>ab</span><span class=o>)</span> <span class=o>/</span> <span class=n>ab</span><span class=o>.</span><span class=na>normSq</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>Point</span> <span class=n>c</span> <span class=o>=</span> <span class=n>ab</span><span class=o>.</span><span class=na>scale</span><span class=o>(</span><span class=n>u</span><span class=o>).</span><span class=na>translate</span><span class=o>(</span><span class=n>a</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>distance</span><span class=o>(</span><span class=n>p</span><span class=o>,</span> <span class=n>c</span><span class=o>);</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Distance to line segment</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kt>double</span> <span class=nf>distanceToLineSegment</span><span class=o>(</span><span class=n>Point</span> <span class=n>p</span><span class=o>,</span> <span class=n>Point</span> <span class=n>a</span><span class=o>,</span> <span class=n>Point</span> <span class=n>b</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>ap</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>a</span><span class=o>,</span> <span class=n>p</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>ab</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>a</span><span class=o>,</span> <span class=n>b</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>u</span> <span class=o>=</span> <span class=n>ap</span><span class=o>.</span><span class=na>dot</span><span class=o>(</span><span class=n>ab</span><span class=o>)</span> <span class=o>/</span> <span class=n>ab</span><span class=o>.</span><span class=na>normSq</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span><span class=o>(</span><span class=n>u</span> <span class=o>&lt;</span> <span class=n>0</span><span class=o>.</span><span class=na>0</span><span class=o>)</span> <span class=k>return</span> <span class=n>distance</span><span class=o>(</span><span class=n>p</span><span class=o>,</span> <span class=n>a</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span><span class=o>(</span><span class=n>u</span> <span class=o>&gt;</span> <span class=n>1</span><span class=o>.</span><span class=na>0</span><span class=o>)</span> <span class=k>return</span> <span class=n>distance</span><span class=o>(</span><span class=n>p</span><span class=o>,</span> <span class=n>b</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>distanceToLine</span><span class=o>(</span><span class=n>p</span><span class=o>,</span> <span class=n>a</span><span class=o>,</span> <span class=n>b</span><span class=o>);</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Angle AOB</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kt>double</span> <span class=nf>angle</span><span class=o>(</span><span class=n>Point</span> <span class=n>a</span><span class=o>,</span> <span class=n>Point</span> <span class=n>o</span><span class=o>,</span> <span class=n>Point</span> <span class=n>b</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>oa</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>o</span><span class=o>,</span> <span class=n>a</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>ob</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>o</span><span class=o>,</span> <span class=n>b</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>acos</span><span class=o>(</span><span class=n>oa</span><span class=o>.</span><span class=na>dot</span><span class=o>(</span><span class=n>ob</span><span class=o>)</span> <span class=o>/</span> <span class=n>sqrt</span><span class=o>(</span><span class=n>oa</span><span class=o>.</span><span class=na>normSq</span><span class=o>()</span> <span class=o>*</span> <span class=n>ob</span><span class=o>.</span><span class=na>normSq</span><span class=o>()));</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Counter clockwise test, collinear test</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=c1>// note: to accept collinear points, we have to change the ‘&gt; 0’
+</span></span></span><span class=line><span class=cl><span class=c1>// returns true if point r is on the left side of line pq
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>boolean</span> <span class=nf>ccw</span><span class=o>(</span><span class=n>Point</span> <span class=n>p</span><span class=o>,</span> <span class=n>Point</span> <span class=n>q</span><span class=o>,</span> <span class=n>Point</span> <span class=n>r</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>pq</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>p</span><span class=o>,</span> <span class=n>q</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>pr</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>p</span><span class=o>,</span> <span class=n>r</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>pq</span><span class=o>.</span><span class=na>cross</span><span class=o>(</span><span class=n>pr</span><span class=o>)</span> <span class=o>&gt;</span> <span class=n>0</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>boolean</span> <span class=nf>collinear</span><span class=o>(</span><span class=n>Point</span> <span class=n>p</span><span class=o>,</span> <span class=n>Point</span> <span class=n>q</span><span class=o>,</span> <span class=n>Point</span> <span class=n>r</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>pq</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>p</span><span class=o>,</span> <span class=n>q</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>Vector</span> <span class=n>pr</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Vector</span><span class=o>(</span><span class=n>p</span><span class=o>,</span> <span class=n>r</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>Math</span><span class=o>.</span><span class=na>abs</span><span class=o>(</span><span class=n>pq</span><span class=o>.</span><span class=na>cross</span><span class=o>(</span><span class=n>pr</span><span class=o>))</span> <span class=o>&lt;</span> <span class=n>EPS</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Integer version of Line</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Line</span> <span class=kd>implements</span> <span class=n>Comparable</span><span class=o>&lt;</span><span class=n>Line</span><span class=o>&gt;{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>int</span> <span class=n>dy</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>int</span> <span class=n>dx</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>int</span> <span class=n>c</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>Line</span><span class=o>(</span><span class=kt>int</span> <span class=n>dx</span><span class=o>,</span> <span class=kt>int</span> <span class=n>dy</span><span class=o>,</span> <span class=kt>int</span> <span class=n>c</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>dx</span> <span class=o>=</span> <span class=n>dx</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>dy</span> <span class=o>=</span> <span class=n>dy</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>c</span> <span class=o>=</span> <span class=n>c</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>int</span> <span class=nf>compareTo</span><span class=o>(</span><span class=n>Line</span> <span class=n>o</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>dx</span> <span class=o>==</span> <span class=n>o</span><span class=o>.</span><span class=na>dx</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span><span class=o>(</span><span class=n>dy</span> <span class=o>==</span> <span class=n>o</span><span class=o>.</span><span class=na>dy</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>                <span class=k>return</span> <span class=n>c</span> <span class=o>-</span> <span class=n>o</span><span class=o>.</span><span class=na>c</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=o>}</span>
+</span></span><span class=line><span class=cl>            <span class=k>else</span>
+</span></span><span class=line><span class=cl>                <span class=k>return</span> <span class=n>dy</span> <span class=o>-</span> <span class=n>o</span><span class=o>.</span><span class=na>dy</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=k>return</span> <span class=n>dx</span><span class=o>-</span><span class=n>o</span><span class=o>.</span><span class=na>dx</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>boolean</span> <span class=nf>equals</span><span class=o>(</span><span class=n>Object</span> <span class=n>o</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>o</span> <span class=k>instanceof</span> <span class=n>Line</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>            <span class=n>Line</span> <span class=n>ol</span> <span class=o>=</span> <span class=o>(</span><span class=n>Line</span><span class=o>)</span><span class=n>o</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>ol</span><span class=o>.</span><span class=na>dx</span> <span class=o>==</span> <span class=n>dx</span> <span class=o>&amp;&amp;</span> <span class=n>ol</span><span class=o>.</span><span class=na>dy</span> <span class=o>==</span> <span class=n>dy</span> <span class=o>&amp;&amp;</span> <span class=n>ol</span><span class=o>.</span><span class=na>c</span> <span class=o>==</span>  <span class=n>c</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=kc>false</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>int</span> <span class=nf>hashCode</span><span class=o>(){</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>Integer</span><span class=o>.</span><span class=na>hashCode</span><span class=o>(</span><span class=n>dx</span><span class=o>+</span><span class=n>dy</span><span class=o>+</span><span class=n>c</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Refer: <a href=https://leetcode.com/submissions/detail/238430333/ target=_blank rel="noopener noreffer">Max Point on a Line</a></p><h2 id=circle>Circle</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Circle</span><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>Point</span> <span class=n>center</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>radius</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>Circle</span><span class=o>(</span><span class=n>Point</span> <span class=n>center</span><span class=o>,</span> <span class=kt>double</span> <span class=n>radius</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>center</span> <span class=o>=</span> <span class=n>center</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>radius</span> <span class=o>=</span> <span class=n>radius</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>static</span> <span class=n>Circle</span> <span class=nf>circle2PtsRad</span><span class=o>(</span><span class=n>Point</span> <span class=n>p1</span><span class=o>,</span> <span class=n>Point</span> <span class=n>p2</span><span class=o>,</span> <span class=kt>double</span> <span class=n>radius</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>        <span class=kt>double</span> <span class=n>d2</span> <span class=o>=</span> <span class=o>(</span><span class=n>p1</span><span class=o>.</span><span class=na>x</span> <span class=o>-</span> <span class=n>p2</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>*</span> <span class=o>(</span><span class=n>p1</span><span class=o>.</span><span class=na>x</span> <span class=o>-</span> <span class=n>p2</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>+</span> <span class=o>(</span><span class=n>p1</span><span class=o>.</span><span class=na>y</span> <span class=o>-</span> <span class=n>p2</span><span class=o>.</span><span class=na>y</span><span class=o>)</span> <span class=o>*</span> <span class=o>(</span><span class=n>p1</span><span class=o>.</span><span class=na>y</span> <span class=o>-</span> <span class=n>p2</span><span class=o>.</span><span class=na>y</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=kt>double</span> <span class=n>det</span> <span class=o>=</span> <span class=n>radius</span> <span class=o>*</span> <span class=n>radius</span> <span class=o>/</span> <span class=n>d2</span> <span class=o>-</span> <span class=n>0</span><span class=o>.</span><span class=na>25</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=o>(</span><span class=n>det</span> <span class=o>&lt;</span> <span class=n>0</span><span class=o>.</span><span class=na>0</span><span class=o>)</span> <span class=k>return</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=kt>double</span> <span class=n>h</span> <span class=o>=</span> <span class=n>sqrt</span><span class=o>(</span><span class=n>det</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=kt>double</span> <span class=n>cx</span> <span class=o>=</span> <span class=o>(</span><span class=n>p1</span><span class=o>.</span><span class=na>x</span> <span class=o>+</span> <span class=n>p2</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>*</span> <span class=n>0</span><span class=o>.</span><span class=na>5</span> <span class=o>+</span> <span class=o>(</span><span class=n>p1</span><span class=o>.</span><span class=na>y</span> <span class=o>-</span> <span class=n>p2</span><span class=o>.</span><span class=na>y</span><span class=o>)</span> <span class=o>*</span> <span class=n>h</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=kt>double</span> <span class=n>cy</span> <span class=o>=</span> <span class=o>(</span><span class=n>p1</span><span class=o>.</span><span class=na>y</span> <span class=o>+</span> <span class=n>p2</span><span class=o>.</span><span class=na>y</span><span class=o>)</span> <span class=o>*</span> <span class=n>0</span><span class=o>.</span><span class=na>5</span> <span class=o>+</span> <span class=o>(</span><span class=n>p2</span><span class=o>.</span><span class=na>x</span> <span class=o>-</span> <span class=n>p1</span><span class=o>.</span><span class=na>x</span><span class=o>)</span> <span class=o>*</span> <span class=n>h</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>Circle</span> <span class=n>c</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Circle</span><span class=o>(</span><span class=k>new</span> <span class=n>Point</span><span class=o>(</span><span class=n>cx</span><span class=o>,</span> <span class=n>cy</span><span class=o>),</span> <span class=n>radius</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Operations:</p><ul><li>inside circle integer version</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kt>int</span> <span class=nf>insideCircle</span><span class=o>(</span><span class=n>Point_I</span> <span class=n>p</span><span class=o>,</span> <span class=n>Point_I</span> <span class=n>c</span><span class=o>,</span> <span class=kt>int</span> <span class=n>r</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// all integer version
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>int</span> <span class=n>dx</span> <span class=o>=</span> <span class=n>p</span><span class=o>.</span><span class=na>x</span> <span class=o>-</span> <span class=n>c</span><span class=o>.</span><span class=na>x</span><span class=o>,</span> <span class=n>dy</span> <span class=o>=</span> <span class=n>p</span><span class=o>.</span><span class=na>y</span> <span class=o>-</span> <span class=n>c</span><span class=o>.</span><span class=na>y</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>Euc</span> <span class=o>=</span> <span class=n>dx</span> <span class=o>*</span> <span class=n>dx</span> <span class=o>+</span> <span class=n>dy</span> <span class=o>*</span> <span class=n>dy</span><span class=o>,</span> <span class=n>rSq</span> <span class=o>=</span> <span class=n>r</span> <span class=o>*</span> <span class=n>r</span><span class=o>;</span> <span class=c1>// all integer
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>return</span> <span class=n>Euc</span> <span class=o>&lt;</span> <span class=n>rSq</span> <span class=o>?</span> <span class=n>0</span> <span class=o>:</span> <span class=n>Euc</span> <span class=o>==</span> <span class=n>rSq</span> <span class=o>?</span> <span class=n>1</span> <span class=o>:</span> <span class=n>2</span><span class=o>;</span> <span class=o>}</span> <span class=c1>//inside/border/outside
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=triangle>Triangle</h2><p>Operations:</p><ul><li>Area by Heron&rsquo;s formula</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kt>double</span> <span class=nf>area</span><span class=o>(</span><span class=kt>double</span> <span class=n>ab</span><span class=o>,</span> <span class=kt>double</span> <span class=n>bc</span><span class=o>,</span> <span class=kt>double</span> <span class=n>ca</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>s</span> <span class=o>=</span> <span class=n>0</span><span class=o>.</span><span class=na>5</span> <span class=o>*</span> <span class=o>(</span><span class=n>ab</span> <span class=o>+</span> <span class=n>bc</span> <span class=o>+</span> <span class=n>ca</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>sqrt</span><span class=o>(</span><span class=n>s</span> <span class=o>*</span> <span class=o>(</span><span class=n>s</span> <span class=o>-</span> <span class=n>ab</span><span class=o>)</span> <span class=o>*</span> <span class=o>(</span><span class=n>s</span> <span class=o>-</span> <span class=n>bc</span><span class=o>)</span> <span class=o>*</span> <span class=o>(</span><span class=n>s</span> <span class=o>-</span> <span class=n>ca</span><span class=o>));</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>n-circle radisu</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kt>double</span> <span class=nf>rInCircle</span><span class=o>(</span><span class=kt>double</span> <span class=n>ab</span><span class=o>,</span> <span class=kt>double</span> <span class=n>bc</span><span class=o>,</span> <span class=kt>double</span> <span class=n>ca</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>A</span> <span class=o>=</span> <span class=n>area</span><span class=o>(</span><span class=n>ab</span><span class=o>,</span> <span class=n>bc</span><span class=o>,</span> <span class=n>ca</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>A</span> <span class=o>/</span> <span class=o>(</span><span class=n>0</span><span class=o>.</span><span class=na>5</span> <span class=o>*</span> <span class=o>(</span><span class=n>ab</span> <span class=o>+</span> <span class=n>bc</span> <span class=o>+</span> <span class=n>ca</span><span class=o>));</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>double</span> <span class=nf>rInCircle</span><span class=o>(</span><span class=n>Point</span> <span class=n>a</span><span class=o>,</span> <span class=n>Point</span> <span class=n>b</span><span class=o>,</span> <span class=n>Point</span> <span class=n>c</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>ab</span> <span class=o>=</span> <span class=n>distance</span><span class=o>(</span><span class=n>a</span><span class=o>,</span> <span class=n>b</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>bc</span> <span class=o>=</span> <span class=n>distance</span><span class=o>(</span><span class=n>b</span><span class=o>,</span> <span class=n>c</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=kt>double</span> <span class=n>ca</span> <span class=o>=</span> <span class=n>distance</span><span class=o>(</span><span class=n>c</span><span class=o>,</span> <span class=n>a</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>rInCircle</span><span class=o>(</span><span class=n>ab</span><span class=o>,</span> <span class=n>bc</span><span class=o>,</span> <span class=n>ca</span><span class=o>);</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>3 points touching in-circle</li><li>circumscribed circle</li><li>center of circumscribed circle</li><li>cosine law</li><li>sin law</li><li>Pythagorean theorem and tuples</li></ul><h1 id=quadrilaterals>Quadrilaterals</h1><p>Operations:</p><ul><li>Rectangle</li><li>Square</li><li>Trapezium</li><li>Parallelogram</li><li>Kite</li><li>Rhombus</li></ul><h2 id=polygon>polygon</h2><p>Operations:</p><ul><li>Representation</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=c1>//a list of points counter-clockwise
+</span></span></span><span class=line><span class=cl><span class=c1>// 6 points, entered in counter clockwise order, 0-based indexing
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>vector</span><span class=o>&lt;</span><span class=n>point</span><span class=o>&gt;</span> <span class=n>P</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=n>P</span><span class=o>.</span><span class=na>push_back</span><span class=o>(</span><span class=n>point</span><span class=o>(</span><span class=n>1</span><span class=o>,</span> <span class=n>1</span><span class=o>));</span> <span class=c1>// P0
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>P</span><span class=o>.</span><span class=na>push_back</span><span class=o>(</span><span class=n>point</span><span class=o>(</span><span class=n>3</span><span class=o>,</span> <span class=n>3</span><span class=o>));</span> <span class=c1>// P1
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>P</span><span class=o>.</span><span class=na>push_back</span><span class=o>(</span><span class=n>point</span><span class=o>(</span><span class=n>9</span><span class=o>,</span> <span class=n>1</span><span class=o>));</span> <span class=c1>// P2
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>P</span><span class=o>.</span><span class=na>push_back</span><span class=o>(</span><span class=n>point</span><span class=o>(</span><span class=n>12</span><span class=o>,</span> <span class=n>4</span><span class=o>));</span> <span class=c1>// P3
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>P</span><span class=o>.</span><span class=na>push_back</span><span class=o>(</span><span class=n>point</span><span class=o>(</span><span class=n>9</span><span class=o>,</span> <span class=n>7</span><span class=o>));</span> <span class=c1>// P4
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>P</span><span class=o>.</span><span class=na>push_back</span><span class=o>(</span><span class=n>point</span><span class=o>(</span><span class=n>1</span><span class=o>,</span> <span class=n>7</span><span class=o>));</span> <span class=c1>// P5
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>P</span><span class=o>.</span><span class=na>push_back</span><span class=o>(</span><span class=n>P</span><span class=o>[</span><span class=n>0</span><span class=o>]);</span> <span class=c1>// important: loop back
+</span></span></span></code></pre></td></tr></table></div></div><ul><li>Parameters of polygon</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=c1>// returns the perimeter, which is the sum of Euclidian distances
+</span></span></span><span class=line><span class=cl><span class=c1>// of consecutive line segments (polygon edges)
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>double</span> <span class=nf>perimeter</span><span class=o>(</span><span class=kd>const</span> <span class=n>vector</span><span class=o>&lt;</span><span class=n>point</span><span class=o>&gt;</span> <span class=o>&amp;</span><span class=n>P</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl><span class=kt>double</span> <span class=n>result</span> <span class=o>=</span> <span class=n>0</span><span class=o>.</span><span class=na>0</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=n>0</span><span class=o>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=o>(</span><span class=kt>int</span><span class=o>)</span><span class=n>P</span><span class=o>.</span><span class=na>size</span><span class=o>()-</span><span class=n>1</span><span class=o>;</span> <span class=n>i</span><span class=o>++)</span> <span class=c1>// remember that P[0] = P[n-1]
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>result</span> <span class=o>+=</span> <span class=n>dist</span><span class=o>(</span><span class=n>P</span><span class=o>[</span><span class=n>i</span><span class=o>],</span> <span class=n>P</span><span class=o>[</span><span class=n>i</span><span class=o>+</span><span class=n>1</span><span class=o>]);</span>
+</span></span><span class=line><span class=cl><span class=k>return</span> <span class=n>result</span><span class=o>;</span> <span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Area of polygon</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java></code></pre></td></tr></table></div></div><ul><li>Checking a polygon is convex</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java></code></pre></td></tr></table></div></div><ul><li>A point is inside a polygon</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java></code></pre></td></tr></table></div></div><ul><li>Cutting polygon with a straight line</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java></code></pre></td></tr></table></div></div><ul><li>Finding covex hull</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java></code></pre></td></tr></table></div></div><h2 id=transformation>Transformation</h2><p>The rotation matrix is <img class=lazyload src=/svg/loading.min.svg data-src=http://planning.cs.uiuc.edu/img807.gif data-srcset="http://planning.cs.uiuc.edu/img807.gif, http://planning.cs.uiuc.edu/img807.gif 1.5x, http://planning.cs.uiuc.edu/img807.gif 2x" data-sizes=auto alt=http://planning.cs.uiuc.edu/img807.gif title=image></p><p>Refer: <a href=https://leetcode.com/submissions/detail/628337089/ target=_blank rel="noopener noreffer">Rotate Image</a></p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span></span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/algorithm/geometry/index.md target=_blank></a></span></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()></a></span>&nbsp;|&nbsp;<span><a href=/></a></span></section></div><div class=post-nav><a href=/algorithm/graph/ class=prev rel=prev title=Graph><i class="fas fa-angle-left fa-fw"></i>Graph</a>
+<a href=/algorithm/dp/ class=next rel=next title="Dynamic programming">Dynamic programming<i class="fas fa-angle-right fa-fw"></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2016 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Lai Yiu Ming, Tom</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title><i class="fas fa-comment fa-fw"></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"",maxShownLines:100},comment:{},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
