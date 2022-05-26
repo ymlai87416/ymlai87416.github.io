@@ -327,7 +327,7 @@ double area(double ab, double bc, double ca){
 }
 ```
 
-* n-circle radisu
+* In-circle radius
 
 ```java
 double rInCircle(double ab, double bc, double ca){
