@@ -125,6 +125,8 @@ class Line {
         return areParallel(l1, l2) && Math.abs(l1.c - l2.c) < EPS;
     }
 
+    // X is find by multiply both eq1 by b2 and eq2 by b1 and subtract
+    // Y is find by subsitute an eq with non zero y term.
     static Point areIntersect(Line l1, Line l2){
         if(areParallel(l1, l2)) return null;
         
