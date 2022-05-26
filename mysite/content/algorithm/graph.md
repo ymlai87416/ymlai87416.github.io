@@ -121,9 +121,78 @@ Refer: [UVA10986](https://github.com/ymlai87416/algorithm_practice/blob/master/j
 
 ### Meet in the middle
 
+There are 2 favor, one is BFS from both end, another one is to check the size and decide which 1 to expand
+Try to abstract out BFS data and routine to have clean implementation.
+
 ```java
-//TODO: implement
+//at main
+BFSData[] bfsData = new BFSData[2];
+bfsData[0] = new BFSData(totalWordCnt);
+bfsData[1] = new BFSData(totalWordCnt);
+
+bfsData[0].q.offer(beginWord);
+bfsData[0].distance[idx.get(beginWord)] =0;
+
+bfsData[1].q.offer(endWord);
+bfsData[1].distance[idx.get(endWord)] =0;
+
+
+while(bfsData[0].q.size() > 0 && bfsData[1].q.size() > 0){
+    int mode = 0;
+    if(bfsData[0].q.size() > bfsData[1].q.size())
+        mode = 1;
+    
+    int join = bfs(bfsData[mode], bfsData[1-mode]);
+    if(join != -1)  //we found a join.
+        return bfsData[0].distance[join] + bfsData[1].distance[join]+1;
+}
+
+private int bfs(BFSData primary, BFSData secondary){
+    Queue<String> next = new ArrayDeque<>();
+    while(!primary.q.isEmpty()){
+        String uWord = primary.q.poll();
+        int u = idx.getOrDefault(uWord, -1);
+        
+        if(secondary.distance[u] != -1)
+            return u;
+
+        List<String> keys = generateTransKey(uWord);
+
+        for(String key: keys){
+            List<Integer> kl = lookup.get(key);
+            if(kl == null) continue;
+            for(Integer ki: kl){
+                if(primary.distance[ki] == -1){
+                    next.offer(wordList.get(ki));
+                    primary.distance[ki] = primary.distance[u]+1;
+                }
+            }
+        }
+    }
+    
+    primary.q = next;
+    
+    return -1;
+}
+
+class BFSData{
+    Queue<String> q;
+    int[] distance;
+    List<Integer>[] parent;
+    public BFSData(int n){
+        q = new ArrayDeque<>();
+        distance = new int[n];
+        Arrays.fill(distance, -1);
+        parent = new List[n];
+        Arrays.fill(parent, null);
+    }
+    
+}
 ```
+
+Refer: [Word Ladder](https://leetcode.com/submissions/detail/707622035/)
+
+Refer: [Word Ladder II](https://leetcode.com/submissions/detail/707652350/)
 
 Refer: [UVA11212](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/MoreAdvanceTopic/MeetInTheMiddle_A_IDA/UVA11212.java)
 
