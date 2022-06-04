@@ -5,7 +5,7 @@ But this time, it break many things.
 Current setup I have installed some services on the cluster, and I don&amp;rsquo;t have helm installed.
 Because sometimes I need to edit the yaml before applying it.
 Currently, I have the following software installed:
-ingress-nginx: v0.</description></item><item><title>Kubernetes move from docker to containerd</title><link>https://ymlai87416.github.io/blog/k8s-move-to-containerd/</link><pubDate>Sun, 10 Apr 2022 13:06:20 +0100</pubDate><author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author><guid>https://ymlai87416.github.io/blog/k8s-move-to-containerd/</guid><description>Some good resources.
+ingress-nginx: v0.46 cert-manager: v1.</description></item><item><title>Kubernetes move from docker to containerd</title><link>https://ymlai87416.github.io/blog/k8s-move-to-containerd/</link><pubDate>Sun, 10 Apr 2022 13:06:20 +0100</pubDate><author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author><guid>https://ymlai87416.github.io/blog/k8s-move-to-containerd/</guid><description>Some good resources.
 https://www.youtube.com/watch?v=H7l48VQewmA
 https://kruyt.org/migrate-docker-containerd-kubernetes/
 But never remove docker from your machine!!.
@@ -14,7 +14,8 @@ Seems I am expected to upgrade Kubernetes at least semi-annually, in order to pl
 Kubernetes end of life schedule
 Current setup 3 Raspberry pi as master node. use Keepalived for HA.
 Ubuntu 20.04 LTS (arm), docker version 1.4.4-1, kubernetes version 1.20.5
-1 x86_64 VM node as worker node.</description></item><item><title>3 nodes Kubernetes cluster failed due to cert error</title><link>https://ymlai87416.github.io/blog/multi-node-k8s-failed/</link><pubDate>Sat, 09 Apr 2022 00:00:00 +0800</pubDate><author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author><guid>https://ymlai87416.github.io/blog/multi-node-k8s-failed/</guid><description>1 year before I setup a Kubernetes cluster with 3 master nodes and 1 worker node, and today I got the following error
+1 x86_64 VM node as worker node.
+Ubuntu 20.04 LTS (x86_64), docker version 1.</description></item><item><title>3 nodes Kubernetes cluster failed due to cert error</title><link>https://ymlai87416.github.io/blog/multi-node-k8s-failed/</link><pubDate>Sat, 09 Apr 2022 00:00:00 +0800</pubDate><author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author><guid>https://ymlai87416.github.io/blog/multi-node-k8s-failed/</guid><description>1 year before I setup a Kubernetes cluster with 3 master nodes and 1 worker node, and today I got the following error
 I don&amp;rsquo;t know that all the certs generated only have 1 year lifespan. Document says during update of cluster version should automatically update all the certs, but I don&amp;rsquo;t have the time&amp;hellip;
 1 2 kubectl get pods --all-namespaces kubectl: Unable to connect to the server: x509: certificate has expired or is not yet valid Update process I found the following article.</description></item><item><title>Change in my personal infrastructure</title><link>https://ymlai87416.github.io/blog/change-in-infra/</link><pubDate>Tue, 05 Apr 2022 00:00:00 +0800</pubDate><author>ymlai87416@gmail.com (Lai Yiu Ming, Tom)</author><guid>https://ymlai87416.github.io/blog/change-in-infra/</guid><description>Setup K8S cluster for my use K8S has outperformed my expectation and works really well. I don&amp;rsquo;t need to worry about dying computers anymore. If I think the project is OK and provides a stable income on it&amp;rsquo;s own. I just simply migrate to Google cloud provider.
 The setup involved 3 Raspberry PI (3 master in ARM) and 1 intel NUC (x86).

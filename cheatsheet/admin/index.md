@@ -58,6 +58,51 @@ ALTER TABLE Persons
 ADD PRIMARY KEY (name);
 ```
 
+### Redis
+
+```bash
+# connect to redis server
+redis-cli
+keys *
+del abc
+get abc
+set abc "hello"
+```
+
+
+### Zookeeper
+
+```bash
+# connect to zookeeper server
+zkCli -server localhost:22181
+[zk: localhost:22181(CONNECTED) 0] ls /
+[admin, brokers, cluster, config, consumers, controller, controller_epoch, feature, isr_change_notification, latest_producer_id_block, log_dir_event_notification, services, testapp, zookeeper]
+
+get /testapp/application/f89497d9-a0ba-474e-8b4b-6878a700adf6 
+{"name":"application","id":"f89497d9-a0ba-474e-8b4b-6878a700adf6","address":"yiude-mbp","port":8282,"sslPort":null,"payload":{"@class":"org.springframework.cloud.zookeeper.discovery.ZookeeperInstance","id":"application","name":"application","metadata":{"instance_status":"UP"}},"registrationTimeUTC":1654331328914,"serviceType":"DYNAMIC","uriSpec":{"parts":[{"value":"scheme","variable":true},{"value":"://","variable":false},{"value":"address","variable":true},{"value":":","variable":false},{"value":"port","variable":true}]}}
+```
+
+### Kafka
+
+```bash
+# create topic
+kafka-topics --create --topic testapp-wordcount --bootstrap-server kafka:9092
+kafka-console-producer --topic testapp-wordcount --bootstrap-server kafka:9092
+kafka-console-consumer --topic testapp-wordcount --from-beginning --bootstrap-server kafka:9092
+```
+
+### Docker
+
+```bash
+# to a folder with Dockerfile
+DOCKER_BUILDKIT=1 docker build -t ymlai87416/spark-master:3.2.0-hadoop3.2 .
+docker login
+docker push ymlai87416/semi-trade:v0.41
+
+# to a folder with docker-compose.yml
+docker-compose up
+```
+
 ### K8s
 
 #### Basic admin
