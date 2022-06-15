@@ -79,3 +79,18 @@ kubectl patch node k8s-node02 -p '{"spec":{"podCIDR":"10.244.4.0/24"}}'
 # don't know your podcidr?
 kubectl cluster-info dump
 ```
+
+
+## Running helm chart
+
+All the chart are to be downloaded first and modify before deploy.
+
+```
+# download the chart
+helm pull bitnami/mysql --untar=true
+
+# add myvalue.yml for customerization
+
+# install the chart
+helm install my-release ./xxxxxx
+```

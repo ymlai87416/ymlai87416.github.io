@@ -101,6 +101,9 @@ docker push ymlai87416/semi-trade:v0.41
 
 # to a folder with docker-compose.yml
 docker-compose up
+
+# copy file to docker machine
+docker cp  CONTAINER:SRC_PATH DEST_PATH|
 ```
 
 ### K8s
