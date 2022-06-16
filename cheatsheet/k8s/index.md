@@ -17,6 +17,12 @@ Find the token for login k8s console
 kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"
 ```
 
+Remove all dead port
+
+```bash
+kubectl get pods --no-headers=true | awk '/replicator/{print $1}'| xargs  kubectl delete pod
+```
+
 ## Cert manager
 
 Cert manager automatically renew.
@@ -85,12 +91,20 @@ kubectl cluster-info dump
 
 All the chart are to be downloaded first and modify before deploy.
 
-```
+```bash
 # download the chart
 helm pull bitnami/mysql --untar=true
 
 # add myvalue.yml for customerization
 
-# install the chart
-helm install my-release ./xxxxxx
+# generate the yaml
+helm install my-release ./xxxxxx --values=./xxx/myvalue.yaml
+
+# generate the yaml
+helm template monitoring ./xxxxxx --values=./xxx/myvalue.yaml > ./xxx/stack.yaml
+
+# install the yaml
+k8s apply -f ./xxx/stack.yaml
 ```
+
+
