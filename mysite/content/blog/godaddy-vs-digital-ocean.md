@@ -1,7 +1,7 @@
 ---
 title: "Godaddy vs Digital Ocean"
 date: 2016-10-02T00:00:00+08:00
-draft: true
+draft: false
 tags: ["computer science", "infrastructure"]
 ---
 

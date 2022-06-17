@@ -1,7 +1,7 @@
 ---
 title: "Finish Kaggle titanic with over 80%"
 date: 2017-07-16T00:00:00+08:00
-draft: true
+draft: false
 tags: ["computer science", "artificial intelligence"]
 ---
 
