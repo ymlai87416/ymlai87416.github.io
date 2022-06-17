@@ -24,10 +24,23 @@ sudo apt upgrade
 
 ### Setup VM and make it start automatically
 
+Please refer to this cheatsheet
+
 ```bash
 ## install virt-manager, it can connect to remote vm server
 virt-manager
 virsh autostart vmName
+
+virsh list
+virsh dominfo k8s-node01
+virsh nodeinfo
+```
+
+### Expand LVM volume
+
+```bash
+# ubuntu default only use half of the volume
+
 ```
 
 ### MySQL
