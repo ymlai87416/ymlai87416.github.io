@@ -50,6 +50,10 @@ Better than DP.
 
 Refer: [Wildcard Matching](https://leetcode.com/submissions/detail/230018120/)
 
+While regular expression matching require 'a*b*' which need dynamic progamming. O(n^m)
+
+Refer: [Regular Expression Matching](https://leetcode.com/submissions/detail/225403507/)
+
 ## Minimum edit distance
 
 Operation include: insert, delete, replace

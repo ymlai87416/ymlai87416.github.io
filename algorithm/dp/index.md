@@ -3,6 +3,15 @@
 
 # Dynamic programming
 
+## Type
+
+* Get idea by recursion
+
+* Get idea by growing
+
+
+
+
 ## Longest increasing subsequence
 
 Very classic algorithm. 
@@ -10,6 +19,15 @@ Time complexity: O(nlog(n))
 Space complexity: O(n)
 
 Refer: [Longest Increasing Subsequence](https://leetcode.com/submissions/detail/690868527/)
+
+In real life, it is much easier to fix the O(n^2) algorithm
+
+```
+L(i) = 1 + max( L(j) ) where 0 < j < i and arr[j] < arr[i]; or
+L(i) = 1, if no such j exists.
+```
+
+Refer to: [2311. Longest Binary Subsequence Less Than or Equal to K](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/discuss/2168203/LIS-or-Longest-Increasing-Subsequence-Logic)
 
 ## Travelling salesman
 

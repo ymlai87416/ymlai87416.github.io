@@ -79,7 +79,9 @@ def main():
         traceback.print_exception(*sys.exc_info()) 
 
 if __name__ == '__main__':
-    main()  # 或是任何你想執行的函式
+  print 'Number of arguments:', len(sys.argv), 'arguments.'
+  print 'Argument List:', str(sys.argv)
+  main()  # 或是任何你想執行的函式
 ```
 
 
@@ -431,9 +433,9 @@ myfile.write(mydata)
 import json
 
 data = [ { 'a' : 1, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ]
-data2 = json.dumps(data)
+data2 = json.dumps(data)  # beware of dump(), which write to file.
 
-jsonData = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
+jsonData = '{"a":1,"b":2,"c":3,"d":4,"e":5}'
 text = json.loads(jsonData)
 print(text)   # {u'a': 1, u'c': 3, u'b': 2, u'e': 5, u'd': 4}
 
