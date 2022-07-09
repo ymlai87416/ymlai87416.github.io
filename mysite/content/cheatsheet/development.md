@@ -24,8 +24,15 @@ mvn clean install -DskipTests
 java -cp myjar.jar com.mypackage.myClass
 ```
 
-### Git
+### Python
 
+```
+# Setup conda
+conda create --name system_design python=3.9
+# List conda
+```
+
+### Git
 
 ```bash
 # add a new git branch and checkout

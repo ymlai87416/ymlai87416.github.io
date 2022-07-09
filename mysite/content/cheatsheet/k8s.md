@@ -114,3 +114,26 @@ helm template monitoring ./xxxxxx --values=./xxx/myvalue.yaml > ./xxx/stack.yaml
 k8s apply -f ./xxx/stack.yaml
 ```
 
+## Create a service account
+
+```bash
+kubectl create role spark-submitter --verb=get --verb=list --verb=create --verb=delete --resource=sparkapplications.sparkoperator.k8s.io --namespace=spark-operator
+
+kubectl create sa spark-submitter-sa -n spark-operator
+
+kubectl create rolebinding spark-submitter-binding --role=spark-submitter --serviceaccount=spark-operator:spark-submitter-sa -n spark-operator
+
+# can across different namespaces
+kubectl create rolebinding spark-submitter-binding2 --role=spark-submitter --serviceaccount=system-design:spark-submitter-sa -n spark-operator
+```
+
+## Calling from pod
+
+```bash
+token=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+
+curl -v --cacert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_PORT_443_TCP_PORT/apis/sparkoperator.k8s.io/v1beta2/namespaces/spark-operator/sparkapplications/spark-pi
+
+
+curl -v --cacert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_PORT_443_TCP_PORT/apis/sparkoperator.k8s.io/v1beta2/namespaces/spark-operator/sparkapplications?limit=500
+```
