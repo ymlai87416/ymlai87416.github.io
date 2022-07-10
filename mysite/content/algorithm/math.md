@@ -137,6 +137,20 @@ long C(int n, int r) {
 
     return ans;
 }
+
+//This impl have modulo, no restriction
+long C(int n, int r, int mod) {
+    if(r > n - r) r = n - r; // because C(n, r) == C(n, n - r)
+    long ans = 1;
+    int i;
+
+    for(i = 1; i <= r; i++) {
+        long v = (1L * (n - r + i) * multipicativeInv(i, modulo)) % modulo;
+        ans = (ans * v) % modulo;
+    }
+
+    return ans;
+}
 ```
 
 ### nPr
@@ -284,6 +298,20 @@ private void helper2(int n, int k, int nmax, Stack<Integer> cur, List<List<Integ
 
 Refer: [Combinations](https://leetcode.com/submissions/detail/230498519/)
 
+### Star and stick
+
+[Wiki](https://en.wikipedia.org/wiki/Stars_and_bars_(combinatorics))
+
+T1: For any pair of positive integers n and k, the number of k-tuples of positive integers whose sum is n is equal to the number of (k − 1)-element subsets of a set with n − 1 elements.
+
+$\binom{n-1}{k-1}$
+
+T2: For any pair of positive integers n and k, the number of k-tuples of non-negative integers whose sum is n is equal to the number of multisets of cardinality k − 1 taken from a set of size n + 1.
+
+$\binom{n+k-1}{k-1}$
+
+Refer:[Count the Number of Ideal Arrays](https://leetcode.com/submissions/detail/743329843/)
+
 ## Base / Radix
 
 - Read
@@ -315,8 +343,8 @@ System.out.println(x.modPow(y, n));
 ### Multiplicative inverse
 
 ```java
-var num = new BigInteger("7");
-var mod = new BigInteger("20");
+var num = BigInteger.valueOf(7);
+var mod = BigInteger.valueOf(20);
 BigInteger inverse = num.modInverse(mod);
 ```
 
