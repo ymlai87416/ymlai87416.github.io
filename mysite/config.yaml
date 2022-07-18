@@ -86,7 +86,7 @@ languages:
           gravatarEmail: ''
           avatarURL: /images/avatar.jpg
           title: ''
-          subtitle: 'Tom personl web site'
+          subtitle: 'Tom personal web site'
           typeit: true
           social: true
           disclaimer: ''
@@ -97,7 +97,7 @@ languages:
         GitHub: ymlai87416
         Linkedin: lai-yiu-ming-a586b83b
         Twitter: ymlai87416
-        Instagram: ymlai87416
+        Instagram: ''
         Facebook: ''
         Telegram: ''
         Medium: ''
@@ -145,7 +145,7 @@ languages:
         Deviantart: ''
         Behance: ''
         Dribbble: ''
-        Wordpress: https://www.ymlai87416.com
+        Wordpress: ''
         Vine: ''
         Googlescholar: ''
         Researchgate: ''
