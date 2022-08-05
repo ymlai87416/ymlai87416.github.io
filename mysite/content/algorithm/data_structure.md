@@ -195,18 +195,48 @@ Memory: O(n) - less memory compare to segment tree
 
 ```java
 class FenwickTree {
-    private int[] ft; // recall that vi is: typedef vector<int> vi;
-    public FenwickTree(int n) { ft = new int[n+1]; } // init n + 1 zeroes
+    private int[] ft; 
+    private int[] nums;
+    
+    //0 is not used, please traslate index to 1-index
+    public FenwickTree(int n) {
+        ft = new int[n+1];
+        this.nums = new int[n];
+    } 
+    public FenwickTree(int[] nums){
+        ft = new int[nums.length+1];
+        this.nums = nums;
+        for(int i=0; i<nums.length; ++i)
+            _adjust(i+1, nums[i]);
+    }
+    
+    //0 base function
+    void update(int k, int v){
+        int diff = v - nums[k];
+        _adjust(k+1, diff);
+        nums[k] = v;
+    }
+    
+    int rsq(int a, int b){
+        return _rsq(a+1, b+1);
+    }
+    
     private int LSOne(int S){ return S & -S;}
-    int rsq(int b) { // returns RSQ(1, b)
+    //1 base function
+    int _rsq(int b) { 
         int sum = 0; for (; b != 0; b -= LSOne(b)) sum += ft[b];
-        return sum; } // note: LSOne(S) (S & (-S))
-    int rsq(int a, int b) { // returns RSQ(a, b)
-        return rsq(b) - (a == 1 ? 0 : rsq(a - 1)); }
-    // adjusts value of the k-th element by v (v can be +ve/inc or -ve/dec)
-    void adjust(int k, int v) { // note: n = ft.size() - 1
-        for (; k < ft.length; k += LSOne(k)) ft[k] += v; }
+        return sum; 
+    }
+    
+    int _rsq(int a, int b) { 
+        return _rsq(b) - (a == 1 ? 0 : _rsq(a - 1)); 
+    }
+    
+    void _adjust(int k, int v) { 
+        for (; k < ft.length; k += LSOne(k)) ft[k] += v; 
+    }
 };
+
 ```
 
 Refer to [UVA12086](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA12086.java)
