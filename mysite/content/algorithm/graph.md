@@ -251,6 +251,8 @@ Connected component: do a dfs from each vertex, the visited components are the c
 
 or we can do a union find
 
+
+
 ## Strongly connected component
 
 Time complexity: O(|V|+|E|).
@@ -526,6 +528,7 @@ void printPath(int i, int j) {
 ## Articulation point and bridges
 
 Time complexity: O(V + E)
+The idea is to find loop in undirected graph.
 
 ```java
 int dfsNumberCounter = 0;
@@ -561,6 +564,8 @@ void articulationPointAndBridge(int u) {
     }
 }
 ```
+
+Reference: [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)
 
 Refer: [UVA10765](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/ArticulationPoints/UVA10765.java)
 
