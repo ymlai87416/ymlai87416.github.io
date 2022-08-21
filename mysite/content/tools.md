@@ -16,6 +16,8 @@ draft: false
 
 [Algorithm notes](../algorithm/)
 
+[Opensource notes](../opensource/)
+
 ## Development tools
 
 [Development tools](../mytool/)
