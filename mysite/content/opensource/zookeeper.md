@@ -36,7 +36,7 @@ etcd is used by kubernetes for the same purpose
 
 ## Data structure
 
-(ZooKeeper （四） 源码剖析：数据模型和存储)[https://juejin.cn/post/6844904163646652430]
+[ZooKeeper （四） 源码剖析：数据模型和存储](https://juejin.cn/post/6844904163646652430)
 
 - [ ] [ZKDatabase](https://github.com/apache/zookeeper/tree/master/zookeeper-server/src/main/java/org/apache/zookeeper/server/ZKDatabase.java)
 
@@ -50,7 +50,7 @@ etcd is used by kubernetes for the same purpose
 
 ## Network
 
-(ZooKeeper （三）源码剖析: 服务端网络连接层 NIO)[https://juejin.cn/post/6844904159167283213]
+[ZooKeeper （三）源码剖析: 服务端网络连接层 NIO](https://juejin.cn/post/6844904159167283213O)
 
 NIO Mechanism: [NIOServerCnxnFactory.java](https://github.com/apache/zookeeper/blob/master/zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxnFactory.java)
 
