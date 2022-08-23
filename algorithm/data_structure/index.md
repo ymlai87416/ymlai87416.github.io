@@ -166,8 +166,92 @@ Refer to: [UVA11402](https://github.com/ymlai87416/algorithm_practice/blob/maste
 
 Shortcut: ds.st2d
 
+```java
+class SegmentTree2D{
+    int N;
+    int M;
+    int[][] A;
+    SegmentTree[] st;
+    final int INVALID = Integer.MIN_VALUE;
+    
+    public SegmentTree2D(int M, int N, int[][] A){
+        this.N = N;
+        this.M = M;
+        this.A = A;
+        st = new SegmentTree[M*4];
+        
+        build(1, 0, M-1);
+    }
+    
+    private int left(int i){ return 2*i; }
+    private int right(int i) { return 2*i+1; }
+    
+    private void mergeTree(SegmentTree dst, SegmentTree l, SegmentTree r){
+        for(int i=0; i<4*N; ++i)
+            dst.st[i] = l.st[i] + r.st[i];
+    }
+    
+    public void build(int p, int L, int R){
+        if(L == R){
+            st[p] = new SegmentTree(N, A[L]);
+        }
+        else{
+            int mid = (L+R)/2;
+            build(left(p), L, mid);
+            build(right(p), mid+1, R);
+            st[p] = new SegmentTree(N);
+            mergeTree(st[p], st[left(p)], st[right(p)]);
+        }
+    }
+    
+    public int rmq(int p, int Lx, int Rx, int Ly, int Ry, int lx, int rx, int ly, int ry){
+        if(rx < Lx || lx > Rx){
+            return INVALID;
+        }
+        else if(lx <= Lx && Rx <= rx){
+            //now get the segment tree
+            //System.out.println("D " + st[p].rmq(1, Ly, Ry, ly, ry));
+            return st[p].rmq(1, Ly, Ry, ly, ry);
+        }
+        else{
+            int mid = (Lx+Rx)/2;
+            int l = rmq(left(p), Lx, mid, Ly, Ry, lx, rx, ly, ry);
+            int r = rmq(right(p), mid+1, Rx, Ly, Ry, lx, rx, ly, ry);
+            
+            if(l == INVALID) return r;
+            if(r == INVALID) return l;
+            return l+r;
+        }
+    }
+    
+    public void update(int p, int Lx, int Rx, int Ly, int Ry, int ix, int iy, int v){
+        if(Lx == Rx){
+            st[p].update(1, Ly, Ry, iy, v);
+        }
+        else{
+            int mid = (Lx+Rx)/2;
+            if(Lx <=ix && ix <= mid)
+                update(left(p), Lx, mid, Ly, Ry, ix, iy, v);
+            else if(mid+1 <= ix && ix <= Rx)
+                update(right(p), mid+1, Rx, Ly, Ry, ix, iy, v);
+            
+            mergeTree(st[p], st[left(p)], st[right(p)]);
+        }
+    }
+    
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<4*M; ++i){
+            if(st[i] != null)
+                sb.append(i+ ": " + st[i] + "\n");
+        }
+        
+        return sb.toString();
+    }
+}
 ```
-```
+
+Refer to: [308. Range Sum Query 2D - Mutable](https://leetcode.com/submissions/detail/780782444/)
 
 Refer to: [UVA11297](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA11297.java)
 
