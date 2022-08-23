@@ -314,6 +314,57 @@ class FenwickTree {
 
 Refer to [UVA12086](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA12086.java)
 
+## 2D Fenwick tree
+
+```java
+class BIT2D{
+    int M;
+    int N;
+    BIT[] ft;
+    private int lsb(int x){return x & (-x); }
+    
+    public BIT2D(int M, int N, int[][] A){
+        this.M = M;
+        this.N = N;
+        ft = new BIT[M+1];
+        for(int i=0; i<=M; ++i)
+            ft[i] = new BIT(N);
+        
+        for(int i=1; i<=M; ++i){
+            for(int j=1; j<=N; ++j)
+                adjust(i, j, A[i-1][j-1]);
+        }
+    }
+    
+    public void adjust(int i, int j, int v){
+        for(; i<=M; i+=lsb(i)){
+            ft[i].adjust(j, v);
+        }
+    }
+    
+    public int rsq(int ax, int ay, int bx, int by){
+        return rsq(ay, bx, by) - rsq(ax-1, bx, by);
+    }
+    
+    public int rsq(int a, int bx, int by){
+        int sum = 0;
+        for(; a>0; a-=lsb(a))
+            sum += ft[a].rsq(bx, by);
+        return sum;
+    }
+    
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        
+        for(int i=1; i<=M; ++i)
+            sb.append(i + ": " + ft[i] + "\n");
+        return sb.toString();
+    }
+}
+```
+
+Refer to [Range Sum Query 2D - Mutable](https://leetcode.com/submissions/detail/781071691/)
+
 ## Heap
 
 Not much used, can be replaced by PriorityQueue in most setting.
