@@ -120,4 +120,141 @@ Refer: [Longest Duplicate Substring](https://leetcode.com/submissions/detail/696
 The top-right or left-bottom corner search approach is O(sqrt(K)) search algorithm on the linear version. 
 Time complexity: O(M+N)
 
+## Binary search tree
 
+```java
+//TODO: to be completed
+```
+
+## Searching on K-dimension
+
+This is the extension of BST in higher dimension
+
+```java
+class KDTree{
+    int[][] points;
+    Node root;
+    int dimension;
+    int N;
+    Random r;
+    
+    public KDTree(int dimension){
+        this.dimension = dimension;
+    }
+    
+    public void add(int[] point){
+        root = addHelper(point, root, 0);
+    }
+    
+    public Node addHelper(int[] point, Node cur, int lvl){
+        if(cur == null)
+            return new Node(point, lvl % dimension);
+        if(point[cur.dim] < cur.value[cur.dim] ){
+            cur.left = addHelper(point, cur.left, lvl+1);
+        }
+        else{
+            cur.right = addHelper(point, cur.right, lvl+1);
+        }
+        
+        return cur;
+    }
+    
+    //how to find k nearest
+    PriorityQueue<Tuple> pq;
+    int k = -1;
+    public int[][] kNearestPoint(int[] point, int k){
+        pq = new PriorityQueue<>();
+        this.k = k;
+        
+        kNearestPointHelper(point, root);
+        
+        int[][] result = new int[k][];
+        for(int i=0; i<k; ++i)
+            result[i] = pq.poll().point;
+        
+        return result;
+    }
+    
+    public void kNearestPointHelper(int[] point, Node curr){
+        
+        if(curr == null) return;
+        //System.out.println("T: " + curr.value[0] + "," + curr.value[1]);
+        
+        int cv = point[curr.dim];
+        //find the dist between root.
+        long curDist = dist(point, curr.value);
+        if(pq.size() < k){
+            pq.offer(new Tuple(curDist, curr.value) );
+        }
+        else if(pq.peek().dist > curDist){
+            pq.poll();
+            pq.offer(new Tuple(curDist, curr.value) );
+        }
+        
+        if(cv >= curr.value[curr.dim]){
+            kNearestPointHelper(point, curr.right);
+            
+            //traverse also left?
+            long distBoundBoxOther = point[curr.dim] - curr.value[curr.dim];
+            distBoundBoxOther = distBoundBoxOther * distBoundBoxOther;
+            
+            if(pq.size() < k || distBoundBoxOther < pq.peek().dist ){
+                kNearestPointHelper(point, curr.left);
+            }
+        }
+        else {
+            kNearestPointHelper(point, curr.left);
+            
+            //traverse also left?
+            long distBoundBoxOther = point[curr.dim] - curr.value[curr.dim];
+            distBoundBoxOther = distBoundBoxOther * distBoundBoxOther;
+            
+            if(pq.size() < k || distBoundBoxOther < pq.peek().dist ){
+                kNearestPointHelper(point, curr.right);
+            }
+        }
+        
+    }
+    
+    private long dist(int[] pt1, int[] pt2){
+        long diffX = pt1[0] -pt2[0];
+        long diffY = pt1[1] -pt2[1];
+        return diffX * diffX + diffY * diffY;
+    }
+
+}
+
+class Node{
+    public int[] value;
+    public int dim;
+    public Node left;
+    public Node right;
+    
+    public Node(int[] v, int d){
+        value = v;
+        dim = d;
+    }
+}
+
+class Tuple implements Comparable<Tuple>{
+    public long dist;
+    public int[] point;
+    
+    public Tuple(long d, int[] p){
+        dist = d;
+        point = p;
+    }
+    
+    public int compareTo(Tuple t){
+        if(dist == t.dist)
+            return 0;
+        else if(dist < t.dist) return 1;
+        else return -1;
+    }
+}
+
+```
+
+Reference:
+[K Closest Points to Origin](https://leetcode.com/submissions/detail/790663659/)
+[Queries on Number of Points Inside a Circle](https://leetcode.com/submissions/detail/790694277/)
