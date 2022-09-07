@@ -910,7 +910,10 @@ Time complexity: O(E*sqrt(V))
 ```
 
 
-Refer: [Maximum Number of Accepted Invitations]()
+Refer: [Maximum Number of Accepted Invitations](https://leetcode.com/submissions/detail/792011785/)
+
+K
+
 
 ### Weighted MCBM
 
