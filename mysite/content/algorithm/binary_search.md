@@ -114,6 +114,45 @@ while(low < high){
 
 Refer: [Longest Duplicate Substring](https://leetcode.com/submissions/detail/696974797/)
 
+## Binary search using library function
+
+```java
+//exact value, just use the binarySearch and check for pos is positive.
+
+private int searchGEq(long[] arr, int start, int end, long value){
+    int pos = Arrays.binarySearch(arr, start, end, value);
+    
+    if(pos >=0){
+        //ensure it is the leftmost  [value, ..)
+        while(pos-1 >=start && arr[pos-1] == value) --pos;
+        
+        return pos;
+    }
+    else{
+        //this is the insert position
+        // 0 1 3, search for 2, I want to return 3
+        //     ^
+        return -(pos+1);
+    }
+}
+
+private int searchLEq(long[] arr, int start, int end, long value){
+    int pos = Arrays.binarySearch(arr, start, end, value);
+    
+    if(pos >=0){
+        //ensure it is the rightmost  (... value]
+        while(pos+1 < end && arr[pos+1] == value) ++pos;
+        
+        return pos;
+    }
+    else{
+        // 0 1 3, search for 2, I want to return 1
+        //     ^
+        return -(pos+1)-1;
+    }
+}
+```
+
 
 ## Searching in sorted 2D array
 
