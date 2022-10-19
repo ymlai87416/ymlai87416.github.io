@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://ymlai87416.github.io/sitemap.xml
+Sitemap: https://www.ymlai87416.com/sitemap.xml
