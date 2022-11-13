@@ -1,0 +1,514 @@
+<!doctype html><html lang=zh><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>Elastic search - Tom personal site</title><meta name=Description content="Tom personal web site"><meta property="og:title" content="Elastic search"><meta property="og:description" content="Elastic search Index Create 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 # create an index PUT http://127.0.0.1:9200/shopping # create an index with mapping PUT http://127.0.0.1:9200/user/_mapping { &#34;properties&#34;:{ &#34;name&#34;: { &#34;type&#34;: &#34;text&#34;, &#34;index&#34;: true //depends on the 分詞 }, &#34;sex&#34;: { &#34;type&#34;: &#34;keyword&#34;, &#34;index&#34;: true //can only match as keyword }, &#34;tel&#34;: { &#34;type&#34;: &#34;keyword&#34;, &#34;index&#34;:"><meta property="og:type" content="article"><meta property="og:url" content="https://www.ymlai87416.com/cheatsheet/elasticsearch/"><meta property="og:image" content="https://www.ymlai87416.com/logo.png"><meta property="article:section" content="cheatsheet"><meta property="article:published_time" content="2022-11-13T00:00:00+00:00"><meta property="article:modified_time" content="2022-11-13T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://www.ymlai87416.com/logo.png"><meta name=twitter:title content="Elastic search"><meta name=twitter:description content="Elastic search Index Create 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 # create an index PUT http://127.0.0.1:9200/shopping # create an index with mapping PUT http://127.0.0.1:9200/user/_mapping { &#34;properties&#34;:{ &#34;name&#34;: { &#34;type&#34;: &#34;text&#34;, &#34;index&#34;: true //depends on the 分詞 }, &#34;sex&#34;: { &#34;type&#34;: &#34;keyword&#34;, &#34;index&#34;: true //can only match as keyword }, &#34;tel&#34;: { &#34;type&#34;: &#34;keyword&#34;, &#34;index&#34;:"><meta name=application-name content="Tom personal web site"><meta name=apple-mobile-web-app-title content="Tom personal web site"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://www.ymlai87416.com/cheatsheet/elasticsearch/><link rel=prev href=https://www.ymlai87416.com/cheatsheet/dart/><link rel=next href=https://www.ymlai87416.com/cheatsheet/admin/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Elastic search","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.ymlai87416.com\/cheatsheet\/elasticsearch\/"},"image":["https:\/\/www.ymlai87416.com\/images\/Apple-Devices-Preview.png"],"genre":"cheatsheet","wordcount":751,"url":"https:\/\/www.ymlai87416.com\/cheatsheet\/elasticsearch\/","datePublished":"2022-11-13T00:00:00+00:00","dateModified":"2022-11-13T00:00:00+00:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"Tom","logo":"https:\/\/www.ymlai87416.com\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Tom"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Tom personal site">Tom personal site</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/about/>About </a><a class=menu-item href=/blog/>Blog </a><a class=menu-item href=/cheatsheet/>Cheatsheet </a><a class=menu-item href=/tools/>Tools </a><a class=menu-item href=/link/>Link </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Tom personal site">Tom personal site</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><a class=menu-item href=/about/ title>About</a><a class=menu-item href=/blog/ title>Blog</a><a class=menu-item href=/cheatsheet/ title>Cheatsheet</a><a class=menu-item href=/tools/ title>Tools</a><a class=menu-item href=/link/ title>Link</a><a href=javascript:void(0); class="menu-item theme-switch" title>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title></h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">Elastic search</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Tom</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-11-13>2022-11-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;&nbsp;</div></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span></span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#index>Index</a><ul><li><a href=#create>Create</a></li><li><a href=#delete>Delete</a></li><li><a href=#display>Display</a></li><li><a href=#backup-and-restore>Backup and restore</a></li></ul></li><li><a href=#data>Data</a><ul><li><a href=#create-1>Create</a></li><li><a href=#retrieve>Retrieve</a></li><li><a href=#update>Update</a></li><li><a href=#delete-1>Delete</a></li><li><a href=#search-relavant>Search relavant</a></li></ul></li></ul></nav></div></div><div class=content id=content><h1 id=elastic-search>Elastic search</h1><h2 id=index>Index</h2><h3 id=create>Create</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># create an index</span>
+</span></span><span class=line><span class=cl>PUT http://127.0.0.1:9200/shopping
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># create an index with mapping</span>
+</span></span><span class=line><span class=cl>PUT http://127.0.0.1:9200/user/_mapping
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;properties&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;name&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;type&#34;</span>: <span class=s2>&#34;text&#34;</span>,
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;index&#34;</span>: <span class=nb>true</span>       //depends on the 分詞
+</span></span><span class=line><span class=cl>        <span class=o>}</span>,
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;sex&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;type&#34;</span>: <span class=s2>&#34;keyword&#34;</span>,
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;index&#34;</span>: <span class=nb>true</span>       //can only match as keyword
+</span></span><span class=line><span class=cl>        <span class=o>}</span>,
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;tel&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;type&#34;</span>: <span class=s2>&#34;keyword&#34;</span>,
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;index&#34;</span>: <span class=nb>false</span>      //query will result in exception
+</span></span><span class=line><span class=cl>        <span class=o>}</span>,
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=delete>Delete</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>DELETE /shopping
+</span></span></code></pre></td></tr></table></div></div><h3 id=display>Display</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># show tables</span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/_cat/indicies?v
+</span></span></code></pre></td></tr></table></div></div><h3 id=backup-and-restore>Backup and restore</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># list all the backup snapshot</span>
+</span></span><span class=line><span class=cl>GET _snapshot
+</span></span><span class=line><span class=cl>GET _snapshot/my_repository/*?verbose<span class=o>=</span><span class=nb>false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># backup hourly </span>
+</span></span><span class=line><span class=cl>PUT _slm/policy/hourly-snapshots
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;name&#34;</span>: <span class=s2>&#34;&lt;hourly-snapshot-{now/d}&gt;&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;schedule&#34;</span>: <span class=s2>&#34;0 0 * * * ?&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;repository&#34;</span>: <span class=s2>&#34;my_repository&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;config&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;indices&#34;</span>: <span class=s2>&#34;*&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;include_global_state&#34;</span>: <span class=nb>true</span>
+</span></span><span class=line><span class=cl>  <span class=o>}</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;retention&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;expire_after&#34;</span>: <span class=s2>&#34;1d&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;min_count&#34;</span>: 1,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;max_count&#34;</span>: <span class=m>24</span>
+</span></span><span class=line><span class=cl>  <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># restore indicies</span>
+</span></span><span class=line><span class=cl>POST _snapshot/my_repository/my_snapshot_2099.05.06/_restore
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;indices&#34;</span>: <span class=s2>&#34;my-index,logs-my_app-default&#34;</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>GET _cluster/health
+</span></span></code></pre></td></tr></table></div></div><h2 id=data>Data</h2><h3 id=create-1>Create</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>POST http://127.0.0.1/shopping/_doc
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;title&#34;</span>: <span class=s2>&#34;android phone&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;android&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;images&#34;</span>: <span class=s2>&#34;http://www.image.com/x.jpg&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;price&#34;</span>: 3999,
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=retrieve>Retrieve</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># search by id</span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_doc/1001
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># search all</span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;query&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;match_all&#34;</span>:<span class=o>{</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># search field </span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search?q<span class=o>=</span>category:android
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># where</span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;query&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;match&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;android&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>select field</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>POST my-index-000001/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;query&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;user.id&#34;</span>: <span class=s2>&#34;kimchy&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>  <span class=o>}</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;fields&#34;</span>: <span class=o>[</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;user.id&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;http.response.*&#34;</span>,         
+</span></span><span class=line><span class=cl>    <span class=o>{</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;field&#34;</span>: <span class=s2>&#34;@timestamp&#34;</span>,
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;format&#34;</span>: <span class=s2>&#34;epoch_millis&#34;</span> 
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>  <span class=o>]</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;_source&#34;</span>: <span class=nb>false</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>and+or</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span><span class=lnt>70
+</span><span class=lnt>71
+</span><span class=lnt>72
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># and</span>
+</span></span><span class=line><span class=cl>POST http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;query&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;bool&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;must&#34;</span>: <span class=o>[</span>
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;android&#34;</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>,
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;price&#34;</span>: <span class=m>1999</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>
+</span></span><span class=line><span class=cl>            <span class=o>]</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># or</span>
+</span></span><span class=line><span class=cl>POST http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;query&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;bool&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;should&#34;</span>: <span class=o>[</span>
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;android&#34;</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>,
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;iphone&#34;</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>,
+</span></span><span class=line><span class=cl>            <span class=o>]</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># range query</span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;query&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;bool&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;should&#34;</span>: <span class=o>[</span>
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;android&#34;</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>,
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;iphone&#34;</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>,
+</span></span><span class=line><span class=cl>            <span class=o>]</span>,
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;filter&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;range&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;price&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                        <span class=s2>&#34;gt&#34;</span>: <span class=m>5000</span>
+</span></span><span class=line><span class=cl>                    <span class=o>}</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>
+</span></span><span class=line><span class=cl>            <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># full text</span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;query&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;match_phrase&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;android phone&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>,
+</span></span><span class=line><span class=cl>    <span class=o>}</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;highlight&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;fields&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;category&#34;</span>: <span class=o>{}</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>order by + limit</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;query&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;match_all&#34;</span>:<span class=o>{</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;from&#34;</span>: 0,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;size&#34;</span>: 2,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;sort&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;price&#34;</span>: <span class=o>{</span> <span class=s2>&#34;order&#34;</span>: <span class=s2>&#34;desc&#34;</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>group by + count</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># gropu by</span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;aggs&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;price_group&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;terms&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;field&#34;</span>: <span class=s2>&#34;price&#34;</span>
+</span></span><span class=line><span class=cl>            <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;size&#34;</span>: <span class=m>0</span>  //this will stop returning raw data
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># average</span>
+</span></span><span class=line><span class=cl>GET http://127.0.0.1:9200/shopping/_search
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;aggs&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;price_avg&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;avg&#34;</span>:<span class=o>{</span>
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;field&#34;</span>: <span class=s2>&#34;price&#34;</span>
+</span></span><span class=line><span class=cl>            <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;size&#34;</span>: <span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=update>Update</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># update it from 3999 to 4999</span>
+</span></span><span class=line><span class=cl>PUT http://127.0.0.1/shopping/_doc/1001
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;title&#34;</span>: <span class=s2>&#34;android phone&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;category&#34;</span>: <span class=s2>&#34;android&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;images&#34;</span>: <span class=s2>&#34;http://www.image.com/x.jpg&#34;</span>,
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;price&#34;</span>: 4999,
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># using POST</span>
+</span></span><span class=line><span class=cl>POST http://127.0.0.1/shopping/_update/1001
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;doc&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;title&#34;</span>: <span class=s2>&#34;Google Nexus 7&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=delete-1>Delete</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>DELETE /my-index-000001/_doc/1
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>POST /my-index-000001/_delete_by_query
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;query&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;user.id&#34;</span>: <span class=s2>&#34;elkbee&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>  <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=search-relavant>Search relavant</h3><p>Default boost is 2.2,
+BM25: in absence of an advanced optimization, as {\displaystyle k_{1}\in [1.2,2.0]}k_1 \in [1.2,2.0] and {\displaystyle b=0.75}b = 0.75</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>GET /testscore/_search?explain<span class=o>=</span><span class=nb>true</span>
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;query&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;bool&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=s2>&#34;should&#34;</span>: <span class=o>[</span>
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;title&#34;</span>: <span class=o>{</span> <span class=s2>&#34;query&#34;</span>: <span class=s2>&#34;Hadoop&#34;</span>, <span class=s2>&#34;boost&#34;</span>: <span class=m>1</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>,
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;title&#34;</span>: <span class=o>{</span> <span class=s2>&#34;query&#34;</span>: <span class=s2>&#34;Hive&#34;</span>, <span class=s2>&#34;boost&#34;</span>: <span class=m>1</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>,
+</span></span><span class=line><span class=cl>                <span class=s2>&#34;match&#34;</span>: <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=s2>&#34;title&#34;</span>: <span class=o>{</span> <span class=s2>&#34;query&#34;</span>: <span class=s2>&#34;Spark&#34;</span>, <span class=s2>&#34;boost&#34;</span>: <span class=m>2</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>
+</span></span><span class=line><span class=cl>            <span class=o>]</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span></span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/cheatsheet/elasticsearch/index.md target=_blank></a></span></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()></a></span>&nbsp;|&nbsp;<span><a href=/></a></span></section></div><div class=post-nav><a href=/cheatsheet/dart/ class=prev rel=prev title=Dart><i class="fas fa-angle-left fa-fw"></i>Dart</a>
+<a href=/cheatsheet/admin/ class=next rel=next title="Server admin">Server admin<i class="fas fa-angle-right fa-fw"></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2016 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Lai Yiu Ming, Tom</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title><i class="fas fa-comment fa-fw"></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"",maxShownLines:100},comment:{},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
