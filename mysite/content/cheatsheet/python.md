@@ -621,6 +621,21 @@ date_df['diff_days'] = date_df['Date'].diff().dt.days
 
 Summary from here [Link](https://medium.com/jbennetcodes/how-to-rewrite-your-sql-queries-in-pandas-and-more-149d341fc53e)
 
+
+## Matplotlib
+
+- Draw line
+
+- Overlay
+
+- 
+
+## Conda
+
+
+## venv
+
+
 ## Flask
 
 Useful cheatsheet from Pretty Printed
