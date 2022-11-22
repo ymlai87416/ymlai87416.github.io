@@ -139,9 +139,9 @@ print("The first white-space character is located in position:", x.start())  //N
 ```
 
 
-## Array
+## Data structure
 
-### Basic operation, access of element
+### Array - Basic operation, access of element
 
 ```python
 thislist = ["apple", "banana", "cherry"]
@@ -167,6 +167,26 @@ newlist = [x for x in fruits if "a" in x]
 thislist.sort()
 ```
 
+### Set
+
+```python
+thisset = {"apple", "banana", "cherry"}
+thisset = set(("apple", "banana", "cherry"))
+thisset.add("orange")
+thisset.update(tropical) # or set1.union(set2)
+thisset.remove("banana")
+thisset.discard("banana") # no error
+thisset.clear()
+x.intersection_update(y)  # z = x.intersection(y) return new set
+z = x.symmetric_difference(y)
+```
+
+### Dictionary
+```python
+dict = {}
+# find key in dict
+'a' in dict
+```
 ## Date
 
 ### New date
@@ -567,6 +587,7 @@ print(df)
 cars = ["BMW", "BENZ", "Toyota", "Nissan", "Lexus"]
 select = pd.Series(cars)  
 
+# insert by columns
 groups = ["Movies", "Sports", "Coding", "Fishing", "Dancing", "cooking"]  
 num = [46, 8, 12, 12, 6, 58]
 
@@ -575,6 +596,10 @@ dict = {"groups": groups,
        }
 
 select_df = pd.DataFrame(dict)
+
+# insert by row
+df = pd.DataFrame(columns = ['group', 'num'])
+df = df.append({'group' : 'Movies', 'num' : 46}, ignore_index = True)
 
 out_df = select_df[select_df.loc[:,"num"] > 10] # 選出人數超過 10 的群組  
 
@@ -632,6 +657,28 @@ Summary from here [Link](https://medium.com/jbennetcodes/how-to-rewrite-your-sql
 
 ## Conda
 
+```bash
+# create env
+conda create --name myenv python=3.9
+conda env create -f environment.yml
+
+# sample
+conda env list
+conda activate myenv
+
+# delete env
+conda remove --name myenv --all
+```
+
+```yaml
+name: env-name
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - codecov
+```
 
 ## venv
 
