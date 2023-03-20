@@ -24,6 +24,10 @@ class ToolList extends Component {
                 title: 'Table format to insert SQL',
                 path: '#/table2SQL',
             },
+            {
+                title: 'Kelly calculator',
+                path: '#/kelly',
+            },
          ];
         this.setState({tools: arr})
     }
