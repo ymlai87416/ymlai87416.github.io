@@ -56,7 +56,7 @@ function App() {
         dbDispatch({type: "fetch_error", value: err})
       })
 
-  });
+  }, []);
 
   return (
     <DBContext.Provider value ={{ state: db, dispatch: dbDispatch}} >
