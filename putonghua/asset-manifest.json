@@ -1,22 +1,13 @@
 {
   "files": {
-    "main.css": "/putonghua/static/css/main.d1b05096.chunk.css",
-    "main.js": "/putonghua/static/js/main.3ebd462b.chunk.js",
-    "main.js.map": "/putonghua/static/js/main.3ebd462b.chunk.js.map",
-    "runtime-main.js": "/putonghua/static/js/runtime-main.d84ba5ed.js",
-    "runtime-main.js.map": "/putonghua/static/js/runtime-main.d84ba5ed.js.map",
-    "static/js/2.8d4b94fe.chunk.js": "/putonghua/static/js/2.8d4b94fe.chunk.js",
-    "static/js/2.8d4b94fe.chunk.js.map": "/putonghua/static/js/2.8d4b94fe.chunk.js.map",
+    "main.css": "/putonghua/static/css/main.073c9b0a.css",
+    "main.js": "/putonghua/static/js/main.935d43f0.js",
     "index.html": "/putonghua/index.html",
-    "precache-manifest.57774e51104c43c7fa94b1a9cc16e5a7.js": "/putonghua/precache-manifest.57774e51104c43c7fa94b1a9cc16e5a7.js",
-    "service-worker.js": "/putonghua/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/putonghua/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.8d4b94fe.chunk.js.LICENSE.txt": "/putonghua/static/js/2.8d4b94fe.chunk.js.LICENSE.txt"
+    "main.073c9b0a.css.map": "/putonghua/static/css/main.073c9b0a.css.map",
+    "main.935d43f0.js.map": "/putonghua/static/js/main.935d43f0.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.d84ba5ed.js",
-    "static/js/2.8d4b94fe.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.3ebd462b.chunk.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.935d43f0.js"
   ]
 }
