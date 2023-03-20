@@ -7,6 +7,7 @@ import ToolList from './components/ToolList.js'
 import Dec2BinTool from './components/Dec2BinTool'
 import ReverseStr from './components/ReverseStr'
 import MultiLine from './components/MultiLine'
+import Kelly from './components/Kelly'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/dec2bin" component={Dec2BinTool} />
         <Route path="/reverseStr" component={ReverseStr} />
         <Route path="/multiLine" component={MultiLine} />
+        <Route path="/kelly" component={Kelly} />
       </div>
     </HashRouter>
   );

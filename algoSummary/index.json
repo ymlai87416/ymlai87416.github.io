@@ -1,0 +1,1270 @@
+[{
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/BitManipulation/UVA10264.java",
+        "topics": ["bit_manipulation", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/BitManipulation/UVA11926.java",
+        "topics": ["bit_manipulation", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/BitManipulation/UVA11933.java",
+        "topics": ["bit_manipulation", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/GraphDataStructure/UVA10895.java",
+        "topics": ["Lv3", "UVA", "graph"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/GraphDataStructure/UVA11991.java",
+        "topics": ["Lv2", "UVA", "graph", "skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/GraphDataStructure/UVA599.java",
+        "topics": ["Lv2", "UVA", "graph"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaPriorityQueue/UVA10954.java",
+        "topics": ["Lv1", "UVA", "priority_queue"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaPriorityQueue/UVA11995.java",
+        "topics": ["Lv2", "UVA", "priority_queue"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaPriorityQueue/UVA1203.java",
+        "topics": ["Lv2", "UVA", "priority_queue"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaQueueAndDeque/UVA10901.java",
+        "topics": ["Lv3", "queue", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaQueueAndDeque/UVA11034.java",
+        "topics": ["Lv2", "queue", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaTreeMap/UVA10226.java",
+        "topics": ["Lv1", "treeMap", "bst", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaTreeMap/UVA11286.java",
+        "topics": ["Lv2", "hash_table", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaTreeMap/UVA11572.java",
+        "topics": ["Lv2", "hash_table", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaTreeSet/UVA11136.java",
+        "topics": ["Lv2", "UVA", "bst", "tree_map"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaTreeSet/UVA11849.java",
+        "topics": ["hash_table", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/JavaTreeSet/UVA978.java",
+        "topics": ["Lv3", "UVA", "bst", "tree_map"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/LinkedList/UVA11988.java",
+        "topics": ["Lv1", "linked_list", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/OneDArrayManipulation/UVA11340.java",
+        "topics": ["array", "Lv1", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/OneDArrayManipulation/UVA12356.java",
+        "topics": ["skip", "UVA", "array", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/Stack/UVA1062.java",
+        "topics": ["stack", "greedy", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/Stack/UVA732.java",
+        "topics": ["stack", "Lv3", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA11235.java",
+        "topics": ["segmentTree", "rmq", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA11297.java",
+        "topics": ["quadtree", "segmentTree", "segmentTree2D", "UVA", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA11402.java",
+        "topics": ["segmentTree", "segmentTreeLazyUpdate", "Lv3", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA12086.java",
+        "topics": ["fenwickTree", "rmq", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA1232.java",
+        "topics": ["segmentTree", "segmentTreeLazyUpdate", "Lv4", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA12532.java",
+        "topics": ["segmentTree", "rmq", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA297.java",
+        "topics": ["quadtree", "tree", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TwoDArrayManipulation/UVA10855.java",
+        "topics": ["array_2d", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TwoDArrayManipulation/UVA10920.java",
+        "topics": ["array_2d", "Lv3", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/UnionFind/UVA11503.java",
+        "topics": ["union_find", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Circles/UVA10005.java",
+        "topics": ["circle", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Circles/UVA10589.java",
+        "topics": ["circle", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/PointsAndLines/UVA10263.java",
+        "topics": ["UVA", "lines", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/PointsAndLines/UVA10927.java",
+        "topics": ["UVA", "points", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/PointsAndLines/UVA920.java",
+        "topics": ["UVA", "points", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Polygon/UVA10652.java",
+        "topics": ["polygon", "UVA", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Polygon/UVA1111.java",
+        "topics": ["polygon", "UVA", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Polygon/UVA11265.java",
+        "topics": ["UVA", "polygon", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Quadrilaterals/UVA11207.java",
+        "topics": ["Lv3", "quadrilaterals", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Quadrilaterals/UVA11834.java",
+        "topics": ["Lv4", "quadrilaterals", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Quadrilaterals/UVA460.java",
+        "topics": ["Lv3", "quadrilaterals", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/ThreeDObjects/UVA737.java",
+        "topics": ["3d_geometry", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/ThreeDObjects/UVA815.java",
+        "topics": ["UVA", "3d_geometry", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Triangle/UVA10577.java",
+        "topics": ["Lv4", "triangles", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Triangle/UVA11152.java",
+        "topics": ["Lv2", "triangles", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Geometry/Triangle/UVA11909.java",
+        "topics": ["Lv3", "triangles", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/GoogleCodeJam/Y2008/Round1A/A/Solution.java",
+        "topics": ["Adhoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/GoogleCodeJam/Y2008/Round1A/B/Solution.java",
+        "topics": ["MatrixMuliplication", "FibonacciSequence"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/GoogleCodeJam/Y2008/Round1A/C/Solution.java",
+        "topics": ["Satisfiability"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/GoogleCodeJam/Y2008/Round1B/A/Solution.java",
+        "topics": ["Combination"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/GoogleCodeJam/Y2008/Round1B/B/Solution.java",
+        "topics": ["UnionFind"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/GoogleCodeJam/Y2008/Round1B/C/Solution.java",
+        "topics": ["SquareRootDecomposition", "JosephusProblem"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/AllPairShortestPathStandard/UVA11463.java",
+        "topics": ["all_pair_shortest_path", "floyd", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/AllPairShortestPathStandard/UVA821.java",
+        "topics": ["all_pair_shortest_path", "floyd", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/AllPairShortestPathVariants/UVA104.java",
+        "topics": ["all_pair_shortest_path", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/AllPairShortestPathVariants/UVA1056.java",
+        "topics": ["all_pair_shortest_path", "Lv3", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/ArticulationPoints/UVA10765.java",
+        "topics": ["ArticulationPoints", "Lv3", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/ArticulationPoints/UVA796.java",
+        "topics": ["articulation_points", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/BipartiteGraph/UVA11138.java",
+        "topics": ["MCBM", "bipartiteGraph", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/BipartiteGraph/UVA11159.java",
+        "topics": ["MCBM", "bipartiteGraph", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/BipartiteGraphCheck/UVA11080.java",
+        "topics": ["bipartite_graph_checking", "bipartite_graph", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/BipartiteGraphCheck/UVA11396.java",
+        "topics": ["bipartite_graph_checking", "bipartite_graph", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/ConvertingGeneralGraphToDAG/UVA10913.java",
+        "topics": ["dp", "dag", "UVA", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/ConvertingGeneralGraphToDAG/UVA11487.java",
+        "topics": ["dp", "dag", "UVA", "Lv4", "skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/ConvertingGeneralGraphToDAG/UVA907.java",
+        "topics": ["dp", "dag", "UVA", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/CoutingPathsInDAG/UVA10401.java",
+        "topics": ["UVA", "Lv3", "dp", "dag", "dag_count_paths"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/CoutingPathsInDAG/UVA11957.java",
+        "topics": ["UVA", "Lv4", "dp", "dag", "dag_count_paths"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/CoutingPathsInDAG/UVA988.java",
+        "topics": ["UVA", "Lv3", "dp", "dag", "dag_count_paths"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/SingleSourceShortestLongestPaths/UVA10285.java",
+        "topics": ["UVA", "Lv2", "dp", "dag", "dag_longest_path"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/SingleSourceShortestLongestPaths/UVA10350.java",
+        "topics": ["UVA", "Lv4", "dp", "dag", "dag_longest_path"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/DirectedAcyclicGraph/SingleSourceShortestLongestPaths/UVA452.java",
+        "topics": ["UVA", "Lv3", "dp", "dag", "dag_longest_path"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/EulerianGraph/UVA10054.java",
+        "topics": ["UVA", "Lv2", "eulerian_graph"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/EulerianGraph/UVA10203.java",
+        "topics": ["UVA", "Lv2", "eulerian_graph"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/EulerianGraph/UVA10596.java",
+        "topics": ["UVA", "Lv3", "eulerian_graph"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/FloodFill/UVA1103.java",
+        "topics": ["UVA", "Lv3", "flood_fill"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/FloodFill/UVA11094.java",
+        "topics": ["UVA", "Lv2", "flood_fill"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/FloodFill/UVA11953.java",
+        "topics": ["UVA", "Lv2", "flood_fill"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/FloodFill/UVA469.java",
+        "topics": ["UVA", "Lv2", "flood_fill"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/GraphTraversal/UVA00118.java",
+        "topics": ["UVA", "Lv2", "graph_traversal", "skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/GraphTraversal/UVA11831.java",
+        "topics": ["UVA", "Lv2", "graph_traversal"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/GraphTraversal/UVA11902.java",
+        "topics": ["UVA", "Lv3", "connected_component", "skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/GraphTraversal/UVA11906.java",
+        "topics": ["UVA", "Lv3", "connected_component"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/GraphTraversal/UVA12442.java",
+        "topics": ["UVA", "Lv3", "graph_traversal", "skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/MSTStandard/UVA11228.java",
+        "topics": ["UVA", "Lv3", "mst"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/MSTStandard/UVA11631.java",
+        "topics": ["UVA", "Lv2", "mst"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/MSTStandard/UVA11747.java",
+        "topics": ["UVA", "Lv2", "mst"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/MSTVariants/UVA10369.java",
+        "topics": ["UVA", "Lv2", "mst"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/MSTVariants/UVA10600.java",
+        "topics": ["UVA", "Lv2", "mst"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/NegativeWeightCycleBellmanFord/UVA10449.java",
+        "topics": ["UVA", "Lv3", "skip", "bellman_ford"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/NegativeWeightCycleBellmanFord/UVA10557.java",
+        "topics": ["UVA", "Lv3", "skip", "bellman_ford", "skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/NetworkFlow/StandardMaxFlowProblem/UVA259.java",
+        "topics": ["UVA", "Lv3", "network_flow"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/NetworkFlow/StandardMaxFlowProblem/UVA820.java",
+        "topics": ["UVA", "Lv2", "network_flow"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/NetworkFlow/Variants/UVA11380.java",
+        "topics": ["UVA", "Lv4", "network_flow"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/NetworkFlow/Variants/UVA11506.java",
+        "topics": ["UVA", "Lv3", "network_flow"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/NetworkFlowStandard/UVA11167.java",
+        "topics": ["UVA", "Lv3", "network_flow", "skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/StronglyConnectedComponents/CallingCircles.java",
+        "topics": ["UVA", "strongly_connected_component", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/StronglyConnectedComponents/Dominos.java",
+        "topics": ["UVA", "Lv2", "strongly_connected_components"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/StronglyConnectedComponents/UVA11838.java",
+        "topics": ["UVA", "Lv2", "strongly_connected_components"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/TopologicalSort/UVA11060.java",
+        "topics": ["UVA", "Lv2", "topological_sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/TopologicalSort/UVA124.java",
+        "topics": ["UVA", "topological_sort", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/TopologicalSort/UVA872.java",
+        "topics": ["UVA", "topological_sort", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/TopologicalSort/UVA872WA.java",
+        "topics": ["skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/Tree/UVA10459.java",
+        "topics": ["UVA", "tree", "Lv4", "tree_diameter"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/Tree/UVA10805.java",
+        "topics": ["UVA", "tree", "Lv5", "tree_diameter"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/Tree/UVA11695.java",
+        "topics": ["UVA", "Lv4", "tree", "tree_diameter"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/UnweightedBFSEasier/UVA10653.java",
+        "topics": ["UVA", "bfs", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/UnweightedBFSEasier/UVA924.java",
+        "topics": ["UVA", "Lv2", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/UnweightedBFSHarder/UVA11101.java",
+        "topics": ["UVA", "Lv3", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/UnweightedBFSHarder/UVA12160.java",
+        "topics": ["UVA", "bfs", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/UnweightedBFSHarder/UVA314.java",
+        "topics": ["UVA", "Lv3", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/WeightedDijkstraEasier/UVA10986.java",
+        "topics": ["UVA", "bfs", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/WeightedDijkstraEasier/UVA1112.java",
+        "topics": ["UVA", "Lv2", "dijkstra"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/WeightedDijkstraHarder/UVA10801.java",
+        "topics": ["skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/Anagram/UVA454.java",
+        "topics": ["problem", "anagram", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/Easy/UVA10114.java",
+        "topics": ["simulation", "problem", "adhoc", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/Easy/UVA11559.java",
+        "topics": ["problem", "adhoc", "UVA", "Lv1"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/Easy/UVA11799.java",
+        "topics": ["UVA", "adhoc", "Lv1"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/GameCard/UVA10646.java",
+        "topics": ["simulation", "card_game", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/GameCard/UVA12247.java",
+        "topics": ["simulation", "card_game", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/GameCard/UVA462.java",
+        "topics": ["card_game", "simulation", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/GameChess/UVA278.java",
+        "topics": ["skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/GameOtherEasier/UVA11459.java",
+        "topics": ["game", "simulation", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/Medium/UVA10141.java",
+        "topics": ["ad_hoc", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/Medium/UVA11507.java",
+        "topics": ["ad_hoc", "Lv2", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/Palindrome/UVA11221.java",
+        "topics": ["UVA", "palindrome", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/RealLifeProblemEasier/UVA161.java",
+        "topics": ["skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA11044.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA1124.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA11364.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA11498.java",
+        "topics": ["UVA", "Lv0", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA11547.java",
+        "topics": ["UVA", "Lv0", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA11727.java",
+        "topics": ["UVA", "Lv0", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA12250.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA12279.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA12289.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA12372.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA12403.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Introduction/SuperEasy/UVA12577.java",
+        "topics": ["UVA", "Lv1", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/AddAndSearchWord_DataStructureDesign.java",
+        "topics": ["backtracking", "dfs", "trie"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BalancedBinaryTree.java",
+        "topics": ["tree", "dfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BasicCalculator.java",
+        "topics": ["math", "stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BasicCalculatorII.java",
+        "topics": ["math", "stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BestTimeToBuyAndSellStock.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BestTimeToBuyAndSellStockII.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BestTimeToBuyAndSellStockIII.java",
+        "topics": ["dp", "scan_left_right", "time_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BestTimeToBuyAndSellStockWithCooldown.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BinaryTreeInOrderTraversal.java",
+        "topics": ["tree", "dfs", "in_order"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BinaryTreeLevelOrderTraversal.java",
+        "topics": ["bfs", "tree", "level_order"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BinaryTreeMaximumPathSum.java",
+        "topics": ["dfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BinaryTreePostOrderTraversal.java",
+        "topics": ["tree", "dfs", "post_order"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BinaryTreePreOrderTraversal.java",
+        "topics": ["tree", "bfs", "pre_order"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BinaryTreeZigzagLevelOrderTraversal.java",
+        "topics": ["stack", "tree", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BitwiseAndOfNumberRange.java",
+        "topics": ["bit", "time_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BrustBallons.java",
+        "topics": ["divide_and_conquer", "dp", "time_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/BullsAndCows.java",
+        "topics": ["hash_table"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ClimbingStairs.java",
+        "topics": ["dp", "fibonacci_number"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CloneGraph.java",
+        "topics": ["dfs", "bfs", "graph"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CoinChange.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/Combination.java",
+        "topics": ["backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CombinationSum.java",
+        "topics": ["backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CombinationSum2.java",
+        "topics": ["backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CombinationSum3.java",
+        "topics": ["backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ConstructBinaryTreeFromPreorderAndInorderTraversal.java",
+        "topics": ["tree", "dfs", "pre_order", "in_order"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ContainsDuplicate.java",
+        "topics": ["hash_table"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ContainsDuplicateIII.java",
+        "topics": ["sort", "map"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ConvertBSTToGreaterTree.java",
+        "topics": ["tree", "dfs", "bfs", "recursion"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ConvertSortedArrayToBinarySearchTree.java",
+        "topics": ["tree", "dfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CopyListWithRandomPointer.java",
+        "topics": ["hash_table", "linked_list"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CountAndSay.java",
+        "topics": ["string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CountPrimes.java",
+        "topics": ["seive", "math", "prime"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CountToSmallerNumberAfterSelf.java",
+        "topics": ["binary_search", "divide_and_conquer", "sort", "binary_indexed_tree", "segment_tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CountingBits.java",
+        "topics": ["dp", "bit"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CourseSchedule.java",
+        "topics": ["dfs", "bfs", "graph", "topological_sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/CourseScheduleII.java",
+        "topics": ["dfs", "bfs", "graph", "topolocial_sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/DailyTemperature.java",
+        "topics": ["stack", "monotonic_stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/DecodeWay.java",
+        "topics": ["dp", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/DeleteNodeInALinkedList.java",
+        "topics": ["linked_list"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/DiameterOfBinaryTree.java",
+        "topics": ["tree", "diameter"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/DifferentWaysToAddParentheses.java",
+        "topics": ["divideAndConquer"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/DistinctSubsequence.java",
+        "topics": ["string", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/DivideTwoIntegers.java",
+        "topics": ["math", "binarySearch"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/EditDistance.java",
+        "topics": ["string", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/EvaluateReversePolishNotation.java",
+        "topics": ["stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ExcelSheetColumnNumber.java",
+        "topics": ["math"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FactorialTrailingZeroes.java",
+        "topics": ["math"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FindAllAnagramInAString.java",
+        "topics": ["hash_table", "sliding_window"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FindAllNumberDisappearedInAnArray.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FindFirstAndLastPositionOfElementInSortedArray.java",
+        "topics": ["binarySearch", "time_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FindMedianFromDataStream.java",
+        "topics": ["heap", "two_pointers"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FindMinimumInRotatedSortedArray.java",
+        "topics": ["binarySearch"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FindPeekElement.java",
+        "topics": ["binary_search"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FindTheDuplicateNumber.java",
+        "topics": ["twoPointer", "binary_search"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FirstMissingPositive.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FirstUniqueCharacterInAString.java",
+        "topics": ["hashTable", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FlattenBinaryTreeToLinkedList.java",
+        "topics": ["tree", "dfs", "constant_space"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FlattenNestedListIterator.java",
+        "topics": ["stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FourSum.java",
+        "topics": ["hashTable", "twoPointer"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FourSumII.java",
+        "topics": ["hash_table", "binary_search"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/FractionToRecurringDecimal.java",
+        "topics": ["hash_table", "math"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/GameOfLife.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/GasStation.java",
+        "topics": ["greedy"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/GenerateParenthese.java",
+        "topics": ["string", "back_tracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/GroupAnagrams.java",
+        "topics": ["hashTable", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/HIndex.java",
+        "topics": ["sort", "counting_sort", "time_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/HIndexII.java",
+        "topics": ["binary_search", "time_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/HammingDistance.java",
+        "topics": ["bit"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/HappyNumber.java",
+        "topics": ["hash_table", "math"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/HouseRobber.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/HouseRobberII.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/HouseRobberIII.java",
+        "topics": ["dp", "tree", "dfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ImplementStrStr.java",
+        "topics": ["twoPointer", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ImplementTrie.java",
+        "topics": ["trie"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/IncreasingTripletSubsequence.java",
+        "topics": ["time_O", "space_O", "eliminiate"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/InsertDeleteGetRandomO1.java",
+        "topics": ["hash_table"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/InsertInterval.java",
+        "topics": ["sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/IntegerToRoman.java",
+        "topics": ["math", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/IntersectionOfTwoArraysII.java",
+        "topics": ["hash_table", "two_pointer", "binary_search", "sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/IntersectionOfTwoLinkedLists.java",
+        "topics": ["linked_list", "two_pointers"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/InvertBinaryTree.java",
+        "topics": ["tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/JumpGame.java",
+        "topics": ["greedy"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/JumpGameII.java",
+        "topics": ["greedy"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/KthLargestElementInAnArray.java",
+        "topics": ["divideAndConquer", "heap", "kLargest"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/KthSmallestElementInABst.java",
+        "topics": ["binarySearch", "tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/KthSmallestElementInASortedMatrix.java",
+        "topics": ["binarySearch", "heap"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LRUCache.java",
+        "topics": ["lruCache"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LargestNumber.java",
+        "topics": ["sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LargestRectangleInHistogram.java",
+        "topics": ["stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LinkedListCycle.java",
+        "topics": ["linkedList", "twoPointer"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LinkedListCycleII.java",
+        "topics": ["linkedList", "twoPointers"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LongestCommonPrefix.java",
+        "topics": ["string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LongestConsecutiveSequence.java",
+        "topics": ["unionFind"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LongestIncreasingSubSequence.java",
+        "topics": ["binarySearch", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LongestPalindromicSubstring.java",
+        "topics": ["string", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LongestPalindromicSubstring2.java",
+        "topics": ["string", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LongestSubstringWithAtLeastKRepeatingCharacters.java",
+        "topics": ["divideAndConquer", "slidingWindow"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/LowestCommonAncestorOfABinaryTree.java",
+        "topics": ["tree", "lower_common_ancestor", "time_O", "time_O", "rmq", "topological_sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MajorityElement.java",
+        "topics": ["divideAndConquer", "bit", "boyerMooreMajorityVote"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MaxPointsOnALine.java",
+        "topics": ["hashTable", "math"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MaximalRectangle.java",
+        "topics": ["hashTable", "dp", "stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MaximalSquare.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MaximumDepthOfBinaryTree.java",
+        "topics": ["tree", "dfs", "recursion"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MaximumProductOfWordLength.java",
+        "topics": ["bit"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MaximumProductSubarray.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MaximumSubarray.java",
+        "topics": ["divideAndConquer", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MedianOfTwoSortedArrays.java",
+        "topics": ["array", "binarySearch", "divideAndConquer"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MergeInterval.java",
+        "topics": ["array", "sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MergeKSortedList.java",
+        "topics": ["linkedList", "divideAndConquer", "heap"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MergeSortedArray.java",
+        "topics": ["array", "twoPointers"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MergeTwoBinaryTree.java",
+        "topics": ["tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MinStack.java",
+        "topics": ["stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MinimumDepthOfBinaryTree.java",
+        "topics": ["tree", "dfs", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MinimumPathSum.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MinimumWindowSubstring.java",
+        "topics": ["hashTable", "twoPointers", "string", "slidingWindow"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MissingNumber.java",
+        "topics": ["array", "math", "bit"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MoveZeros.java",
+        "topics": ["array", "twoPointers"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/MultiplyStrings.java",
+        "topics": ["math", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/NQueens.java",
+        "topics": ["backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/NextPermutation.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/NumberOf1Bits.java",
+        "topics": ["bit"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/NumberOfIsland.java",
+        "topics": ["dfs", "bfs", "unionFind"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/OddEvenLinkedList.java",
+        "topics": ["linkedList"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PalindromeLinkedList.java",
+        "topics": ["linkedList", "twoPointers"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PalindromePartitioning.java",
+        "topics": ["dp", "backtracking", "dfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PascalTriangle.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PathSum.java",
+        "topics": ["tree", "dfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PathSumII.java",
+        "topics": ["tree", "dfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PathSumIII.java",
+        "topics": ["tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PerfectSquares.java",
+        "topics": ["math", "dp", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PermutationII.java",
+        "topics": ["backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PermutationSequence.java",
+        "topics": ["math", "backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/Permutations.java",
+        "topics": ["backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PlusOne.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PopulatingNextRightPointersInEachNode.java",
+        "topics": ["tree", "dfs", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PopulatingNextRightPointersInEachNodeII.java",
+        "topics": ["tree", "dfs", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/PowerOfThree.java",
+        "topics": ["math"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ProductOfArrayExceptSelf.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/RangeSumQueryMutable.java",
+        "topics": ["binaryIndexedTree", "segmentTree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/RegularExpressionMatching.java",
+        "topics": ["string", "dp", "backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/RemoveNthNodeFromEndOfList.java",
+        "topics": ["linkedList", "twoPointers"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ReverseBits.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ReverseLinkedList.java",
+        "topics": ["linkedList"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/RotateArray.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/RotateImage.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SearchA2DMatrix.java",
+        "topics": ["array", "binarySearch"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SearchInRotatedSortedArray.java",
+        "topics": ["array", "binarySearch"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SearchInRotatedSortedArrayII.java",
+        "topics": ["array", "binarySearch"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SearchInsertPosition.java",
+        "topics": ["array", "binarySearch"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SerializeAndDeserializeBinaryTree.java",
+        "topics": ["tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SetMatrixZeroes.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ShortestUnsortedContinousSubarray.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SimplifyPath.java",
+        "topics": ["string", "stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SingleNumber.java",
+        "topics": ["hashTable", "bit"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SingleNumberIII.java",
+        "topics": ["bit"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SlidingWindowMaximum.java",
+        "topics": ["queue", "sliding_window", "heap", "monotonic_queue", "rmq"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SortColors.java",
+        "topics": ["array", "twoPointers", "sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SortList.java",
+        "topics": ["linkedList", "sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SpiralMatrix.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SpiralMatrixII.java",
+        "topics": ["array"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/Sqrt.java",
+        "topics": ["math", "binarySearch"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/StringToIntegerAtoi.java",
+        "topics": ["math", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/Subsets.java",
+        "topics": ["array", "backtracking", "bit"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SurroundedRegions.java",
+        "topics": ["dfs", "bfs", "unionFind"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/SymmetricTree.java",
+        "topics": ["tree", "dfs", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/TextJustification.java",
+        "topics": ["string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ThreeSum.java",
+        "topics": ["array", "two_pointers"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/TopKFrequentElements.java",
+        "topics": ["hashTable", "heap"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/TrapingRainWater.java",
+        "topics": ["array", "twoPointers", "dp", "stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/TwentyFourGame.java",
+        "topics": ["dfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/TwoSum.java",
+        "topics": ["sorting", "twoPointer", "hash_table"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/UglyNumberII.java",
+        "topics": ["math", "dp", "heap"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/UniqueBinarySearchTree.java",
+        "topics": ["dp", "tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/UniquePath.java",
+        "topics": ["array", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ValidAnagram.java",
+        "topics": ["hashTable", "sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ValidNumber.java",
+        "topics": ["math", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ValidPalindrome.java",
+        "topics": ["twoPointer", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ValidParentheses.java",
+        "topics": ["string", "stack"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ValidSudoku.java",
+        "topics": ["hashTable"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/ValidateBinarySearchTree.java",
+        "topics": ["tree", "dfs", "recursion"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/WiggleSortII.java",
+        "topics": ["sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/WildcardMatching.java",
+        "topics": ["string", "dp", "backtracking", "greedy"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/WordBreak.java",
+        "topics": ["dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/WordBreakII.java",
+        "topics": ["dp", "backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/WordLadder.java",
+        "topics": ["bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/WordLadderII.java",
+        "topics": ["array", "string", "backtracking", "bfs"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/WordSearch.java",
+        "topics": ["array", "backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Leetcode/WordSearchII.java",
+        "topics": ["backtracking", "trie"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerBaseNumberConversion/UVA10551.java",
+        "topics": ["UVA", "Lv3", "base_number_conversion", "big_integer"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerBasicFeature/UVA10523.java",
+        "topics": ["UVA", "big_integer", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerBasicFeature/UVA11879.java",
+        "topics": ["UVA", "big_integer", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerOthers/UVA10814.java",
+        "topics": ["UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerOthers/UVA11821.java",
+        "topics": ["UVA", "big_integer", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerOthers/UVA1230.java",
+        "topics": ["UVA", "Lv2", "big_integer"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerPrimalityTesting/UVA10235.java",
+        "topics": ["UVA", "big_integer", "primality_testing", "Lv1"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerPrimalityTesting/UVA11287.java",
+        "topics": ["UVA", "big_integer", "primality_testing", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BigIntegerPrimalityTesting/UVA1210.java",
+        "topics": ["UVA", "big_integer", "primality_testing", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/BinomialCoefficients/UVA10541.java",
+        "topics": ["UVA", "combinatorics", "Lv4", "binomail_coefficients"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/FibonacciNumber/UVA10689.java",
+        "topics": ["UVA", "combinatorics", "fibonacci_number", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/FibonacciNumber/UVA763.java",
+        "topics": ["UVA", "combinatorics", "fibonacci_number", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/FindingPrimeFactors/UVA11466.java",
+        "topics": ["TLE", "skip", "UVA", "prime", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/FindingPrimeFactors/UVA583.java",
+        "topics": ["UVA", "prime", "Lv1"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/GCDLCM/UVA11827.java",
+        "topics": ["UVA", "gcd_lcm", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/GameTheory/UVA10111.java",
+        "topics": ["skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/GameTheory/UVA10368.java",
+        "topics": ["UVA", "game_theory", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/GameTheory/UVA11311.java",
+        "topics": ["UVA", "game_theory", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/GameTheory/UVA11489.java",
+        "topics": ["UVA", "game_theory", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/GameTheory/UVA847.java",
+        "topics": ["UVA", "game_theory", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/JustAdHoc/UVA11526.java",
+        "topics": ["UVA", "adhoc", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/LogExpPower/UVA10916.java",
+        "topics": ["UVA", "log", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/MathSimulationEasier/UVA1225.java",
+        "topics": ["UVA", "math_simulation", "Lv1"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/MathSimulationHarder/UVA616.java",
+        "topics": ["UVA", "math_simulation", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/OtherNumberTheoryProblem/UVA756.java",
+        "topics": ["UVA", "number_theory", "other", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/SimplerOne/UVA10773.java",
+        "topics": ["UVA", "math", "ad_hoc", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/SimplerOne/UVA11723.java",
+        "topics": ["UVA", "math", "ad_hoc", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/SimplerOne/UVA11875.java",
+        "topics": ["UVA", "math", "ad_hoc", "Lv1"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/MoreAdvanceTopic/ChallengingBacktrackProblem/UVA11065.java",
+        "topics": ["UVA", "Lv5", "backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/MoreAdvanceTopic/ChallengingBacktrackProblem/UVA11195.java",
+        "topics": ["UVA", "Lv3", "backtracking"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/MoreAdvanceTopic/Dp/UVA10911.java",
+        "topics": ["dp", "minimum_weight_perfect_matching_general", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/MoreAdvanceTopic/MeetInTheMiddle_A_IDA/UVA11212.java",
+        "topics": ["UVA", "Lv4", "meet_in_the_middle"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/MoreAdvanceTopic/MeetInTheMiddle_A_IDA/UVA1211Prerun.java",
+        "topics": ["UVA", "Lv1"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/BinarySearch/UVA00679.java",
+        "topics": ["UVA", "Lv2", "binary_search"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/BinarySearch/UVA00957.java",
+        "topics": ["binarySeach", "binary_search_end_inclusive", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/BinarySearch/UVA10474.java",
+        "topics": ["binary_search", "binary_search_lower_bound", "binary_search_upper_bound", "binary_search_end_exclusive", "UVA", "Lv1"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/BinarySearch/UVA10567.java",
+        "topics": ["UVA", "Lv3", "binary_search"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/BinarySearch/UVA12192.java",
+        "topics": ["binary_search", "UVA", "Lv3", "skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/BinarySearchAnswer/UVA10341.java",
+        "topics": ["UVA", "binary_search", "binary_search_real_number", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/BinarySearchAnswer/UVA11935.java",
+        "topics": ["binary_search", "binary_search_real_number", "Lv3", "UVA"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/CoinChange/UVA10306.java",
+        "topics": ["dp", "coin_change", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/CoinChange/UVA11517.java",
+        "topics": ["dp", "coin_change", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedyClassical/UVA11264.java",
+        "topics": ["skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedyClassical/UVA11389.java",
+        "topics": ["greedy", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedyClassical/UVA12405.java",
+        "topics": ["greedy", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedyNonClassical/UVA10656.java",
+        "topics": ["UVA", "Lv2", "greedy"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedyNonClassical/UVA10718.java",
+        "topics": ["UVA", "Lv3", "greedy"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedyNonClassical/UVA11157.java",
+        "topics": ["UVA", "Lv3", "greedy"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedySorting/UVA11100.java",
+        "topics": ["UVA", "Lv3", "greedy", "greedy_sorting"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedySorting/UVA11292.java",
+        "topics": ["UVA", "Lv1", "greedy", "greedy_sorting"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/GreedySorting/UVA12210.java",
+        "topics": ["UVA", "Lv3", "greedy", "greedy_sorting"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeFancy/UVA11553.java",
+        "topics": ["skip"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeFancy/UVA12455.java",
+        "topics": ["UVA", "Lv2", "iterative_search"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeOneLoop/UVA10976.java",
+        "topics": ["UVA", "Lv2", "iterative_search", "linear_scan"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeOneLoop/UVA1237.java",
+        "topics": ["UVA", "Lv2", "iterative_search", "linear_scan"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeOneLoop/UVA927.java",
+        "topics": ["UVA", "Lv3", "iterative_search", "linear_scan"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeThreeLoop/UVA735.java",
+        "topics": ["UVA", "Lv3", "iterative_search", "search_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeThreeLoopHarder/UVA10660.java",
+        "topics": ["UVA", "Lv3", "iterative_search", "search_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeThreeLoopHarder/UVA11236.java",
+        "topics": ["UVA", "Lv3", "iterative_search", "search_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeThreeLoopHarder/UVA11565.java",
+        "topics": ["UVA", "Lv3", "iterative_search", "search_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeTwoLoop/UVA11242.java",
+        "topics": ["UVA", "Lv2", "iterative_search", "search_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/IterativeTwoLoop/UVA1260.java",
+        "topics": ["UVA", "Lv2", "iterative_search", "search_O"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/Knapsack/UVA10616.java",
+        "topics": ["dp", "01_knapsack", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/Knapsack/UVA10819.java",
+        "topics": ["dp", "01_knapsack", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/LongestIncreasingSubsequence/UVA11456.java",
+        "topics": ["dp", "longest_increasing_subsequence", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/LongestIncreasingSubsequence/UVA11790.java",
+        "topics": ["dp", "longest_increasing_subsequence", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/Max1DRangeSum/UVA10755.java",
+        "topics": ["dp", "max_1d_range_sum", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/Max1DRangeSum/UVA787.java",
+        "topics": ["dp", "max_1d_range_sum", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/Max2DRangeSum/UVA10827.java",
+        "topics": ["dp", "max_2d_range_sum", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/Max2DRangeSum/UVA11951.java",
+        "topics": ["dp", "max_2d_range_sum", "UVA", "Lv3"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/Max2DRangeSum/UVA983.java",
+        "topics": ["dp", "max_2d_range_sum", "UVA", "Lv4"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/NonClassical/UVA10337.java",
+        "topics": ["UVA", "Lv3", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/NonClassical/UVA10721.java",
+        "topics": ["UVA", "Lv2", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/NonClassical/UVA10943.java",
+        "topics": ["UVA", "Lv2", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/NonClassical/UVA11450.java",
+        "topics": ["dp", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/ProblemSolving/TSP/UVA10496.java",
+        "topics": ["dp", "traveling_salesman_problem", "UVA", "Lv2"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/RareTopic/ChinesePostmanProblem/UVA10296.java",
+        "topics": ["UVA", "Lv4", "chinese_postman_problem"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/RareTopic/SortingInLinearTime/UVA11462.java",
+        "topics": ["UVA", "Lv1", "sort", "radix_sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/RareTopic/TowerOfHanoi/UVA10017.java",
+        "topics": ["UVA", "Lv1", "sort", "radix_sort"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/CipherEncodeEncryptDecodeDecryptEasier/UVA10851.java",
+        "topics": ["UVA", "Lv3", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/CipherEncodeEncryptDecodeDecryptEasier/UVA11278.java",
+        "topics": ["UVA", "Lv3", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/CipherEncodeEncryptDecodeDecryptHarder/UVA11385.java",
+        "topics": ["UVA", "Lv3", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/CipherEncodeEncryptDecodeDecryptHarder/UVA554.java",
+        "topics": ["UVA", "Lv4", "string"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/DPClassic/UVA10635.java",
+        "topics": ["UVA", "Lv3", "string", "longest_common_substring", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/DPClassic/UVA526.java",
+        "topics": ["UVA", "Lv3", "string", "edit_distance", "dp"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/FrequencyCounting/UVA10252.java",
+        "topics": ["UVA", "Lv1", "string", "frequency_counting"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/FrequencyCounting/UVA11203.java",
+        "topics": ["UVA", "Lv4", "string", "frequency_counting"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/FrequencyCounting/UVA902.java",
+        "topics": ["UVA", "Lv2", "string", "frequency_counting"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/InputParsingNonRecursive/UVA11878.java",
+        "topics": ["UVA", "Lv3", "string", "parsing"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/JustAdHoc/UVA941.java",
+        "topics": ["UVA", "Lv3", "string", "ad_hoc"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/RegularExpression/UVA10058.java",
+        "topics": ["UVA", "Lv4", "string", "regular_expression"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/StringMatchingStandard/UVA11475.java",
+        "topics": ["UVA", "Lv2", "string", "string_matching"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/SuffixTreeStandard/UVA11107.java",
+        "topics": ["UVA", "Lv4", "string", "suffix_tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/SuffixTreeStandard/UVA11512.java",
+        "topics": ["UVA", "Lv3", "string", "suffix_tree"]
+    }, {
+        "path": "https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/StringProcessing/SuffixTreeStandard/UVA760.java",
+        "topics": ["UVA", "Lv3", "string", "suffix_tree"]
+    } ]
