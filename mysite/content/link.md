@@ -13,9 +13,13 @@ Toc: false
 
 * [Algorithm notes](https://www.mindmeister.com/2021534788?t=G53Vw0k9my)
 
+* [My AWS notes new](https://www.mindmeister.com/1336038621)
+
+* [Algorithm notes new](https://www.mindmeister.com/2021534788?t=G53Vw0k9my)
+
 ### Productivity site
 
-* [Trello](https://trello.com/)
+* [Todoist](https://todoist.com/app/today)
 
 * Design website: [Figma](https://www.figma.com/), [Canvas](https://www.canva.com/zh_tw/)
 
@@ -56,4 +60,38 @@ Toc: false
 
     Give me idea of how an indicator works
 
+#### Freelance
 
+[fiverr](https://www.fiverr.com/)
+
+#### Online payment
+
+[Strip](https://stripe.com/)
+
+#### AI tools
+
+##### Writing 
+
+* [ChartGPT](https://chat.openai.com/)
+
+* [CodePilot](https://github.com/github-copilot/signup)
+
+##### Image generate and web design
+
+* [Midjourney](https://www.midjourney.com/app/)
+
+* [Stable diffusion](https://stablediffusionweb.com/)
+
+#### Market and affliate tools
+
+* [Offvalue](https://www.offervault.com/?selectedTab=topOffers&search=&page=1)
+
+* [ahrefs](https://ahrefs.com/youtube-keyword-tool)
+
+* [H supertools](https://h-supertools.com/)
+
+#### API tools and tooling
+
+* You can also sell API on AWS
+
+* [RapidApi](https://rapidapi.com/)

@@ -411,3 +411,22 @@ try {
 
 ```
 
+## App script
+
+```js
+//Call put and post
+var url = "https://www.ymlai87416.com/testapi";
+var options = {
+    "method": "post",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "payload": JSON.stringify({
+        "action": "silly",
+        "content": "This is within a json obj."
+    })
+};
+
+var response = UrlFetchApp.fetch(url, options);
+console.log(response);
+```

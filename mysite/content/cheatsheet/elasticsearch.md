@@ -1,5 +1,5 @@
 ---
-title: "Elastic search"
+title: "Open search"
 date: "2022-11-13"
 author: "Tom"
 
@@ -8,8 +8,92 @@ toc:
   auto: true
 ---
 
-# Elastic search 
+# Elastic search / Open search
 
+Opensearch is a fork of Elastic search after 7.10.
+
+## Setup a testing env
+
+Opensearch
+```yaml
+version: '3'
+services:
+  opensearch-node1: # This is also the hostname of the container within the Docker network (i.e. https://opensearch-node1/)
+    image: opensearchproject/opensearch:latest # Specifying the latest available image - modify if you want a specific version
+    container_name: opensearch-node1
+    environment:
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1 # Set memlock to unlimited (no soft or hard limit)
+        hard: -1
+      nofile:
+        soft: 65536 # Maximum number of open files for the opensearch user - set to at least 65536
+        hard: 65536
+    volumes:
+      - opensearch-data1:/usr/share/opensearch/data # Creates volume called opensearch-data1 and mounts it to the container
+    ports:
+      - 9200:9200 # REST API
+      - 9600:9600 # Performance Analyzer
+    networks:
+      - opensearch-net # All of the containers will join the same Docker bridge network
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:latest # Make sure the version of opensearch-dashboards matches the version of opensearch installed on other nodes
+    container_name: opensearch-dashboards
+    ports:
+      - 5601:5601 # Map host port 5601 to container port 5601
+    expose:
+      - "5601" # Expose port 5601 for web access to OpenSearch Dashboards
+    environment:
+      OPENSEARCH_HOSTS: '["https://opensearch-node1:9200"]' # Define the OpenSearch nodes that OpenSearch Dashboards will query
+    networks:
+      - opensearch-net
+
+volumes:
+  opensearch-data1:
+
+networks:
+  opensearch-net:
+```
+
+Elasticsearch 
+
+Reference: https://gist.github.com/tomcant/ebce0df19cdde66cb7c7b5939fdba2ad
+```yaml
+version: "3.7"
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.2
+    ports:
+      - 9200
+      - 9300
+    environment:
+      - discovery.type=single-node
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.2
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+
+volumes:
+  elasticsearch_data:
+    driver: local
+```
+
+### Sample dump of data for searching
+
+For example, can take a look at here https://github.com/elastic/examples/tree/master/Exploring%20Public%20Datasets/nyc_traffic_accidents
+
+data in CSV
+pipeline on elasticsearch
+filebeat for loading data.
 
 ## Index
 
@@ -334,4 +418,66 @@ GET /testscore/_search?explain=true
         }
     }
 }
+```
+
+## Java client
+
+### Library
+
+- Jest Github: https://github.com/searchbox-io/Jest
+- Elasticsearch
+
+```xml
+<dependency>
+  <groupId>org.opensearch.client</groupId>
+  <artifactId>opensearch-rest-high-level-client</artifactId>
+  <version>2.4.0</version>
+</dependency>
+```
+
+
+- Elasticsearch high level rest client
+- Opensearch
+- Opensearch high level rest client 
+
+```xml
+<dependency>
+  <groupId>org.opensearch.client</groupId>
+  <artifactId>opensearch-rest-high-level-client</artifactId>
+  <version>2.4.0</version>
+</dependency>
+```
+
+- Opensearch java client Github: https://github.com/opensearch-project/opensearch-java#sample-code
+
+In short high level API is handwritten and java client is code generated.
+
+### Send query to elasticsearch using Jest
+
+```java
+public JestClient jestClient() {
+    JestClientFactory factory = new JestClientFactory();
+    factory.setHttpClientConfig(
+      new HttpClientConfig.Builder("http://localhost:9200")
+        .multiThreaded(true)
+        .defaultMaxTotalConnectionPerRoute(2)
+        .maxTotalConnection(10)
+        .build());
+    return factory.getObject();
+}
+
+List<SearchResult.Hit<Employee, Void>> searchResults = 
+  jestClient.execute(new Search.Builder(search).build())
+    .getHits(Employee.class);
+searchResults.forEach(hit -> {
+    System.out.println(String.format("Document %s has score %s", hit.id, hit.score));
+});
+```
+
+### Using elasticsearch library to generate Query
+
+Elastic library can be used to build query and translate it to Json Request string.
+
+```java
+
 ```
