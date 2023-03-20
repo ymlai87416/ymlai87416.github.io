@@ -29,7 +29,7 @@ function Search(){
 
   const handleChange = e => {
     var result = dbContext.state.content.filter(x => matchTag(e.target.value, x.topics));
-    console.log(result);
+    //console.log(result);
     searchResultContext.dispatch({type: "search_completed", value: result});
   };
 
