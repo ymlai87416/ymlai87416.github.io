@@ -59,8 +59,8 @@ jobs:
           hugo \
             --gc \
             --minify \
+            -s mysite \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-            -s mysite
 
       - name: Copy english
         run: cp -R englishVocab mysite/public
