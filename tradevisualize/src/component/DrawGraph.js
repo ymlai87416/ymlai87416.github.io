@@ -1,13 +1,9 @@
 import { AdvancedChart } from "react-tradingview-embed";
  
-const DrawGraph = () => {
+const DrawGraph = ({plotCommand, tradeData}) => {
   return (
     <div>
       <AdvancedChart widgetProps={{"theme": "dark"}} />
-      <div>
-        <input type='text'/>
-        <p> Enter the command here: </p>
-      </div>
     </div>
   )
 }

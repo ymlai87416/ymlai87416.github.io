@@ -36,7 +36,7 @@ class PinyinTable extends React.Component {
             })
             .then(function (data) {
                 var myObject = JSON.parse(data);
-                debugger
+                //debugger
                 this.setState({ content: myObject });
             }.bind(this))
             .catch(function (err) {
