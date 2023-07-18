@@ -16,6 +16,23 @@ toc:
 
 [Linux System Programming 6 Hours Course](https://www.youtube.com/watch?v=6OSeJFo6GOc&list=PLGCybmGfHKDM6QvZ5cB4uWL-t3ACHJ7wN)
 
+
+## Compiling on Fedora
+
+Run the following commands
+
+```sh
+## cloning project
+cd ~/GitProject
+git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
+
+## installing dependencies
+sudo dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign grubby
+sudo dnf install qt5-qtbase-devel libXi-devel gcc-c++
+
+
+```
+
 ## Study resources
 
 

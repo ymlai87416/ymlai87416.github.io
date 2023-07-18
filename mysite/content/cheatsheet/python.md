@@ -552,7 +552,19 @@ print("The pastebin URL is:%s"%pastebin_url)
 mytuple = ("apple", "banana", "cherry")
 
 # set
+mySet = set()
 myset = {"apple", "banana", "cherry"}
+# insert one / many
+mySet.add(4) 
+mySet.update(anotherSet)
+## delete
+mySet.remove(2)
+## check exist
+element in mySet
+# set operation
+unionSet = set1.union(set2)
+intersectSet = set1.intersection(set2)
+diffSet = set1.difference(set2)
 
 # dictionary
 thisdict = {
@@ -560,9 +572,15 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
-
-if "year" in thisdict.keys():
-  pass
+# add key value pair / update existing value
+myDict['key'] = newValue
+# delete key
+del myDict['key']
+# check key exists
+'key' in myDict
+# merge 2 dictionary
+dict1.update(dict2)
+merged_dict = {**dict1, **dict2}
 ```
 
 ### Numpy
