@@ -507,59 +507,87 @@ public class CreateXMLFileJava {
 
 ### JSON
 
-```xml
-<dependency>
-    <groupId>com.alibaba</groupId>
-    <artifactId>fastjson</artifactId>
-    <version>1.2.47</version>
-</dependency>
+```gradle
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.1'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.14.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.1'
+}
 ```
 
 #### Read
 
 ```java
-JSONObject object = new JSONObject();
-//string
-object.put("string","string");
-//int
-object.put("int",2);
-//boolean
-object.put("boolean",true);
-//array
-List<Integer> integers = Arrays.asList(1,2,3);
-object.put("list",integers);
-//null
-object.put("null",null);
-​
-System.out.println(object);
+public static void main(String[] args) {
+    // JSON string representing an array of objects
+    String jsonString = "[{\"name\":\"John Doe\", \"age\":30}, {\"name\":\"Jane Doe\", \"age\":25}]";
+
+    // Create ObjectMapper instance
+    ObjectMapper objectMapper = new ObjectMapper();
+
+    try {
+        // Deserialize JSON string to JsonNode
+        JsonNode rootNode = objectMapper.readTree(jsonString);
+
+        // Check if the root node is an array
+        if (rootNode.isArray()) {
+            // Cast the root node to ArrayNode
+            ArrayNode arrayNode = (ArrayNode) rootNode;
+
+            // Iterate over elements of the array
+            for (JsonNode node : arrayNode) {
+                // Access individual fields of each JsonNode
+                String name = node.get("name").asText();
+                int age = node.get("age").asInt();
+
+                // Print out the fields
+                System.out.println("Name: " + name);
+                System.out.println("Age: " + age);
+            }
+        }
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 ```
 
 #### Write
 
 ```java
-JSONObject object = JSONObject
-      .parseObject("{\"boolean\":true,\"string\":\"string\",\"list\":[1,2,3],\"int\":2}");
+public static void main(String[] args) {
+    // Create an instance of ObjectMapper
+    ObjectMapper objectMapper = new ObjectMapper();
 
-//string
-String s = object.getString("string");
-System.out.println(s);
-//int
-int i = object.getIntValue("int");
-System.out.println(i);
-//boolean
-boolean b = object.getBooleanValue("boolean");
-System.out.println(b);
-//list
-List<Integer> integers = JSON.parseArray(object.getJSONArray("list").toJSONString(),Integer.class);
-integers.forEach(System.out::println);
-//null
-System.out.println(object.getString("null"));
+    // Create a JsonNodeFactory instance
+    JsonNodeFactory nodeFactory = JsonNodeFactory.instance;
 
+    // Create an ObjectNode (a JSON object)
+    ObjectNode personNode = nodeFactory.objectNode();
+    
+    // Add properties to the ObjectNode
+    personNode.put("name", "John Doe");
+    personNode.put("age", 30);
 
-//从字符串解析JSON对象
-JSONObject obj = JSON.parseObject("{\"runoob\":\"菜鸟教程\"}");
-//从字符串解析JSON数组
-JSONArray arr = JSON.parseArray("[\"菜鸟教程\",\"RUNOOB\"]\n");
+    // Create an ArrayNode (a JSON array)
+    ArrayNode phoneNumbersNode = nodeFactory.arrayNode();
+    phoneNumbersNode.add("123-456-7890");
+    phoneNumbersNode.add("987-654-3210");
+    
+    // Add the ArrayNode to the ObjectNode
+    personNode.set("phoneNumbers", phoneNumbersNode);
+    
+    // Convert ObjectNode to JsonNode
+    JsonNode jsonNode = personNode;
+
+    // Print the JsonNode as a JSON string
+    try {
+        String jsonString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);
+        System.out.println(jsonString);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 ```
 
 ### Yaml
