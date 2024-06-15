@@ -24,7 +24,7 @@ var fullName: String = "Alice Smith"
 print("Age: \(age)") // Output: Age: 25
 ```
 
-Operators
+## Operators
 
 ```
 print("Closed range (1...5):")
@@ -319,9 +319,6 @@ let displayedName = userName ?? defaultName // Output: Displayed Name: Anonymous
 ```
 
 ## Enumerations
-    Defining Enumerations
-    Associated Values
-    Raw Values
 
 ```swift
 // Defining Enumerations
@@ -378,12 +375,6 @@ if let possiblePlanet = Planet(rawValue: 2) // Output: Possible Planet: venus
 ```
 
 ## Structures and Classes
-    Defining Structures and Classes
-    Properties (Stored, Computed, Property Observers)
-    Methods (Instance, Type Methods)
-    Initialization
-    Inheritance
-    Protocols
 
 ```swift
 // Defining Structures and Classes
@@ -546,13 +537,8 @@ let forcedResult = try! vend(itemNamed: "Candy", coinsInserted: 5)
 print("Forced result: \(forcedResult)")
 ```
 
-Advanced Topics
+## Advanced Topics
 
-    Generics
-    Extensions
-    Access Control
-    Memory Management (ARC, Weak and Unowned References)
-    Concurrency (async/await, GCD)
 
 ```swift
 // Generic Function
